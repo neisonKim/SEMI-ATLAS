@@ -196,3 +196,6 @@ npm run release:check
 ```
 
 빌드 이후 `out/`의 37개 공개 URL, robots/sitemap, 내부 링크까지 자동 검사합니다. Vercel 배포 절차는 `VERCEL_DEPLOY_KO.md`를 참고하세요.
+
+## v1.15 문의 폼
+Footer의 문의 이메일을 클릭하면 사이트 내부 문의 폼이 열립니다. 전송은 `/api/contact/` 서버 Route를 통해 Gmail SMTP로 처리됩니다. 설정 방법은 `CONTACT_FORM_STATUS.md`를 참고하세요.

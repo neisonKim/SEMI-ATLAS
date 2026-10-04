@@ -1,4 +1,5 @@
 import AssetImage from '@/components/AssetImage';
+import HeroSlider from '@/components/HeroSlider';
 import ConceptCard from '@/components/ConceptCard';
 import SectionTitle from '@/components/SectionTitle';
 import SearchAutocomplete from '@/components/SearchAutocomplete';
@@ -19,7 +20,7 @@ export default function HomePage() {
   return (
     <main id="main">
       <section className="home-hero">
-        <AssetImage name="hero-fab" alt="클린룸의 웨이퍼와 반도체 제조 장비" className="hero-image" eager />
+        <HeroSlider />
         <div className="container hero-content">
           <span className="eyebrow">KNOWLEDGE, CONNECTED.</span>
           <h1>반도체의 큰 그림,<br /><em>첫 개념부터.</em></h1>
@@ -36,10 +37,6 @@ export default function HomePage() {
             <a href="/concept/lithography/">노광</a>
             <a href="/concept/foundry/">파운드리</a>
           </div>
-        </div>
-        <div className="hero-caption">
-          <span>01 / FOUNDATIONS</span>
-          <b>작은 구조가 만드는<br />더 큰 가능성</b>
         </div>
       </section>
 

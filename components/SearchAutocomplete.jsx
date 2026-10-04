@@ -18,6 +18,7 @@ export default function SearchAutocomplete({
   placeholder = '웨이퍼, HBM, 노광…',
   buttonLabel = '검색',
   action = '/encyclopedia/',
+  autoFocus = false,
 }) {
   const [internalValue, setInternalValue] = useState('');
   const [open, setOpen] = useState(false);
@@ -74,8 +75,13 @@ export default function SearchAutocomplete({
       goToSuggestion(activeIndex);
       return;
     }
+    if (live) {
+      event.preventDefault();
+      setOpen(Boolean(query.trim()));
+      setActiveIndex(-1);
+      return;
+    }
     setOpen(false);
-    if (live) event.preventDefault();
   };
 
   return (
@@ -89,6 +95,7 @@ export default function SearchAutocomplete({
           type="search"
           placeholder={placeholder}
           autoComplete="off"
+          autoFocus={autoFocus}
           value={query}
           role="combobox"
           aria-autocomplete="list"

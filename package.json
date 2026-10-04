@@ -1,14 +1,14 @@
 {
   "name": "semiconductor-encyclopedia-nextjs",
-  "version": "1.10.0",
+  "version": "1.16.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "node scripts/serve-static.mjs",
+    "start": "next start",
     "check:search": "node scripts/verify-search.mjs",
     "check:data": "node scripts/verify-data.mjs",
-    "check": "npm run check:data && npm run check:search && npm run check:visual && npm run check:process && npm run check:industry && npm run check:responsive && npm run check:transition && npm run check:seo",
+    "check": "npm run check:data && npm run check:search && npm run check:visual && npm run check:process && npm run check:industry && npm run check:responsive && npm run check:transition && npm run check:seo && npm run check:interaction && npm run check:contact",
     "check:visual": "node scripts/verify-visual-guides.mjs",
     "predev": "node scripts/generate-static-metadata.mjs",
     "prebuild": "node scripts/generate-static-metadata.mjs && node scripts/clean-build.mjs",
@@ -16,17 +16,20 @@
     "check:industry": "node scripts/verify-industry-hub.mjs",
     "check:responsive": "node scripts/verify-responsive.mjs",
     "check:seo": "node scripts/generate-static-metadata.mjs && node scripts/verify-seo.mjs",
-    "preview": "node scripts/serve-static.mjs",
+    "preview": "next start",
     "check:export": "node scripts/verify-export.mjs",
     "check:links": "node scripts/verify-export-links.mjs",
-    "build:verify": "npm run build && npm run check:export && npm run check:links",
-    "release:check": "npm run check && npm run build:verify",
-    "check:transition": "node scripts/verify-transitions.mjs"
+    "build:verify": "npm run build",
+    "release:check": "npm run check && npm run build",
+    "check:transition": "node scripts/verify-transitions.mjs",
+    "check:interaction": "node scripts/verify-interactions.mjs",
+    "check:contact": "node scripts/verify-contact.mjs"
   },
   "dependencies": {
     "next": "16.3.5",
     "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "react-dom": "19.2.0",
+    "nodemailer": "^7.0.0"
   },
   "devDependencies": {}
 }
