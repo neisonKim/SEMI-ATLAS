@@ -1,0 +1,226 @@
+[
+  {
+    "file": "advanced-packaging.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 162438,
+    "kind": "AI-generated illustrative scene"
+  },
+  {
+    "file": "computing.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 234432,
+    "kind": "AI-generated illustrative scene"
+  },
+  {
+    "file": "concept-ald.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 153024,
+    "kind": "AI-generated illustrative scene"
+  },
+  {
+    "file": "concept-cleaning.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 105536,
+    "kind": "AI-generated illustrative scene"
+  },
+  {
+    "file": "concept-cmp.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 123450,
+    "kind": "AI-generated illustrative scene"
+  },
+  {
+    "file": "concept-conductors.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 36212,
+    "kind": "AI-generated illustrative scene"
+  },
+  {
+    "file": "concept-cpu.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 97740,
+    "kind": "AI-generated illustrative scene"
+  },
+  {
+    "file": "concept-cvd.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 100684,
+    "kind": "AI-generated illustrative scene"
+  },
+  {
+    "file": "concept-dram.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 144636,
+    "kind": "AI-generated illustrative scene"
+  },
+  {
+    "file": "concept-etching.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 131672,
+    "kind": "AI-generated illustrative scene"
+  },
+  {
+    "file": "concept-euv-duv.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 115752,
+    "kind": "AI-generated illustrative scene"
+  },
+  {
+    "file": "concept-fabless.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 205580,
+    "kind": "AI-generated illustrative scene"
+  },
+  {
+    "file": "concept-foundry.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 245966,
+    "kind": "AI-generated illustrative scene"
+  },
+  {
+    "file": "concept-gpu.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 199080,
+    "kind": "AI-generated illustrative scene"
+  },
+  {
+    "file": "concept-hbm.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 118404,
+    "kind": "AI-generated illustrative scene"
+  },
+  {
+    "file": "concept-interposer.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 182212,
+    "kind": "AI-generated illustrative scene"
+  },
+  {
+    "file": "concept-ion-implantation.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 178698,
+    "kind": "AI-generated illustrative scene"
+  },
+  {
+    "file": "concept-mosfet.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 49078,
+    "kind": "AI-generated illustrative scene"
+  },
+  {
+    "file": "concept-nand.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 104892,
+    "kind": "AI-generated illustrative scene"
+  },
+  {
+    "file": "concept-oxidation.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 116186,
+    "kind": "AI-generated illustrative scene"
+  },
+  {
+    "file": "concept-semiconductor.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 118456,
+    "kind": "AI-generated illustrative scene"
+  },
+  {
+    "file": "concept-silicon.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 122556,
+    "kind": "AI-generated illustrative scene"
+  },
+  {
+    "file": "concept-tsv.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 87052,
+    "kind": "AI-generated illustrative scene"
+  },
+  {
+    "file": "ecosystem.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 250800,
+    "kind": "AI-generated illustrative scene"
+  },
+  {
+    "file": "hero-fab.webp",
+    "width": 1672,
+    "height": 941,
+    "bytes": 106530,
+    "kind": "AI-generated illustrative scene"
+  },
+  {
+    "file": "lithography.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 148698,
+    "kind": "AI-generated illustrative scene"
+  },
+  {
+    "file": "packaging-overview.webp",
+    "width": 1672,
+    "height": 941,
+    "bytes": 102134,
+    "kind": "AI-generated illustrative scene"
+  },
+  {
+    "file": "process-chamber.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 214502,
+    "kind": "AI-generated illustrative scene"
+  },
+  {
+    "file": "process-overview.webp",
+    "width": 1672,
+    "height": 941,
+    "bytes": 122244,
+    "kind": "AI-generated illustrative scene"
+  },
+  {
+    "file": "silicon-wafer.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 137408,
+    "kind": "AI-generated illustrative scene"
+  },
+  {
+    "file": "transistor.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 238608,
+    "kind": "AI-generated illustrative scene"
+  },
+  {
+    "file": "concept-integration.svg",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 2531,
+    "kind": "Simplified structural diagram"
+  }
+]

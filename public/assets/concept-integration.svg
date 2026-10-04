@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1024" role="img" aria-labelledby="title description">
+  <title id="title">2.5D와 3D의 연결 구조</title>
+  <desc id="description">왼쪽은 인터포저 위에 나란히 놓인 두 칩의 수평 연결, 오른쪽은 위아래로 쌓인 칩의 수직 연결을 단순화한 도식입니다. 실제 제품의 구조와 비율을 나타내지 않습니다.</desc>
+  <rect width="1536" height="1024" fill="#f3f7fa"/>
+  <g fill="#ffffff" stroke="#dce5ec" stroke-width="3">
+    <rect x="70" y="90" width="668" height="844" rx="24"/>
+    <rect x="798" y="90" width="668" height="844" rx="24"/>
+  </g>
+  <g font-family="Arial,sans-serif" text-anchor="middle" fill="#071a33">
+    <text x="404" y="205" font-size="64" font-weight="700">2.5D</text>
+    <text x="1132" y="205" font-size="64" font-weight="700">3D</text>
+  </g>
+  <!-- 2.5D: separate dies on a shared interposer. -->
+  <g fill="#071a33">
+    <rect x="135" y="410" width="228" height="130" rx="8"/>
+    <rect x="445" y="410" width="228" height="130" rx="8"/>
+  </g>
+  <g stroke="#168b9c" stroke-width="14">
+    <path d="M200 540v55m55-55v55m55-55v55M500 540v55m55-55v55m55-55v55"/>
+  </g>
+  <rect x="124" y="588" width="560" height="95" rx="7" fill="#19d6ce"/>
+  <g stroke="#071a33" stroke-width="5" fill="none">
+    <path d="M200 588v25h300v-25M255 588v48h300v-48M310 588v70h300v-70"/>
+  </g>
+  <g fill="#bdd2df">
+    <rect x="124" y="717" width="560" height="75" rx="7"/>
+    <rect x="852" y="717" width="560" height="75" rx="7"/>
+  </g>
+  <g stroke="#718ba3" stroke-width="12">
+    <path d="M200 683v34m105-34v34m100-34v34m100-34v34m105-34v34M963 680v37m112-37v37m112-37v37m112-37v37"/>
+  </g>
+  <!-- 3D: die-to-die vertical links; bonding technology intentionally unspecified. -->
+  <g fill="#071a33">
+    <rect x="918" y="353" width="428" height="125" rx="8"/>
+    <rect x="918" y="555" width="428" height="125" rx="8"/>
+  </g>
+  <g stroke="#19d6ce" stroke-width="18">
+    <path d="M972 478v77m80-77v77m80-77v77m80-77v77m80-77v77"/>
+  </g>
+  <g fill="#ffffff" font-family="Arial,sans-serif" font-size="34" font-weight="700" text-anchor="middle">
+    <text x="249" y="486">DIE A</text><text x="559" y="486">DIE B</text>
+    <text x="1132" y="429">DIE B</text><text x="1132" y="631">DIE A</text>
+  </g>
+  <g fill="#415b72" font-family="Arial,sans-serif" font-size="29" text-anchor="middle">
+    <text x="404" y="868">Lateral connections</text>
+    <text x="1132" y="868">Vertical connections</text>
+  </g>
+</svg>

@@ -1,0 +1,8 @@
+import { rm } from 'node:fs/promises';
+
+await Promise.all([
+  rm(new URL('../.next/', import.meta.url), { recursive: true, force: true }),
+  rm(new URL('../out/', import.meta.url), { recursive: true, force: true }),
+]);
+
+console.log('Removed stale .next and out directories.');

@@ -1,0 +1,3 @@
+Source commit: 056b074e9d1e9bd9b8ab6c38cb291988d18745ec
+Export date: 2026-10-04
+Live site: https://semiconductor-knowledge-atlas.neisonkim.chatgpt.site

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://semiconductor-knowledge-atlas.neisonkim.chatgpt.site/sitemap.xml
