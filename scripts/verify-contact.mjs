@@ -21,6 +21,8 @@ const checks = [
   ['server runtime enabled', !config.includes("output: 'export'") && !config.includes('output:"export"')],
   ['environment template', env.includes('CONTACT_GMAIL_USER=') && env.includes('CONTACT_GMAIL_APP_PASSWORD=') && env.includes('CONTACT_MAIL_TO=')],
   ['contact modal CSS', css.includes('.contact-dialog-backdrop') && css.includes('.contact-form') && css.includes('.contact-success')],
+  ['mobile compact contact sheet', css.includes('max-height:min(76dvh,620px)') && css.includes('position:sticky') && css.includes('height:118px')],
+  ['focus without scrolling header away', form.includes('focus({ preventScroll: true })') && form.includes('dialogRef.current.scrollTop = 0')],
 ];
 
 const failed = checks.filter(([, ok]) => !ok);

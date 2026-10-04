@@ -22,7 +22,10 @@ export default function ContactForm({ open, onClose }) {
 
     const previousOverflow = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
-    window.setTimeout(() => nameRef.current?.focus(), 50);
+    window.setTimeout(() => {
+      if (dialogRef.current) dialogRef.current.scrollTop = 0;
+      nameRef.current?.focus({ preventScroll: true });
+    }, 50);
 
     const onKey = (event) => {
       if (event.key === 'Escape' && state !== 'sending') onClose();

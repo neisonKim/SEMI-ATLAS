@@ -1,7 +1,7 @@
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { absoluteUrl, siteDescription, siteLocale, siteName, siteUrl } from '@/lib/site-config.mjs';
+import { absoluteUrl, siteDescription, siteLocale, siteName, siteUrl, socialImagePath } from '@/lib/site-config.mjs';
 
 export const metadata = {
   metadataBase: new URL(siteUrl),
@@ -19,14 +19,14 @@ export const metadata = {
     locale: siteLocale,
     title: siteName,
     description: siteDescription,
-    url: '/',
-    images: [{ url: '/assets/hero-fab.webp', width: 1536, height: 1024, alt: '반도체 제조 장비와 웨이퍼' }],
+    url: absoluteUrl('/'),
+    images: [{ url: absoluteUrl(socialImagePath), width: 1672, height: 941, alt: 'SEMI-ATLAS 반도체 백과사전 대표 이미지' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: siteName,
     description: siteDescription,
-    images: ['/assets/hero-fab.webp'],
+    images: [absoluteUrl(socialImagePath)],
   },
 };
 

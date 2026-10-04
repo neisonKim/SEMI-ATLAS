@@ -4,6 +4,8 @@ import { siteUrl } from '../lib/site-config.mjs';
 
 const sitemap = await readFile(new URL('../public/sitemap.xml', import.meta.url), 'utf8');
 const robots = await readFile(new URL('../public/robots.txt', import.meta.url), 'utf8');
+const homePage = await readFile(new URL('../app/page.jsx', import.meta.url), 'utf8');
+const layout = await readFile(new URL('../app/layout.jsx', import.meta.url), 'utf8');
 const expectedCount = 7 + concepts.length;
 const locCount = (sitemap.match(/<loc>/g) || []).length;
 
@@ -13,6 +15,9 @@ if (locCount !== expectedCount) problems.push(`sitemap URL count ${locCount} != 
 if (!sitemap.includes(`<loc>${siteUrl}/</loc>`)) problems.push('sitemap home URL mismatch');
 if (!sitemap.includes(`<loc>${siteUrl}/concept/hbm/</loc>`)) problems.push('sitemap concept URL mismatch');
 if (!robots.includes(`Sitemap: ${siteUrl}/sitemap.xml`)) problems.push('robots sitemap URL mismatch');
+if (!homePage.includes("title: homeTitle") || !homePage.includes('description: siteDescription')) problems.push('home OG title/description missing');
+if (!homePage.includes('images: [{') || !homePage.includes('absoluteUrl(socialImagePath)')) problems.push('home OG image missing');
+if (!homePage.includes('twitter:') || !layout.includes('socialImagePath')) problems.push('social preview metadata incomplete');
 for (const concept of concepts) {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(concept.updatedAt || '')) {
     problems.push(`${concept.id}: invalid updatedAt`);

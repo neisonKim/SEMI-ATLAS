@@ -4,15 +4,33 @@ import ConceptCard from '@/components/ConceptCard';
 import SectionTitle from '@/components/SectionTitle';
 import SearchAutocomplete from '@/components/SearchAutocomplete';
 import { byId, categories } from '@/lib/data.mjs';
+import { absoluteUrl, siteDescription, siteLocale, siteName, socialImagePath } from '@/lib/site-config.mjs';
+
+const homeTitle = 'SEMI-ATLAS | 연결하며 이해하는 반도체';
 
 export const metadata = {
   title: '연결하며 이해하는 반도체',
-  description: '30개의 핵심 개념과 학습 경로로 반도체의 기초, 공정, 패키징, 산업을 이해하세요.',
-  alternates: { canonical: '/' },
+  description: siteDescription,
+  alternates: { canonical: absoluteUrl('/') },
   openGraph: {
-    title: '연결하며 이해하는 반도체',
-    description: '30개의 핵심 개념과 학습 경로로 반도체의 기초, 공정, 패키징, 산업을 이해하세요.',
-    url: '/',
+    type: 'website',
+    siteName,
+    locale: siteLocale,
+    title: homeTitle,
+    description: siteDescription,
+    url: absoluteUrl('/'),
+    images: [{
+      url: absoluteUrl(socialImagePath),
+      width: 1672,
+      height: 941,
+      alt: 'SEMI-ATLAS 반도체 백과사전 대표 이미지',
+    }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: homeTitle,
+    description: siteDescription,
+    images: [absoluteUrl(socialImagePath)],
   },
 };
 

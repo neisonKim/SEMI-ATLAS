@@ -1,14 +1,15 @@
-# SEMI-ATLAS v1.17 모바일 헤더 안정화 패치
+# SEMI-ATLAS v1.18 패치
 
-## 수정 내용
-- 모바일에서 검색창을 열었다 닫아도 햄버거 버튼이 사라지지 않도록 액션 영역 폭 고정
-- 검색 버튼과 햄버거 버튼을 각각 고정 슬롯으로 유지
-- 430px 이하에서 검색 form의 absolute 재배치를 제거
-- 검색 입력창만 돋보기 왼쪽으로 확장되도록 변경
-- 모바일 자동완성 패널이 화면 밖으로 밀리지 않도록 위치 조정
+## 변경 사항
+1. 모바일 문의창 높이를 줄이고 내부 스크롤 방식으로 변경했습니다.
+2. 문의창 상단 헤더/닫기 버튼을 고정하여 폼을 스크롤해도 항상 닫기 버튼이 보입니다.
+3. 문의창이 열릴 때 이름 입력칸 자동 포커스로 상단이 밀려나는 현상을 `preventScroll`로 막았습니다.
+4. 모바일 입력칸/textarea 높이와 간격을 축소했습니다.
+5. 홈페이지 Open Graph에 `og:title`, `og:description`, `og:image`, 절대 URL을 명시했습니다.
+6. Twitter/SNS 미리보기 메타도 같이 보강했습니다.
 
-## 적용 방법
-현재 Git 프로젝트 루트에 이 ZIP의 내용을 그대로 덮어씁니다.
+## 적용
+현재 Git 프로젝트 루트에 이 ZIP의 내용을 그대로 덮어쓰세요.
 
 ```powershell
 npm run check
@@ -16,10 +17,13 @@ npm run build
 npm run dev
 ```
 
-정상 확인 후:
+정상이면:
 
 ```powershell
 git add .
-git commit -m "Fix mobile header search and hamburger layout"
+git commit -m "Improve mobile contact modal and social preview metadata"
 git push
 ```
+
+## 카카오톡 공유 미리보기
+배포 후 카카오톡에서 예전 미리보기 정보가 계속 보이면 카카오디벨로퍼스의 URL 메타정보 관리 도구에서 해당 Production URL의 OG 캐시를 초기화해야 합니다.
