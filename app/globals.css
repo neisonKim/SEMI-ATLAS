@@ -118,3 +118,84 @@ html,body{max-width:100%}body{overflow-x:clip}main,section,article,nav,header,fo
   .process-hub-arrow{width:18px;flex-basis:18px}
   .industry-hub-stage{padding-inline:14px}
 }
+
+
+/* MVP 1.10 · Smooth page reveal + brand loading transition */
+.site-page-reveal{
+  animation:sitePageReveal .48s cubic-bezier(.22,.75,.28,1) both;
+  transform-origin:50% 0;
+}
+@keyframes sitePageReveal{
+  from{opacity:0;transform:translateY(8px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+.brand-loading-overlay{
+  position:fixed;
+  inset:0;
+  z-index:2000;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:24px;
+  padding:28px;
+  color:#fff;
+  background:rgba(7,26,51,.96);
+  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);
+  animation:brandOverlayIn .24s ease-out both;
+}
+.brand-loading-mark{
+  position:relative;
+  width:112px;
+  height:112px;
+  display:grid;
+  place-items:center;
+}
+.brand-loading-ring{
+  position:absolute;
+  inset:0;
+  border-radius:50%;
+  border:2px solid rgba(255,255,255,.16);
+  border-top-color:var(--mint);
+  border-right-color:rgba(25,214,206,.58);
+  animation:brandRingSpin .82s linear infinite;
+  box-shadow:0 0 34px rgba(25,214,206,.12);
+}
+.brand-loading-logo{
+  width:72px;
+  height:72px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:#0b2744;
+  border:1px solid rgba(255,255,255,.12);
+  box-shadow:0 14px 36px rgba(0,0,0,.22);
+  animation:brandLogoRise .44s cubic-bezier(.2,.78,.28,1) both;
+}
+.brand-loading-logo img{width:50px;height:50px}
+.brand-loading-copy{text-align:center;line-height:1.25;animation:brandCopyIn .44s .08s ease-out both}
+.brand-loading-copy strong{display:block;font-size:1rem;letter-spacing:.18em;font-weight:850}
+.brand-loading-copy span{display:block;margin-top:8px;font-size:.625rem;letter-spacing:.16em;color:#9eb5c8;font-weight:700}
+@keyframes brandOverlayIn{from{opacity:0}to{opacity:1}}
+@keyframes brandRingSpin{to{transform:rotate(360deg)}}
+@keyframes brandLogoRise{from{opacity:0;transform:scale(.84)}to{opacity:1;transform:scale(1)}}
+@keyframes brandCopyIn{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+
+@media(max-width:430px){
+  .site-page-reveal{animation-duration:.42s}
+  .brand-loading-overlay{gap:20px}
+  .brand-loading-mark{width:96px;height:96px}
+  .brand-loading-logo{width:62px;height:62px}
+  .brand-loading-logo img{width:43px;height:43px}
+  .brand-loading-copy strong{font-size:.9rem}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .site-page-reveal,
+  .brand-loading-overlay,
+  .brand-loading-logo,
+  .brand-loading-copy{animation:none!important}
+  .brand-loading-ring{animation-duration:1.8s}
+}

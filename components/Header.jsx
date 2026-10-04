@@ -14,6 +14,7 @@ const navItems = [
 export default function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const [brandLoading, setBrandLoading] = useState(false);
   const menuRef = useRef(null);
   const buttonRef = useRef(null);
 
@@ -45,6 +46,23 @@ export default function Header() {
 
   useEffect(() => setOpen(false), [pathname]);
 
+  const onBrandClick = (event) => {
+    // Preserve normal browser behavior for open-in-new-tab / modified clicks.
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return;
+
+    event.preventDefault();
+    if (brandLoading) return;
+
+    setOpen(false);
+    setBrandLoading(true);
+
+    // Keep the transition visible briefly so the brand motion feels intentional,
+    // then perform a normal navigation that also works with static export hosting.
+    window.setTimeout(() => {
+      window.location.assign('/');
+    }, 620);
+  };
+
   const isActive = (key) => {
     if (key === 'learn') return pathname.startsWith('/learn');
     if (key === 'encyclopedia') return pathname.startsWith('/encyclopedia') || pathname.startsWith('/concept');
@@ -58,7 +76,7 @@ export default function Header() {
       <a href="#main" className="skip-link">본문 바로가기</a>
       <header className="site-header">
         <div className="header-inner">
-          <a className="brand" href="/" aria-label="반도체 백과사전 홈">
+          <a className="brand" href="/" aria-label="반도체 백과사전 홈" onClick={onBrandClick}>
             <img src="/favicon.svg" alt="" width="36" height="36" />
             <span>
               <b>반도체 백과사전</b>
@@ -96,6 +114,20 @@ export default function Header() {
           <a href="/packaging/">패키징</a>
         </nav>
       </header>
+      {brandLoading && (
+        <div className="brand-loading-overlay" role="status" aria-live="polite" aria-label="홈으로 이동 중">
+          <div className="brand-loading-mark" aria-hidden="true">
+            <span className="brand-loading-ring" />
+            <span className="brand-loading-logo">
+              <img src="/favicon.svg" alt="" width="54" height="54" />
+            </span>
+          </div>
+          <div className="brand-loading-copy">
+            <strong>SEMI ATLAS</strong>
+            <span>KNOWLEDGE, CONNECTED.</span>
+          </div>
+        </div>
+      )}
     </>
   );
 }

@@ -53,8 +53,10 @@ export default function RootLayout({ children }) {
       <body id="top">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
         <Header />
-        {children}
-        <Footer />
+        <div className="site-page-reveal">
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );

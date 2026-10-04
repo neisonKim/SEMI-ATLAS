@@ -1,6 +1,6 @@
 {
   "name": "semiconductor-encyclopedia-nextjs",
-  "version": "1.9.0",
+  "version": "1.10.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,7 +8,7 @@
     "start": "node scripts/serve-static.mjs",
     "check:search": "node scripts/verify-search.mjs",
     "check:data": "node scripts/verify-data.mjs",
-    "check": "npm run check:data && npm run check:search && npm run check:visual && npm run check:process && npm run check:industry && npm run check:responsive && npm run check:seo",
+    "check": "npm run check:data && npm run check:search && npm run check:visual && npm run check:process && npm run check:industry && npm run check:responsive && npm run check:transition && npm run check:seo",
     "check:visual": "node scripts/verify-visual-guides.mjs",
     "predev": "node scripts/generate-static-metadata.mjs",
     "prebuild": "node scripts/generate-static-metadata.mjs && node scripts/clean-build.mjs",
@@ -20,7 +20,8 @@
     "check:export": "node scripts/verify-export.mjs",
     "check:links": "node scripts/verify-export-links.mjs",
     "build:verify": "npm run build && npm run check:export && npm run check:links",
-    "release:check": "npm run check && npm run build:verify"
+    "release:check": "npm run check && npm run build:verify",
+    "check:transition": "node scripts/verify-transitions.mjs"
   },
   "dependencies": {
     "next": "16.3.5",
