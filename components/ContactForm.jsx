@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
 
 const initialForm = {
   name: '',
@@ -38,7 +39,7 @@ export default function ContactForm({ open, onClose }) {
     };
   }, [open, onClose, state]);
 
-  if (!open) return null;
+  if (!open || typeof document === 'undefined') return null;
 
   const update = (event) => {
     const { name, value } = event.target;
@@ -77,7 +78,7 @@ export default function ContactForm({ open, onClose }) {
     }
   };
 
-  return (
+  return createPortal(
     <div
       className="contact-dialog-backdrop"
       role="presentation"
@@ -194,5 +195,7 @@ export default function ContactForm({ open, onClose }) {
         )}
       </section>
     </div>
+    ,
+    document.body,
   );
 }

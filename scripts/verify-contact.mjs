@@ -21,7 +21,8 @@ const checks = [
   ['server runtime enabled', !config.includes("output: 'export'") && !config.includes('output:"export"')],
   ['environment template', env.includes('CONTACT_GMAIL_USER=') && env.includes('CONTACT_GMAIL_APP_PASSWORD=') && env.includes('CONTACT_MAIL_TO=')],
   ['contact modal CSS', css.includes('.contact-dialog-backdrop') && css.includes('.contact-form') && css.includes('.contact-success')],
-  ['mobile compact contact sheet', css.includes('max-height:min(76dvh,620px)') && css.includes('position:sticky') && css.includes('height:118px')],
+  ['mobile compact contact sheet', css.includes('max-height:min(72dvh,600px)') && css.includes('position:sticky') && css.includes('height:118px')],
+  ['viewport-safe contact portal', form.includes("createPortal") && form.includes('document.body') && css.includes('height:100dvh') && css.includes('z-index:2200')],
   ['focus without scrolling header away', form.includes('focus({ preventScroll: true })') && form.includes('dialogRef.current.scrollTop = 0')],
 ];
 
