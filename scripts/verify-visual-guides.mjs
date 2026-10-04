@@ -1,3 +1,4 @@
+import fs from 'node:fs';
 import { byId } from '../lib/data.mjs';
 import { visualGuides } from '../lib/visual-guides.mjs';
 
@@ -16,8 +17,19 @@ for (const guide of visualGuides) {
   }
 }
 
+const component = fs.readFileSync(new URL('../components/VisualGuide.jsx', import.meta.url), 'utf8');
+const css = fs.readFileSync(new URL('../app/globals.css', import.meta.url), 'utf8');
+const requiredComponentTokens = [
+  'tech-foundations', 'tech-computing', 'tech-process-map', 'tech-hbm', 'tech-industry-map',
+  'transistor-structure', 'wafer-cross-section', 'hbm-3d-stack', 'ecosystem-node'
+];
+for (const token of requiredComponentTokens) if (!component.includes(token)) errors.push(`Missing premium visual component token: ${token}`);
+for (const token of ['.visual-guide-premium .premium-board', '.tech-foundations', '.tech-computing', '.tech-hbm', '.tech-industry-map']) {
+  if (!css.includes(token)) errors.push(`Missing premium visual CSS: ${token}`);
+}
+
 if (errors.length) {
   console.error(errors.join('\n'));
   process.exit(1);
 }
-console.log(`PASS: ${visualGuides.length} visual guides, all concept links valid.`);
+console.log(`PASS: ${visualGuides.length} premium visual guides, all concept links and technical layouts valid.`);

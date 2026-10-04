@@ -268,12 +268,15 @@ export default async function ConceptPage({ params }) {
 
             <section className="sources" id="references">
               <span className="eyebrow">REFERENCES</span>
-              <h2>더 알아보기 · 공식 자료</h2>
+              <h2>더 알아보기 · 신뢰할 수 있는 자료</h2>
+              <p className="source-intro">공식 기술문서, 산업 표준·협회 자료, 대학 교육자료를 우선해 선별했습니다.</p>
               <ul>
                 {concept.refs.map((key) => (
                   <li key={key}>
                     <a href={sources[key][1]} target="_blank" rel="noopener noreferrer">
-                      {sources[key][0]}<span className="sr-only"> 새 창</span>
+                      <span className="source-type">{sources[key][2] || '외부 자료'}</span>
+                      <span className="source-title">{sources[key][0]}</span>
+                      <span className="sr-only"> 새 창</span>
                     </a>
                   </li>
                 ))}

@@ -1,26 +1,31 @@
-# SEMI-ATLAS v1.19 패치
+# SEMI-ATLAS v1.21 Patch
 
-기존 v1.18 Git 프로젝트 루트에 이 압축의 내용을 그대로 덮어쓰세요.
+기준: v1.20 이상
 
-핵심 수정:
-- ContactForm을 React Portal로 document.body에 렌더링
-- 모바일 문의 모달이 긴 페이지 기준으로 밀려나는 문제 해결
-- 문의창을 실제 viewport 중앙에 고정
-- 닫기 버튼이 상단에 유지되고 폼 내부만 스크롤
+## 적용 방법
+이 ZIP의 내용을 현재 SEMI-ATLAS Git 프로젝트 루트에 그대로 복사하고 같은 파일은 덮어씁니다.
 
-적용 후:
+## 변경 파일
+- `components/VisualGuide.jsx`
+- `app/visual/page.jsx`
+- `app/globals.css`
+- `scripts/verify-visual-guides.mjs`
+- `package.json`
+- `package-lock.json`
+- `VISUAL_GUIDE_V2_STATUS.md`
 
+## 주요 변경
+Visual Guide 5종을 단순 박스 흐름에서 기술 구조 중심의 Visual Guide V2로 변경합니다.
+
+- Silicon → Wafer → Transistor cross-section → Chip
+- CPU/GPU ↔ DRAM/NAND data fabric
+- Lithography + wafer cross-section + 11-step process rail
+- HBM DRAM stack + TSV + GPU + Silicon Interposer + Package Substrate
+- Semiconductor ecosystem + Equipment/Materials support layer
+
+## 확인
 ```powershell
-npm install
 npm run check
 npm run build
 npm run dev
-```
-
-정상이면:
-
-```powershell
-git add .
-git commit -m "Fix mobile contact modal viewport positioning"
-git push
 ```
