@@ -26,6 +26,7 @@ const checks = [
   ['magnifier-adjacent inline search', header.includes('header-direct-search') && header.includes('header-direct-search-input-wrap') && header.includes('header-direct-search-input') && header.includes('setSearchOpen') && !header.includes('header-search-panel')],
   ['header search stays inside header', css.includes('.header-direct-search.is-open') && css.includes('right:44px') && css.includes('width:calc(100% - 44px)')],
   ['header search direct suggestions', header.includes('suggestConcepts') && header.includes('searchSuggestions') && header.includes('header-direct-search-results')],
+  ['mobile header action slots remain fixed after search close', css.includes('Mobile header action slots stay fixed when inline search toggles') && css.includes('flex:0 0 94px') && css.includes('.menu-toggle{') && css.includes('display:flex!important')],
   ['brand letter spacing', css.includes('.site-header .brand b') && css.includes('letter-spacing:.16em')],
   ['footer direct contact form', footer.includes('studiokei805@gmail.com') && footer.includes('ContactForm') && footer.includes('setContactOpen(true)')],
   ['desktop header aligned to content container', css.includes('@media(min-width:851px)') && css.includes('width:min(var(--container),calc(100% - 64px))')],
@@ -39,4 +40,4 @@ if (failed.length) {
   process.exit(1);
 }
 
-console.log('Interaction UX PASS · hero slider + nav underline + animated hamburger/menu + dark scrim + magnifier-adjacent inline search + spaced brand + direct contact form + aligned desktop header.');
+console.log('Interaction UX PASS · hero slider + nav underline + animated hamburger/menu + dark scrim + fixed mobile search/menu slots + magnifier-adjacent inline search + spaced brand + direct contact form + aligned desktop header.');
