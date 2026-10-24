@@ -2,6 +2,7 @@ import ConceptCard from '@/components/ConceptCard';
 import IndustryHub from '@/components/IndustryHub';
 import PageHero from '@/components/PageHero';
 import SectionTitle from '@/components/SectionTitle';
+import { companies, companyStages } from '@/lib/companies.mjs';
 import { byId } from '@/lib/data.mjs';
 import { industryHub } from '@/lib/industry-hub.mjs';
 
@@ -58,9 +59,9 @@ export default function IndustryPage() {
 
       <section className="section container">
         <SectionTitle
-          eyebrow="MVP INDUSTRY PATH · 28—30"
+          eyebrow="INDUSTRY LEARNING PATH · 28—30"
           title="산업 생태계에서 팹리스와 파운드리까지"
-          description="MVP 1.0에서는 28번 전체 산업 구조를 먼저 읽고, 29번 팹리스와 30번 파운드리의 역할 차이를 순서대로 학습합니다."
+          description="28번 전체 산업 구조를 먼저 읽고, 29번 팹리스와 30번 파운드리의 역할 차이를 순서대로 학습합니다."
         />
         <div className="cards three">
           {['ecosystem', 'fabless', 'foundry'].map((id) => <ConceptCard key={id} concept={byId[id]} />)}
@@ -70,15 +71,13 @@ export default function IndustryPage() {
       <section className="section surface">
         <div className="container industry-next-band">
           <div>
-            <span className="eyebrow">MVP 2.0 EXPANSION</span>
-            <h2>다음에는 공급망의 빈칸을 더 깊게 채웁니다.</h2>
-            <p>EDA/IP, 장비·소재, OSAT를 개별 상세 콘텐츠로 확장하면 현재 산업 지도가 더 촘촘한 Semiconductor Knowledge Graph로 발전할 수 있습니다.</p>
+            <span className="eyebrow">COMPANY ENCYCLOPEDIA</span>
+            <h2>역할에서 실제 기업으로 이어가세요.</h2>
+            <p>주요 기업 {companies.length}개의 제품·기술을 개념과 함께 읽어보세요. 같은 기업이 여러 역할에 등장할 수 있습니다.</p>
+            <a className="button navy" href="/companies/">기업 사전에서 찾아보기 →</a>
           </div>
-          <div className="industry-next-list" aria-label="MVP 2.0 산업 확장 후보">
-            <span>EDA / IP</span>
-            <span>Equipment</span>
-            <span>Materials</span>
-            <span>OSAT</span>
+          <div className="industry-company-roles" aria-label="역할별 기업 예시">
+            {companyStages.map(stage => <div key={stage.id}><a className="industry-company-role" href={`/companies/?stage=${stage.id}`}>{stage.label} →</a><p>{companies.filter(company => company.stages.includes(stage.id)).map((company, index) => <span key={company.id}>{index > 0 && ' · '}<a href={`/company/${company.id}/`}>{company.name}</a></span>)}</p></div>)}
           </div>
         </div>
       </section>

@@ -9,6 +9,7 @@ for (const [key, value] of sourceEntries) {
   try {
     const parsed = new URL(url);
     if (parsed.protocol !== 'https:') errors.push(`Source ${key} must use https`);
+    if (!parsed.pathname.replace(/\//g, '')) errors.push(`Source ${key} must link to a topic page, not a homepage`);
   } catch { errors.push(`Source ${key} has invalid URL`); }
 }
 
@@ -20,6 +21,8 @@ for (const concept of concepts) {
   const unique = new Set(concept.refs);
   if (unique.size !== concept.refs.length) errors.push(`${concept.id}: duplicate reference keys`);
   for (const key of concept.refs) if (!sources[key]) errors.push(`${concept.id}: unknown source ${key}`);
+  const urls = concept.refs.map(key => sources[key]?.[1]);
+  if (new Set(urls).size !== urls.length) errors.push(`${concept.id}: duplicate source URLs`);
 }
 
 if (errors.length) {

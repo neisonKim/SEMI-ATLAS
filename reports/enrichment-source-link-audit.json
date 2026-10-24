@@ -1,0 +1,200 @@
+{
+  "checkedAt": "2026-10-24T21:51:49.325Z",
+  "counts": {
+    "ok": 20,
+    "broken": 0,
+    "generic": 0,
+    "unverified": 1
+  },
+  "results": [
+    {
+      "id": "rsc_silicon",
+      "label": "RSC · Silicon 원소 정보",
+      "url": "https://periodic-table.rsc.org/element/14/",
+      "finalUrl": "https://periodic-table.rsc.org/element/14/",
+      "httpStatus": 200,
+      "title": "Silicon - Element information, properties and uses | Periodic Table",
+      "status": "ok"
+    },
+    {
+      "id": "sumco_sizes",
+      "label": "SUMCO · 웨이퍼 제품 규격",
+      "url": "https://www.sumcousa.com/product-line-2/",
+      "finalUrl": "https://www.sumcousa.com/product-line-2/",
+      "httpStatus": 200,
+      "title": "Product Line",
+      "status": "ok"
+    },
+    {
+      "id": "intel_4004",
+      "label": "Intel · 1971년 4004의 역사",
+      "url": "https://timeline.intel.com/1971/the-first-programmable-microprocessor%3A-the-4004",
+      "finalUrl": "https://timeline.intel.com/1971/the-first-programmable-microprocessor%3A-the-4004",
+      "httpStatus": 200,
+      "title": "Explore Intel’s history- The First Programmable Microprocessor: The 4004",
+      "status": "ok"
+    },
+    {
+      "id": "mit_cmos",
+      "label": "MIT · CMOS와 MOSFET 강의",
+      "url": "https://live.ocw.mit.edu/courses/6-004-computation-structures-spring-2017/pages/c3/c3s1/",
+      "finalUrl": "https://live.ocw.mit.edu/courses/6-004-computation-structures-spring-2017/pages/c3/c3s1/",
+      "httpStatus": 200,
+      "title": "3.1 Annotated Slides | Computation Structures | Electrical Engineering and Computer Science | MIT OpenCourseWare",
+      "status": "ok"
+    },
+    {
+      "id": "intel_clock",
+      "label": "Intel · CPU 클록의 의미",
+      "url": "https://www.intel.com/content/www/us/en/gaming/resources/cpu-clock-speed.html",
+      "finalUrl": "https://www.intel.com/content/www/us/en/gaming/resources/cpu-clock-speed.html",
+      "httpStatus": 200,
+      "title": "CPU Speed: What Is CPU Clock Speed? | Intel",
+      "status": "ok"
+    },
+    {
+      "id": "nvidia_hopper",
+      "label": "NVIDIA · Hopper 구조 해설",
+      "url": "https://developer.nvidia.com/blog/nvidia-hopper-architecture-in-depth/",
+      "finalUrl": "https://developer.nvidia.com/blog/nvidia-hopper-architecture-in-depth/",
+      "httpStatus": 200,
+      "title": "NVIDIA Hopper Architecture In&#x2d;Depth | NVIDIA Technical Blog",
+      "status": "ok"
+    },
+    {
+      "id": "nvidia_warp",
+      "label": "NVIDIA · CUDA Warp-Level Primitives",
+      "url": "https://developer.nvidia.com/blog/using-cuda-warp-level-primitives/",
+      "finalUrl": "https://developer.nvidia.com/blog/using-cuda-warp-level-primitives/",
+      "httpStatus": 200,
+      "title": "Using CUDA Warp&#x2d;Level Primitives | NVIDIA Technical Blog",
+      "status": "ok"
+    },
+    {
+      "id": "micron_nand_types",
+      "label": "Micron · NAND 셀 유형 비교",
+      "url": "https://www.micron.com/products/storage/nand-flash/choosing-the-right-nand",
+      "finalUrl": "https://www.micron.com/products/storage/nand-flash/choosing-the-right-nand",
+      "httpStatus": 200,
+      "title": "Choosing the right NAND | Micron Technology Inc.",
+      "status": "ok"
+    },
+    {
+      "id": "mines_oxidation",
+      "label": "Colorado School of Mines · 열산화",
+      "url": "https://sif.mines.edu/oxidation/",
+      "finalUrl": "https://sif.mines.edu/oxidation/",
+      "httpStatus": 200,
+      "title": "Oxidation - Mines Shared Facilities",
+      "status": "ok"
+    },
+    {
+      "id": "asml_optics",
+      "label": "ASML · 렌즈·미러와 개구수",
+      "url": "https://www.asml.com/en/technology/lithography-principles/lenses-and-mirrors",
+      "finalUrl": "https://www.asml.com/en/technology/lithography-principles/lenses-and-mirrors",
+      "httpStatus": 200,
+      "title": "Lenses &amp; mirrors - Lithography principles | ASML",
+      "status": "ok"
+    },
+    {
+      "id": "lam_ale",
+      "label": "Lam Research · 식각 선택비와 ALE",
+      "url": "https://newsroom.lamresearch.com/Tech-Brief-All-About-ALE",
+      "finalUrl": "https://newsroom.lamresearch.com/Tech-Brief-All-About-ALE",
+      "httpStatus": 200,
+      "title": "Tech Brief: All About ALE",
+      "status": "ok"
+    },
+    {
+      "id": "epfl_pecvd",
+      "label": "EPFL · Oxford PECVD 장비 조건",
+      "url": "https://www.epfl.ch/schools/sb/research/iphys/our-services/clean-rooms/iii-v-lab/oxford-plasmalab-system-100-pecvd/",
+      "finalUrl": "https://www.epfl.ch/schools/sb/research/iphys/our-services/clean-rooms/iii-v-lab/oxford-plasmalab-system-100-pecvd/",
+      "httpStatus": 200,
+      "title": "Oxford plasmalab system 100 PECVD &#8210; IPHYS &#8208; EPFL",
+      "status": "ok"
+    },
+    {
+      "id": "oxford_ald",
+      "label": "Oxford Instruments · 원자 규모 공정",
+      "url": "https://plasma.oxinst.com/assets/uploads/Atomic_Scale_Processing_2019_1.pdf",
+      "finalUrl": "https://plasma.oxinst.com/assets/uploads/Atomic_Scale_Processing_2019_1.pdf",
+      "httpStatus": 200,
+      "title": "",
+      "status": "ok"
+    },
+    {
+      "id": "merck_water",
+      "label": "Merck · 초순수의 비저항",
+      "url": "https://www.merckmillipore.com/CI/en/technical-documents/technical-article/water-purification/water-quality-monitoring",
+      "finalUrl": "https://www.merckmillipore.com/CI/en/technical-documents/technical-article/water-purification/water-quality-monitoring",
+      "httpStatus": 200,
+      "title": "Water Quality Monitoring",
+      "status": "ok"
+    },
+    {
+      "id": "micron_hbm3e",
+      "label": "Micron · HBM3E 사양",
+      "url": "https://www.micron.com/products/memory/hbm/hbm3e",
+      "finalUrl": "https://www.micron.com/products/memory/hbm/hbm3e",
+      "httpStatus": 200,
+      "title": "HBM3E | Micron Technology Inc.",
+      "status": "ok"
+    },
+    {
+      "id": "samsung_hbm_specs",
+      "label": "Samsung · HBM 세대별 사양",
+      "url": "https://semiconductor.samsung.com/dram/hbm/",
+      "finalUrl": "https://semiconductor.samsung.com/dram/hbm/",
+      "httpStatus": 200,
+      "title": "HBM | DRAM | Samsung Semiconductor Global",
+      "status": "ok"
+    },
+    {
+      "id": "intel_bonding",
+      "label": "Intel · 2021 패키징 기술 발표",
+      "url": "https://www.intc.com/news-events/press-releases/detail/1486/intel-accelerates-process-and-packaging-innovations",
+      "finalUrl": "https://www.intc.com/news-events/press-releases/detail/1486/intel-accelerates-process-and-packaging-innovations",
+      "httpStatus": 200,
+      "title": "Intel Accelerates Process and Packaging Innovations :: Intel Corporation (INTC)",
+      "status": "ok"
+    },
+    {
+      "id": "tsmc_2024",
+      "label": "TSMC · 2024 연차보고서",
+      "url": "https://investor.tsmc.com/static/annualReports/2024/english/index.html",
+      "finalUrl": "https://investor.tsmc.com/static/annualReports/2024/english/index.html",
+      "httpStatus": 403,
+      "title": "Just a moment...",
+      "status": "unverified"
+    },
+    {
+      "id": "nist_binary",
+      "label": "NIST · 비트·바이트와 이진 접두어",
+      "url": "https://physics.nist.gov/cuu/Units/binary.html",
+      "finalUrl": "https://physics.nist.gov/cuu/Units/binary.html",
+      "httpStatus": 200,
+      "title": "Definitions of the SI units: The binary prefixes",
+      "status": "ok"
+    },
+    {
+      "id": "ti_thermal",
+      "label": "TI · 반도체 패키지 열 지표",
+      "url": "https://www.ti.com/lit/an/spra953d/spra953d.pdf",
+      "finalUrl": "https://www.ti.com/lit/an/spra953d/spra953d.pdf",
+      "httpStatus": 200,
+      "title": "",
+      "status": "ok"
+    },
+    {
+      "id": "openstax_potential",
+      "label": "OpenStax · 전위차와 전자볼트",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/7-2-electric-potential-and-potential-difference",
+      "finalUrl": "https://openstax.org/books/university-physics-volume-2/pages/7-2-electric-potential-and-potential-difference",
+      "httpStatus": 200,
+      "title": "7.2 Electric Potential and Potential Difference - University Physics Volume 2 | OpenStax",
+      "status": "ok"
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 import { access, readFile, stat } from 'node:fs/promises';
 import { constants } from 'node:fs';
 import { concepts } from '../lib/data.mjs';
+import { companies } from '../lib/companies.mjs';
 import { siteUrl } from '../lib/site-config.mjs';
 
 const outUrl = new URL('../out/', import.meta.url);
@@ -14,10 +15,12 @@ const requiredFiles = [
   'packaging/index.html',
   'industry/index.html',
   'visual/index.html',
+  'companies/index.html',
   'robots.txt',
   'sitemap.xml',
   '404.html',
   ...concepts.map((concept) => `concept/${concept.id}/index.html`),
+  ...companies.map(company => `company/${company.id}/index.html`),
 ];
 
 const missing = [];
@@ -42,8 +45,9 @@ const robots = await readFile(new URL('robots.txt', outUrl), 'utf8');
 const htmlFiles = requiredFiles.filter((file) => file.endsWith('.html'));
 
 const expectedRoutes = [
-  '/', '/encyclopedia/', '/learn/', '/process/', '/packaging/', '/industry/', '/visual/',
+  '/', '/encyclopedia/', '/learn/', '/process/', '/packaging/', '/industry/', '/visual/', '/companies/',
   ...concepts.map((concept) => `/concept/${concept.id}/`),
+  ...companies.map(company => `/company/${company.id}/`),
 ];
 const missingSitemap = expectedRoutes.filter((route) => !sitemap.includes(`${siteUrl}${route}`));
 if (missingSitemap.length) {

@@ -1,0 +1,425 @@
+{
+  "checkedAt": "2026-10-24T21:18:02.005Z",
+  "counts": {
+    "ok": 40,
+    "broken": 0,
+    "generic": 0,
+    "unverified": 6
+  },
+  "results": [
+    {
+      "id": "asml_basics",
+      "label": "ASML · The basics of microchips",
+      "url": "https://www.asml.com/en/technology/all-about-microchips/microchip-basics",
+      "finalUrl": "https://www.asml.com/en/technology/all-about-microchips/microchip-basics",
+      "httpStatus": 200,
+      "title": "The basics of microchips | ASML",
+      "status": "ok"
+    },
+    {
+      "id": "samsung_semiconductor",
+      "label": "Samsung Semiconductor · 반도체",
+      "url": "https://semiconductor.samsung.com/kr/support/tools-resources/dictionary/semiconductor-glossary-semiconductor/",
+      "finalUrl": "https://semiconductor.samsung.com/kr/support/tools-resources/dictionary/semiconductor-glossary-semiconductor/",
+      "httpStatus": 200,
+      "title": "반도체 | 삼성반도체",
+      "status": "ok"
+    },
+    {
+      "id": "openstax_resistivity",
+      "label": "OpenStax · Resistivity and Resistance",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/9-3-resistivity-and-resistance",
+      "finalUrl": "https://openstax.org/books/university-physics-volume-2/pages/9-3-resistivity-and-resistance",
+      "httpStatus": 200,
+      "title": "9.3 Resistivity and Resistance - University Physics Volume 2 | OpenStax",
+      "status": "ok"
+    },
+    {
+      "id": "openstax_band",
+      "label": "OpenStax · Band Theory of Solids",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/9-5-band-theory-of-solids",
+      "finalUrl": "https://openstax.org/books/university-physics-volume-3/pages/9-5-band-theory-of-solids",
+      "httpStatus": 200,
+      "title": "9.5 Band Theory of Solids - University Physics Volume 3 | OpenStax",
+      "status": "ok"
+    },
+    {
+      "id": "samsung_wafer",
+      "label": "Samsung Semiconductor · 웨이퍼",
+      "url": "https://semiconductor.samsung.com/kr/support/tools-resources/dictionary/semiconductor-glossary-wafer/",
+      "finalUrl": "https://semiconductor.samsung.com/kr/support/tools-resources/dictionary/semiconductor-glossary-wafer/",
+      "httpStatus": 200,
+      "title": "웨이퍼 | 삼성반도체",
+      "status": "ok"
+    },
+    {
+      "id": "samsung_ingot",
+      "label": "Samsung Semiconductor · 잉곳",
+      "url": "https://semiconductor.samsung.com/kr/support/tools-resources/dictionary/semiconductor-glossary-ingot/",
+      "finalUrl": "https://semiconductor.samsung.com/kr/support/tools-resources/dictionary/semiconductor-glossary-ingot/",
+      "httpStatus": 200,
+      "title": "잉곳 | 삼성반도체",
+      "status": "ok"
+    },
+    {
+      "id": "intel_transistor",
+      "label": "Intel · The Transistor, Explained",
+      "url": "https://www.intel.com/content/www/us/en/newsroom/tech101/the-transistor-explained.html",
+      "finalUrl": "https://www.intel.com/content/www/us/en/newsroom/tech101/the-transistor-explained.html",
+      "httpStatus": 200,
+      "title": "The Transistor, Explained",
+      "status": "ok"
+    },
+    {
+      "id": "samsung_transistor",
+      "label": "Samsung Semiconductor · 트랜지스터",
+      "url": "https://semiconductor.samsung.com/kr/support/tools-resources/dictionary/semiconductor-glossary-transistor/",
+      "finalUrl": "https://semiconductor.samsung.com/kr/support/tools-resources/dictionary/semiconductor-glossary-transistor/",
+      "httpStatus": 200,
+      "title": "트랜지스터 | 삼성반도체",
+      "status": "ok"
+    },
+    {
+      "id": "ieee_mosfet",
+      "label": "IEEE Technology Navigator · MOSFET / MIS Structures",
+      "url": "https://technav.ieee.org/topic/metal-insulator-structures/",
+      "finalUrl": "https://technav.ieee.org/topic/metal-insulator-structures/",
+      "httpStatus": 200,
+      "title": "Metal-insulator structures | IEEE Technology Navigator",
+      "status": "ok"
+    },
+    {
+      "id": "samsung_cmos",
+      "label": "Samsung Semiconductor · CMOS (Complementary Metal Oxide Semiconductor)",
+      "url": "https://semiconductor.samsung.com/support/tools-resources/dictionary/semiconductor-glossary-cmos/",
+      "finalUrl": "https://semiconductor.samsung.com/support/tools-resources/dictionary/semiconductor-glossary-cmos/",
+      "httpStatus": 200,
+      "title": "CMOS (Complementary Metal Oxide Semiconductor) | Samsung Semiconductor Global",
+      "status": "ok"
+    },
+    {
+      "id": "intel_cpu_gpu",
+      "label": "Intel · CPU vs. GPU",
+      "url": "https://www.intel.com/content/www/us/en/products/docs/processors/cpu-vs-gpu.html",
+      "finalUrl": "https://www.intel.com/content/www/us/en/products/docs/processors/cpu-vs-gpu.html",
+      "httpStatus": 200,
+      "title": "CPU vs. GPU: What's the Difference?",
+      "status": "ok"
+    },
+    {
+      "id": "nvidia_gpu",
+      "label": "NVIDIA · GPU Performance Background User’s Guide",
+      "url": "https://docs.nvidia.com/deeplearning/performance/dl-performance-gpu-background/index.html",
+      "finalUrl": "https://docs.nvidia.com/deeplearning/performance/dl-performance-gpu-background/index.html",
+      "httpStatus": 200,
+      "title": "GPU Performance Background User&#x27;s Guide - NVIDIA Docs",
+      "status": "ok"
+    },
+    {
+      "id": "samsung_soc",
+      "label": "Samsung Semiconductor · SoC (System on Chip)",
+      "url": "https://semiconductor.samsung.com/kr/support/tools-resources/dictionary/semiconductor-glossary-soc/",
+      "finalUrl": "https://semiconductor.samsung.com/kr/support/tools-resources/dictionary/semiconductor-glossary-soc/",
+      "httpStatus": 200,
+      "title": "SoC (System on Chip) | 삼성반도체",
+      "status": "ok"
+    },
+    {
+      "id": "samsung_dram",
+      "label": "Samsung Semiconductor · D램",
+      "url": "https://semiconductor.samsung.com/kr/support/tools-resources/dictionary/semiconductor-glossary-dram/",
+      "finalUrl": "https://semiconductor.samsung.com/kr/support/tools-resources/dictionary/semiconductor-glossary-dram/",
+      "httpStatus": 200,
+      "title": "D램 | 삼성반도체",
+      "status": "ok"
+    },
+    {
+      "id": "micron_dram",
+      "label": "Micron · How DRAM changed the world",
+      "url": "https://www.micron.com/about/blog/memory/dram/how-dram-changed-the-world",
+      "finalUrl": "https://www.micron.com/about/blog/memory/dram/how-dram-changed-the-world",
+      "httpStatus": 200,
+      "title": "How DRAM changed the world | Micron Technology Inc.",
+      "status": "ok"
+    },
+    {
+      "id": "samsung_nand",
+      "label": "Samsung Semiconductor · NAND Flash Memory",
+      "url": "https://semiconductor.samsung.com/kr/support/tools-resources/dictionary/semiconductor-glossary-nand-flash-memory/",
+      "finalUrl": "https://semiconductor.samsung.com/kr/support/tools-resources/dictionary/semiconductor-glossary-nand-flash-memory/",
+      "httpStatus": 200,
+      "title": "낸드 플래시 메모리 | 삼성반도체",
+      "status": "ok"
+    },
+    {
+      "id": "micron_nand",
+      "label": "Micron · 40 years of flash memory innovation",
+      "url": "https://www.micron.com/about/blog/memory/nand/flash-forward-celebrating-40-years-of-memory-innovation",
+      "finalUrl": "https://www.micron.com/about/blog/memory/nand/flash-forward-celebrating-40-years-of-memory-innovation",
+      "httpStatus": 200,
+      "title": "Flash forward: Celebrating 40 years of memory innovation | Micron Technology Inc.",
+      "status": "ok"
+    },
+    {
+      "id": "asml_process",
+      "label": "ASML · How microchips are made",
+      "url": "https://www.asml.com/en/technology/all-about-microchips/how-microchips-are-made",
+      "finalUrl": "https://www.asml.com/en/technology/all-about-microchips/how-microchips-are-made",
+      "httpStatus": 200,
+      "title": "How microchips are made | ASML Description",
+      "status": "ok"
+    },
+    {
+      "id": "applied_products",
+      "label": "Applied Materials · Semiconductor Products & Process Map",
+      "url": "https://www.appliedmaterials.com/us/en/semiconductor/products.html",
+      "finalUrl": "https://www.appliedmaterials.com/us/en/semiconductor/products.html",
+      "httpStatus": 200,
+      "title": "Products",
+      "status": "ok"
+    },
+    {
+      "id": "samsung_oxide",
+      "label": "Samsung Semiconductor · 산화막",
+      "url": "https://semiconductor.samsung.com/kr/support/tools-resources/dictionary/semiconductor-glossary-oxide-layer/",
+      "finalUrl": "https://semiconductor.samsung.com/kr/support/tools-resources/dictionary/semiconductor-glossary-oxide-layer/",
+      "httpStatus": 200,
+      "title": "산화막 | 삼성반도체",
+      "status": "ok"
+    },
+    {
+      "id": "samsung_lithography",
+      "label": "Samsung Semiconductor · 노광",
+      "url": "https://semiconductor.samsung.com/kr/support/tools-resources/dictionary/semiconductor-glossary-photolithography/",
+      "finalUrl": "https://semiconductor.samsung.com/kr/support/tools-resources/dictionary/semiconductor-glossary-photolithography/",
+      "httpStatus": 200,
+      "title": "노광 | 삼성반도체",
+      "status": "ok"
+    },
+    {
+      "id": "asml_light",
+      "label": "ASML · Lithography light & lasers",
+      "url": "https://www.asml.com/en/technology/lithography-principles/light-and-lasers",
+      "finalUrl": "https://www.asml.com/en/technology/lithography-principles/light-and-lasers",
+      "httpStatus": 200,
+      "title": "Light &amp; lasers - Lithography principles| ASML",
+      "status": "ok"
+    },
+    {
+      "id": "applied_etch",
+      "label": "Applied Materials · Etch",
+      "url": "https://www.appliedmaterials.com/us/en/semiconductor/products/processes/etch.html",
+      "finalUrl": "https://www.appliedmaterials.com/us/en/semiconductor/products/processes/etch.html",
+      "httpStatus": 200,
+      "title": "Etch",
+      "status": "ok"
+    },
+    {
+      "id": "lam_glossary",
+      "label": "Lam Research · Technical Glossary",
+      "url": "https://www.lamresearch.com/technical-glossary/",
+      "finalUrl": "https://www.lamresearch.com/technical-glossary/",
+      "httpStatus": 200,
+      "title": "Technical Glossary | Lam Research",
+      "status": "ok"
+    },
+    {
+      "id": "applied_create",
+      "label": "Applied Materials · Materials Deposition",
+      "url": "https://www.appliedmaterials.com/us/en/semiconductor/products/create.html",
+      "finalUrl": "https://www.appliedmaterials.com/us/en/semiconductor/products/create.html",
+      "httpStatus": 200,
+      "title": "Create",
+      "status": "ok"
+    },
+    {
+      "id": "applied_ion",
+      "label": "Applied Materials · VIISta Trident Ion Implant",
+      "url": "https://www.appliedmaterials.com/us/en/product-library/viista-trident.html",
+      "finalUrl": "https://www.appliedmaterials.com/us/en/product-library/viista-trident.html",
+      "httpStatus": 200,
+      "title": "VIISta Trident",
+      "status": "ok"
+    },
+    {
+      "id": "applied_ion_blog",
+      "label": "Applied Materials · Ion Implantation Technology",
+      "url": "https://www.appliedmaterials.com/us/en/newsroom/blogs/implant-innovation-enables-the-compound-semiconductor-roadmap.html",
+      "finalUrl": "https://www.appliedmaterials.com/us/en/newsroom/blogs/implant-innovation-enables-the-compound-semiconductor-roadmap.html",
+      "httpStatus": 200,
+      "title": "Implant Innovation Enables the Compound Semiconductor Roadmap",
+      "status": "ok"
+    },
+    {
+      "id": "applied_cmp",
+      "label": "Applied Materials · Materials Removal & CMP",
+      "url": "https://www.appliedmaterials.com/us/en/semiconductor/products/shape.html",
+      "finalUrl": "https://www.appliedmaterials.com/us/en/semiconductor/products/shape.html",
+      "httpStatus": 200,
+      "title": "Shape",
+      "status": "ok"
+    },
+    {
+      "id": "applied_cmp_blog",
+      "label": "Applied Materials · The Role of CMP in Device Scaling",
+      "url": "https://www.appliedmaterials.com/us/en/blog/blog-posts/the-role-of-cmp-in-device-scaling.html",
+      "finalUrl": "https://www.appliedmaterials.com/us/en/blog/blog-posts/the-role-of-cmp-in-device-scaling.html",
+      "httpStatus": 200,
+      "title": "The Role of CMP in Device Scaling",
+      "status": "ok"
+    },
+    {
+      "id": "samsung_cleaning",
+      "label": "Samsung Semiconductor · 세정공정",
+      "url": "https://semiconductor.samsung.com/kr/support/tools-resources/dictionary/zero-residue-zero-contaminants-semiconductor-cleaning/",
+      "finalUrl": "https://semiconductor.samsung.com/kr/support/tools-resources/dictionary/zero-residue-zero-contaminants-semiconductor-cleaning/",
+      "httpStatus": 200,
+      "title": "세정공정 | 삼성반도체",
+      "status": "ok"
+    },
+    {
+      "id": "applied_cleaning",
+      "label": "Applied Materials · Advanced Wafer Cleaning Technologies",
+      "url": "https://www.appliedmaterials.com/us/en/newsroom/press-releases/052626-applied-materials-partners-screen-adv-wafer-cleaning-tech-to-epic-center.html",
+      "finalUrl": "https://www.appliedmaterials.com/us/en/newsroom/press-releases/052626-applied-materials-partners-screen-adv-wafer-cleaning-tech-to-epic-center.html",
+      "httpStatus": 200,
+      "title": "Applied Materials Partners with SCREEN To Bring Advanced Wafer Cleaning Technologies to EPIC Center",
+      "status": "ok"
+    },
+    {
+      "id": "samsung_packaging",
+      "label": "Samsung Semiconductor · 패키징",
+      "url": "https://semiconductor.samsung.com/kr/support/tools-resources/dictionary/semiconductor-glossary-packaging/",
+      "finalUrl": "https://semiconductor.samsung.com/kr/support/tools-resources/dictionary/semiconductor-glossary-packaging/",
+      "httpStatus": 200,
+      "title": "패키징 | 삼성반도체",
+      "status": "ok"
+    },
+    {
+      "id": "intel_packaging",
+      "label": "Intel · Advanced Packaging",
+      "url": "https://www.intel.com/content/www/us/en/newsroom/news/intel-leads-the-way-with-advanced-packaging.html",
+      "finalUrl": "https://www.intel.com/content/www/us/en/newsroom/news/intel-leads-the-way-with-advanced-packaging.html",
+      "httpStatus": 200,
+      "title": "Intel Leads the Way with Advanced Packaging",
+      "status": "ok"
+    },
+    {
+      "id": "samsung_packaging_process",
+      "label": "Samsung Semiconductor · 패키징 공정과 패키지 테스트",
+      "url": "https://news.samsungsemiconductor.com/kr/반도체-8대-공정-9탄-외부환경으로부터-반도체를-보호/",
+      "finalUrl": "https://news.samsungsemiconductor.com/kr/%EB%B0%98%EB%8F%84%EC%B2%B4-8%EB%8C%80-%EA%B3%B5%EC%A0%95-9%ED%83%84-%EC%99%B8%EB%B6%80%ED%99%98%EA%B2%BD%EC%9C%BC%EB%A1%9C%EB%B6%80%ED%84%B0-%EB%B0%98%EB%8F%84%EC%B2%B4%EB%A5%BC-%EB%B3%B4%ED%98%B8/",
+      "httpStatus": 200,
+      "title": "[반도체 8대 공정] 9탄, 외부환경으로부터 반도체를 보호하는 패키징 (Packaging) 공정 - 삼성전자 반도체 뉴스룸",
+      "status": "ok"
+    },
+    {
+      "id": "samsung_tsv",
+      "label": "Samsung Semiconductor · TSV (Through Silicon Via)",
+      "url": "https://semiconductor.samsung.com/kr/support/tools-resources/dictionary/semiconductor-glossary-tsv/",
+      "finalUrl": "https://semiconductor.samsung.com/kr/support/tools-resources/dictionary/semiconductor-glossary-tsv/",
+      "httpStatus": 200,
+      "title": "TSV (Through Silicon Via) | 삼성반도체",
+      "status": "ok"
+    },
+    {
+      "id": "samsung_hbm",
+      "label": "Samsung Semiconductor · HBM",
+      "url": "https://semiconductor.samsung.com/kr/dram/hbm/",
+      "finalUrl": "https://semiconductor.samsung.com/kr/dram/hbm/",
+      "httpStatus": 200,
+      "title": "HBM | DRAM | 삼성반도체",
+      "status": "ok"
+    },
+    {
+      "id": "micron_hbm",
+      "label": "Micron · High-bandwidth memory (HBM)",
+      "url": "https://www.micron.com/products/memory/hbm",
+      "finalUrl": "https://www.micron.com/products/memory/hbm",
+      "httpStatus": 200,
+      "title": "High-bandwidth memory (HBM) | Micron Technology Inc.",
+      "status": "ok"
+    },
+    {
+      "id": "applied_hbm",
+      "label": "Applied Materials · HBM & Advanced Packaging Bottlenecks",
+      "url": "https://www.appliedmaterials.com/us/en/newsroom/blogs/tackling-key-hbm-and-advanced-packaging-bottlenecks-for-ai-era.html",
+      "finalUrl": "https://www.appliedmaterials.com/us/en/newsroom/blogs/tackling-key-hbm-and-advanced-packaging-bottlenecks-for-ai-era.html",
+      "httpStatus": 200,
+      "title": "Tackling Key HBM and Advanced Packaging Bottlenecks for the AI Era",
+      "status": "ok"
+    },
+    {
+      "id": "tsmc_cowos",
+      "label": "TSMC 3DFabric · CoWoS®",
+      "url": "https://3dfabric.tsmc.com/english/dedicatedFoundry/technology/cowos.htm",
+      "finalUrl": "https://3dfabric.tsmc.com/english/dedicatedFoundry/technology/cowos.htm",
+      "httpStatus": 403,
+      "title": "Just a moment...",
+      "status": "unverified"
+    },
+    {
+      "id": "samsung_adv_pkg",
+      "label": "Samsung Foundry · Advanced Heterogeneous Integration",
+      "url": "https://semiconductor.samsung.com/foundry/advanced-package/advanced-heterogeneous-integration/",
+      "finalUrl": "https://semiconductor.samsung.com/foundry/advanced-package/advanced-heterogeneous-integration/",
+      "httpStatus": 200,
+      "title": "Advanced Heterogeneous Integration | Foundry | Samsung Semiconductor Global",
+      "status": "ok"
+    },
+    {
+      "id": "tsmc_hpc",
+      "label": "TSMC · HPC Platform / 2.5D & 3D Integration",
+      "url": "https://www.tsmc.com/english/dedicatedFoundry/technology/platform_HPC_tech_WLSI",
+      "finalUrl": "https://www.tsmc.com/english/dedicatedFoundry/technology/platform_HPC_tech_WLSI",
+      "httpStatus": 403,
+      "title": "Just a moment...",
+      "status": "unverified"
+    },
+    {
+      "id": "semi_valuechain",
+      "label": "SEMI · Introduction to Semiconductor Processing",
+      "url": "https://www.semi.org/sites/semi.org/files/2023-07/Introduction%20to%20Semiconductor%20Processing.pdf",
+      "finalUrl": "https://www.semi.org/sites/semi.org/files/2023-07/Introduction%20to%20Semiconductor%20Processing.pdf",
+      "httpStatus": 403,
+      "title": "Just a moment...",
+      "status": "unverified"
+    },
+    {
+      "id": "tsmc_oip",
+      "label": "TSMC · Open Innovation Platform®",
+      "url": "https://www.tsmc.com/english/dedicatedFoundry/oip",
+      "finalUrl": "https://www.tsmc.com/english/dedicatedFoundry/oip",
+      "httpStatus": 403,
+      "title": "Just a moment...",
+      "status": "unverified"
+    },
+    {
+      "id": "samsung_glossary",
+      "label": "Samsung Semiconductor · 반도체 용어 모음",
+      "url": "https://semiconductor.samsung.com/kr/support/tools-resources/dictionary/just-the-essentials-semiconductor-terminologyzip/",
+      "finalUrl": "https://semiconductor.samsung.com/kr/support/tools-resources/dictionary/just-the-essentials-semiconductor-terminologyzip/",
+      "httpStatus": 200,
+      "title": "반도체 용어 모음.ZIP | 삼성반도체",
+      "status": "ok"
+    },
+    {
+      "id": "tsmc_foundry",
+      "label": "TSMC · Dedicated IC Foundry",
+      "url": "https://www.tsmc.com/english/dedicatedFoundry",
+      "finalUrl": "https://www.tsmc.com/english/dedicatedFoundry",
+      "httpStatus": 403,
+      "title": "Just a moment...",
+      "status": "unverified"
+    },
+    {
+      "id": "tsmc_grand",
+      "label": "TSMC · Grand Alliance",
+      "url": "https://www.tsmc.com/english/dedicatedFoundry/grandAlliance",
+      "finalUrl": "https://www.tsmc.com/english/dedicatedFoundry/grandAlliance",
+      "httpStatus": 403,
+      "title": "Just a moment...",
+      "status": "unverified"
+    }
+  ]
+}

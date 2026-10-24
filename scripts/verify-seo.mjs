@@ -1,12 +1,13 @@
 import { readFile } from 'node:fs/promises';
 import { concepts } from '../lib/data.mjs';
+import { companies } from '../lib/companies.mjs';
 import { siteUrl } from '../lib/site-config.mjs';
 
 const sitemap = await readFile(new URL('../public/sitemap.xml', import.meta.url), 'utf8');
 const robots = await readFile(new URL('../public/robots.txt', import.meta.url), 'utf8');
 const homePage = await readFile(new URL('../app/page.jsx', import.meta.url), 'utf8');
 const layout = await readFile(new URL('../app/layout.jsx', import.meta.url), 'utf8');
-const expectedCount = 7 + concepts.length;
+const expectedCount = 8 + concepts.length + companies.length;
 const locCount = (sitemap.match(/<loc>/g) || []).length;
 
 const problems = [];
@@ -14,6 +15,10 @@ if (!/^https?:\/\//.test(siteUrl)) problems.push('SITE URL must be absolute.');
 if (locCount !== expectedCount) problems.push(`sitemap URL count ${locCount} != ${expectedCount}`);
 if (!sitemap.includes(`<loc>${siteUrl}/</loc>`)) problems.push('sitemap home URL mismatch');
 if (!sitemap.includes(`<loc>${siteUrl}/concept/hbm/</loc>`)) problems.push('sitemap concept URL mismatch');
+for (const company of companies) {
+  if (!sitemap.includes(`<loc>${siteUrl}/company/${company.id}/</loc>`)) problems.push(`Company missing from sitemap: ${company.id}`);
+}
+if (!sitemap.includes(`<loc>${siteUrl}/companies/</loc>`)) problems.push('Company directory missing from sitemap');
 if (!robots.includes(`Sitemap: ${siteUrl}/sitemap.xml`)) problems.push('robots sitemap URL mismatch');
 if (!homePage.includes("title: homeTitle") || !homePage.includes('description: siteDescription')) problems.push('home OG title/description missing');
 if (!homePage.includes('images: [{') || !homePage.includes('absoluteUrl(socialImagePath)')) problems.push('home OG image missing');

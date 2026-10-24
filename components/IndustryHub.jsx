@@ -1,5 +1,6 @@
 import { byId } from '@/lib/data.mjs';
 import { industryHub } from '@/lib/industry-hub.mjs';
+import { companyStageById } from '@/lib/companies.mjs';
 
 function StageContent({ stage }) {
   return (
@@ -42,9 +43,10 @@ export default function IndustryHub() {
               ) : (
                 <article className={className}>
                   <StageContent stage={stage} />
-                  <span className="industry-hub-link muted">확장 예정</span>
+                  <span className="industry-hub-link muted">산업에서의 역할</span>
                 </article>
               )}
+              {stage.companyStages && <div className="industry-stage-directory">{stage.companyStages.map(id => <a href={`/companies/?stage=${id}`} key={id}>{companyStageById[id].label} 기업 보기 →</a>)}</div>}
               {index < industryHub.stages.length - 1 && <span className="industry-hub-arrow" aria-hidden="true">→</span>}
             </div>
           );
@@ -59,14 +61,14 @@ export default function IndustryHub() {
 
       <p className="industry-hub-note"><strong>중요:</strong> {industryHub.note}</p>
 
-      <div className="industry-learning-path" aria-label="MVP 산업 학습 경로">
+      <div className="industry-learning-path" aria-label="산업 기초 학습 경로">
         {industryHub.learningPath.map((item, index) => {
           const concept = byId[item.id];
           return (
             <div className="industry-learning-step" key={item.id}>
               <a href={`/concept/${item.id}/`}>
                 <span>{String(item.number).padStart(2, '0')}</span>
-                <small>MVP 1.0</small>
+                <small>학습 순서</small>
                 <strong>{item.label}</strong>
                 <p>{item.description}</p>
               </a>

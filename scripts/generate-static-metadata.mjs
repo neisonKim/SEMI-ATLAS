@@ -1,5 +1,6 @@
 import { mkdir, writeFile } from 'node:fs/promises';
 import { concepts } from '../lib/data.mjs';
+import { companies } from '../lib/companies.mjs';
 import { siteUrl } from '../lib/site-config.mjs';
 
 const staticRoutes = [
@@ -10,13 +11,15 @@ const staticRoutes = [
   '/packaging/',
   '/industry/',
   '/visual/',
+  '/companies/',
 ];
 
-const conceptDates = concepts.map((concept) => concept.updatedAt).filter(Boolean);
+const conceptDates = [...concepts.map((concept) => concept.updatedAt), ...companies.map(company => company.checkedAt)].filter(Boolean);
 const latestConceptDate = conceptDates.sort().at(-1) || new Date().toISOString().slice(0, 10);
 const entries = [
   ...staticRoutes.map((route) => ({ route, lastModified: latestConceptDate })),
   ...concepts.map((concept) => ({ route: `/concept/${concept.id}/`, lastModified: concept.updatedAt || latestConceptDate })),
+  ...companies.map(company => ({ route: `/company/${company.id}/`, lastModified: company.checkedAt })),
 ];
 
 const escapeXml = (value) =>

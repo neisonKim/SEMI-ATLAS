@@ -1,0 +1,106 @@
+{
+  "checkedOn": "2026-10-25",
+  "scope": "Link target relevance and availability; not an expert review of all technical claims.",
+  "corrections": [
+    {
+      "beforeId": "intel_transistor",
+      "afterId": "intel_transistor",
+      "beforeUrl": "https://newsroom.intel.com/tech101/the-transistor-explained",
+      "afterUrl": "https://www.intel.com/content/www/us/en/newsroom/tech101/the-transistor-explained.html",
+      "reason": "Redirect target updated to the current Intel article URL."
+    },
+    {
+      "beforeId": "samsung_cmos",
+      "afterId": "samsung_cmos",
+      "beforeUrl": "https://semiconductor.samsung.com/kr/support/tools-resources/dictionary/semiconductor-glossary-cmos/",
+      "afterUrl": "https://semiconductor.samsung.com/support/tools-resources/dictionary/semiconductor-glossary-cmos/",
+      "reason": "Korean URL describes a CMOS image sensor; global dictionary entry explains complementary MOS circuits."
+    },
+    {
+      "beforeId": "nvidia_gpu",
+      "afterId": "nvidia_gpu",
+      "beforeUrl": "https://www.nvidia.com/content/Control-Panel-Help/vLatest/ko-kr/mergedProjects/nvcplKOR/glossary.htm",
+      "afterUrl": "https://docs.nvidia.com/deeplearning/performance/dl-performance-gpu-background/index.html",
+      "reason": "Control Panel glossary replaced by the GPU architecture and parallel execution guide."
+    },
+    {
+      "beforeId": "intel_packaging",
+      "afterId": "intel_packaging",
+      "beforeUrl": "https://newsroom.intel.com/manufacturing/intel-leads-the-way-with-advanced-packaging",
+      "afterUrl": "https://www.intel.com/content/www/us/en/newsroom/news/intel-leads-the-way-with-advanced-packaging.html",
+      "reason": "Redirect target updated to the current Intel packaging article URL."
+    },
+    {
+      "beforeId": "semi_packaging",
+      "afterId": "samsung_packaging_process",
+      "beforeUrl": "https://www.semi.org/ko/connect/events/packaging-tutorial-2024",
+      "afterUrl": "https://news.samsungsemiconductor.com/kr/반도체-8대-공정-9탄-외부환경으로부터-반도체를-보호/",
+      "reason": "Event listing replaced by a technical explanation of packaging and final testing."
+    },
+    {
+      "beforeId": "jedec_memory",
+      "afterId": "micron_hbm",
+      "beforeUrl": "https://www.jedec.org/",
+      "afterUrl": "https://www.micron.com/products/memory/hbm",
+      "reason": "Generic JEDEC homepage replaced by a directly readable official HBM explanation; no standards-document claim is made."
+    },
+    {
+      "beforeId": "semi_valuechain",
+      "afterId": "semi_valuechain",
+      "beforeUrl": "https://discover.semi.org/rs/320-QBB-055/images/SCC-Scope3-Category1-GHG-Guidelines-2024-FINAL.pdf",
+      "afterUrl": "https://www.semi.org/sites/semi.org/files/2023-07/Introduction%20to%20Semiconductor%20Processing.pdf",
+      "reason": "GHG assessment guide replaced by an introductory semiconductor processing and supply-chain teaching document."
+    },
+    {
+      "beforeId": "tsmc_oip",
+      "afterId": "tsmc_oip",
+      "beforeUrl": "https://www.cld.tsmc.com/english/dedicatedFoundry/oip",
+      "afterUrl": "https://www.tsmc.com/english/dedicatedFoundry/oip",
+      "reason": "Canonical TSMC OIP hostname replaces the cld hostname."
+    }
+  ],
+  "httpSummary": {
+    "ok": 40,
+    "broken": 0,
+    "generic": 0,
+    "unverified": 6
+  },
+  "restrictedSources": [
+    {
+      "id": "tsmc_cowos",
+      "url": "https://3dfabric.tsmc.com/english/dedicatedFoundry/technology/cowos.htm",
+      "httpStatus": 403,
+      "assessment": "Direct HTTP access was restricted. The named topic or document was readable through the web research index; this does not establish live HTTP availability."
+    },
+    {
+      "id": "tsmc_hpc",
+      "url": "https://www.tsmc.com/english/dedicatedFoundry/technology/platform_HPC_tech_WLSI",
+      "httpStatus": 403,
+      "assessment": "Direct HTTP access was restricted. The named topic or document was readable through the web research index; this does not establish live HTTP availability."
+    },
+    {
+      "id": "semi_valuechain",
+      "url": "https://www.semi.org/sites/semi.org/files/2023-07/Introduction%20to%20Semiconductor%20Processing.pdf",
+      "httpStatus": 403,
+      "assessment": "Direct HTTP access was restricted. The named topic or document was readable through the web research index; this does not establish live HTTP availability."
+    },
+    {
+      "id": "tsmc_oip",
+      "url": "https://www.tsmc.com/english/dedicatedFoundry/oip",
+      "httpStatus": 403,
+      "assessment": "Direct HTTP access was restricted. The named topic or document was readable through the web research index; this does not establish live HTTP availability."
+    },
+    {
+      "id": "tsmc_foundry",
+      "url": "https://www.tsmc.com/english/dedicatedFoundry",
+      "httpStatus": 403,
+      "assessment": "Direct HTTP access was restricted. The named topic or document was readable through the web research index; this does not establish live HTTP availability."
+    },
+    {
+      "id": "tsmc_grand",
+      "url": "https://www.tsmc.com/english/dedicatedFoundry/grandAlliance",
+      "httpStatus": 403,
+      "assessment": "Direct HTTP access was restricted. The named topic or document was readable through the web research index; this does not establish live HTTP availability."
+    }
+  ]
+}

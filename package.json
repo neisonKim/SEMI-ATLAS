@@ -1,6 +1,6 @@
 {
   "name": "semiconductor-encyclopedia-nextjs",
-  "version": "1.21.0",
+  "version": "1.24.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,7 +8,15 @@
     "start": "next start",
     "check:search": "node scripts/verify-search.mjs",
     "check:data": "node scripts/verify-data.mjs",
-    "check": "npm run check:data && npm run check:references && npm run check:search && npm run check:visual && npm run check:process && npm run check:industry && npm run check:responsive && npm run check:transition && npm run check:seo && npm run check:interaction && npm run check:contact",
+    "check": "npm run check:data && npm run check:content && npm run check:enrichment && npm run check:companies && npm run check:glossary && npm run check:references && npm run check:search && npm run check:visual && npm run check:process && npm run check:industry && npm run check:responsive && npm run check:transition && npm run check:seo && npm run check:interaction && npm run check:contact",
+    "check:companies": "node scripts/verify-companies.mjs",
+    "check:companies:pages": "node scripts/verify-company-pages.mjs",
+    "check:references:companies": "node scripts/audit-reference-links.mjs reports/company-source-link-audit.json --companies",
+    "check:enrichment": "node scripts/verify-concept-enrichment.mjs",
+    "check:references:enrichment": "node scripts/audit-reference-links.mjs reports/enrichment-source-link-audit.json --enrichment",
+    "check:content": "node scripts/verify-content-quality.mjs",
+    "check:content:pages": "node scripts/verify-content-pages.mjs",
+    "check:references:online": "node scripts/audit-reference-links.mjs",
     "check:visual": "node scripts/verify-visual-guides.mjs",
     "predev": "node scripts/generate-static-metadata.mjs",
     "prebuild": "node scripts/generate-static-metadata.mjs && node scripts/clean-build.mjs",
@@ -24,7 +32,8 @@
     "check:transition": "node scripts/verify-transitions.mjs",
     "check:interaction": "node scripts/verify-interactions.mjs",
     "check:contact": "node scripts/verify-contact.mjs",
-    "check:references": "node scripts/verify-references.mjs"
+    "check:references": "node scripts/verify-references.mjs",
+    "check:glossary": "node scripts/verify-glossary.mjs"
   },
   "dependencies": {
     "next": "16.3.5",

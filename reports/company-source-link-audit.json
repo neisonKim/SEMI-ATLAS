@@ -1,0 +1,218 @@
+{
+  "checkedAt": "2026-10-24T22:22:50.575Z",
+  "counts": {
+    "ok": 19,
+    "broken": 0,
+    "generic": 0,
+    "unverified": 4
+  },
+  "results": [
+    {
+      "id": "nvidia_about",
+      "label": "NVIDIA · 기업과 기술 소개",
+      "url": "https://www.nvidia.com/en-us/about-nvidia/",
+      "finalUrl": "https://www.nvidia.com/en-us/about-nvidia/",
+      "httpStatus": 200,
+      "title": "About Us: Company Leadership, History, Jobs, News | NVIDIA",
+      "status": "ok"
+    },
+    {
+      "id": "nvidia_hopper",
+      "label": "NVIDIA · Hopper 구조와 HBM",
+      "url": "https://developer.nvidia.com/blog/nvidia-hopper-architecture-in-depth/",
+      "finalUrl": "https://developer.nvidia.com/blog/nvidia-hopper-architecture-in-depth/",
+      "httpStatus": 200,
+      "title": "NVIDIA Hopper Architecture In&#x2d;Depth | NVIDIA Technical Blog",
+      "status": "ok"
+    },
+    {
+      "id": "nvidia_model",
+      "label": "NVIDIA · 제조 전략 공시",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000120/a2025conflictmineralsrepor.htm",
+      "finalUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000120/a2025conflictmineralsrepor.htm",
+      "httpStatus": 200,
+      "title": "Document",
+      "status": "ok"
+    },
+    {
+      "id": "amd_about",
+      "label": "AMD · 기업과 제품 소개",
+      "url": "https://www.amd.com/en/corporate.html",
+      "finalUrl": "https://www.amd.com/en/corporate.html",
+      "httpStatus": 200,
+      "title": "About AMD",
+      "status": "ok"
+    },
+    {
+      "id": "amd_supply",
+      "label": "AMD · 팹리스와 공급망",
+      "url": "https://www.amd.com/en/corporate/corporate-responsibility/supply-chain-responsibility.html",
+      "finalUrl": "https://www.amd.com/en/corporate/corporate-responsibility/supply-chain-responsibility.html",
+      "httpStatus": 200,
+      "title": "Supply Chain Responsibility",
+      "status": "ok"
+    },
+    {
+      "id": "tsmc_foundry",
+      "label": "TSMC · 위탁 제조 사업",
+      "url": "https://www.tsmc.com/english/dedicatedFoundry",
+      "finalUrl": "https://www.tsmc.com/english/dedicatedFoundry",
+      "httpStatus": 403,
+      "title": "Just a moment...",
+      "status": "unverified"
+    },
+    {
+      "id": "tsmc_cowos",
+      "label": "TSMC · CoWoS 패키징",
+      "url": "https://3dfabric.tsmc.com/english/dedicatedFoundry/technology/cowos.htm",
+      "finalUrl": "https://3dfabric.tsmc.com/english/dedicatedFoundry/technology/cowos.htm",
+      "httpStatus": 403,
+      "title": "Just a moment...",
+      "status": "unverified"
+    },
+    {
+      "id": "samsung_about",
+      "label": "Samsung · 반도체 사업 소개",
+      "url": "https://news.samsungsemiconductor.com/global/about-us/",
+      "finalUrl": "https://news.samsungsemiconductor.com/global/about-us/",
+      "httpStatus": 200,
+      "title": "About Us &#8211; Samsung Semiconductor Global Newsroom",
+      "status": "ok"
+    },
+    {
+      "id": "samsung_memory",
+      "label": "Samsung · 메모리 사업과 제품",
+      "url": "https://semiconductor.samsung.com/kr/about-us/business-area/memory/",
+      "finalUrl": "https://semiconductor.samsung.com/kr/about-us/business-area/memory/",
+      "httpStatus": 200,
+      "title": "메모리사업부 | 사업영역 | 삼성반도체",
+      "status": "ok"
+    },
+    {
+      "id": "samsung_foundry",
+      "label": "Samsung · 파운드리",
+      "url": "https://semiconductor.samsung.com/kr/foundry/",
+      "finalUrl": "https://semiconductor.samsung.com/kr/foundry/",
+      "httpStatus": 200,
+      "title": "삼성 Foundry - 상상을 뛰어넘는 세상을 만들다 | 삼성반도체",
+      "status": "ok"
+    },
+    {
+      "id": "hynix_about",
+      "label": "SK hynix · 기업 소개",
+      "url": "https://www.skhynix.com/company/UI-FR-CP02/",
+      "finalUrl": "https://www.skhynix.com/company/UI-FR-CP02/",
+      "httpStatus": 200,
+      "title": "",
+      "status": "ok"
+    },
+    {
+      "id": "hynix_memory",
+      "label": "SK hynix · DRAM·NAND·HBM 연구",
+      "url": "https://research.skhynix.com/research-areas/future-memory-technologies/evolutionary-memory",
+      "finalUrl": "https://research.skhynix.com/research-areas/future-memory-technologies/evolutionary-memory",
+      "httpStatus": 200,
+      "title": "Future Memory Technologies - Evolutionary Memory | SK hynix",
+      "status": "ok"
+    },
+    {
+      "id": "asml_about",
+      "label": "ASML · 기업 소개",
+      "url": "https://www.asml.com/en/company/about-asml",
+      "finalUrl": "https://www.asml.com/en/company/about-asml",
+      "httpStatus": 200,
+      "title": "About ASML | Supplying the semiconductor industry",
+      "status": "ok"
+    },
+    {
+      "id": "asml_products",
+      "label": "ASML · EUV·DUV 장비",
+      "url": "https://www.asml.com/en/products",
+      "finalUrl": "https://www.asml.com/en/products",
+      "httpStatus": 200,
+      "title": "ASML products &amp; services | Supplying the semiconductor industry",
+      "status": "ok"
+    },
+    {
+      "id": "applied_products",
+      "label": "Applied Materials · 공정 장비",
+      "url": "https://www.appliedmaterials.com/us/en/semiconductor/products.html",
+      "finalUrl": "https://www.appliedmaterials.com/us/en/semiconductor/products.html",
+      "httpStatus": 200,
+      "title": "Products",
+      "status": "ok"
+    },
+    {
+      "id": "applied_create",
+      "label": "Applied Materials · 박막 형성 기술",
+      "url": "https://www.appliedmaterials.com/us/en/semiconductor/products/create.html",
+      "finalUrl": "https://www.appliedmaterials.com/us/en/semiconductor/products/create.html",
+      "httpStatus": 200,
+      "title": "Create",
+      "status": "ok"
+    },
+    {
+      "id": "synopsys_about",
+      "label": "Synopsys · 설계·IP·분석 솔루션",
+      "url": "https://www.synopsys.com/company.html",
+      "finalUrl": "https://www.synopsys.com/company.html",
+      "httpStatus": 200,
+      "title": "About Us | Synopsys",
+      "status": "ok"
+    },
+    {
+      "id": "synopsys_ip",
+      "label": "Synopsys · 반도체 설계 IP",
+      "url": "https://www.synopsys.com/designware-ip.html",
+      "finalUrl": "https://www.synopsys.com/designware-ip.html",
+      "httpStatus": 200,
+      "title": "Semiconductor IP – Silicon IP | Synopsys IP",
+      "status": "ok"
+    },
+    {
+      "id": "sumco_about",
+      "label": "SUMCO · 실리콘 웨이퍼 사업",
+      "url": "https://www.sumcosi.com/english/aboutus/",
+      "finalUrl": "https://www.sumcosi.com/english/aboutus/",
+      "httpStatus": 200,
+      "title": "Who We Are│SUMCO CORPORATION",
+      "status": "ok"
+    },
+    {
+      "id": "sumco_products",
+      "label": "SUMCO · 웨이퍼 종류",
+      "url": "https://www.sumcosi.com/english/products/lineup.html",
+      "finalUrl": "https://www.sumcosi.com/english/products/lineup.html",
+      "httpStatus": 200,
+      "title": "Product Lineup│Products│SUMCO CORPORATION",
+      "status": "ok"
+    },
+    {
+      "id": "sumco_process",
+      "label": "SUMCO · 웨이퍼 생산 과정",
+      "url": "https://www.sumcosi.com/english/products/process/",
+      "finalUrl": "https://www.sumcosi.com/english/products/process/",
+      "httpStatus": 200,
+      "title": "Production Processes│Products│SUMCO CORPORATION",
+      "status": "ok"
+    },
+    {
+      "id": "ase_about",
+      "label": "ASE · 패키징과 테스트 사업",
+      "url": "https://ase.aseglobal.com/about-ase/",
+      "finalUrl": "https://ase.aseglobal.com/about-ase/",
+      "httpStatus": 403,
+      "title": "Just a moment...",
+      "status": "unverified"
+    },
+    {
+      "id": "ase_vipack",
+      "label": "ASE · VIPack 이종 집적",
+      "url": "https://ase.aseglobal.com/VIPack/",
+      "finalUrl": "https://ase.aseglobal.com/VIPack/",
+      "httpStatus": 403,
+      "title": "Just a moment...",
+      "status": "unverified"
+    }
+  ]
+}

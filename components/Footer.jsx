@@ -29,6 +29,7 @@ export default function Footer() {
             <a href="/encyclopedia/">전체 개념</a>
             <a href="/process/">공정 지도</a>
             <a href="/industry/">산업 지도</a>
+            <a href="/companies/">기업 사전</a>
           </nav>
         </div>
         <div className="container footer-bottom">

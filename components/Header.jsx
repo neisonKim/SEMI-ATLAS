@@ -11,6 +11,7 @@ const navItems = [
   ['encyclopedia', '/encyclopedia/', '백과사전'],
   ['visual', '/visual/', '한눈에 보기'],
   ['industry', '/industry/', '산업 지도'],
+  ['companies', '/companies/', '기업 사전'],
 ];
 
 const categoryNames = Object.fromEntries(categories.map((item) => [item.id, item.name]));
@@ -163,6 +164,7 @@ export default function Header() {
     if (key === 'encyclopedia') return pathname.startsWith('/encyclopedia') || pathname.startsWith('/concept');
     if (key === 'visual') return pathname.startsWith('/visual') || pathname.startsWith('/process') || pathname.startsWith('/packaging');
     if (key === 'industry') return pathname.startsWith('/industry');
+    if (key === 'companies') return pathname.startsWith('/companies') || pathname.startsWith('/company/');
     return false;
   };
 
@@ -285,6 +287,7 @@ export default function Header() {
           <a href="/encyclopedia/">백과사전</a>
           <a href="/visual/">한눈에 보기</a>
           <a href="/industry/">산업 지도</a>
+          <a href="/companies/">기업 사전</a>
           <a href="/process/">반도체 공정</a>
           <a href="/packaging/">패키징</a>
         </nav>
