@@ -60,7 +60,7 @@ export default function CompanyDirectory({ conceptOptions }) {
         <p role="status" aria-live="polite" id="company-result-count">{matches.length}개 기업{activeConcept ? ` · ${activeConcept.title}` : ''}</p>
         <button type="button" className="text-button" onClick={reset}>검색·필터 초기화</button>
       </div>
-      {matches.length ? <div className="company-grid">{matches.map(company => <CompanyCard company={company} key={company.id} />)}</div> : (
+      {matches.length ? <div className="company-grid">{matches.map(company => <CompanyCard company={company} showImage key={company.id} />)}</div> : (
         <div className="empty-state" id="company-empty-state"><h3>일치하는 기업을 찾지 못했어요.</h3><p>기업의 다른 이름이나 제품명으로 검색하거나 역할·개념 필터를 바꿔보세요.</p><button type="button" className="button navy" onClick={reset}>전체 기업 보기</button></div>
       )}
     </section>

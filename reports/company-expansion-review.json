@@ -1,0 +1,2033 @@
+{
+  "version": "1.26.0",
+  "checkedAt": "2026-10-25",
+  "scope": "Expand existing 10 company profiles to 50, including genuine media and learning connections.",
+  "counts": {
+    "companies": 50,
+    "additionalCompanies": 40,
+    "roles": 8,
+    "headquartersRegions": 10,
+    "concepts": 30,
+    "learningConnections": 243,
+    "additionalLearningConnections": 180,
+    "logos": 50,
+    "representativeImages": 50,
+    "companySourceRecords": 108,
+    "newCompanySourceRecords": 85,
+    "originalAssetBytes": 17085139,
+    "sitemapUrls": 88
+  },
+  "addedProfiles": [
+    {
+      "id": "qualcomm",
+      "name": "퀄컴",
+      "en": "Qualcomm",
+      "country": "US",
+      "stages": [
+        "fabless"
+      ]
+    },
+    {
+      "id": "broadcom",
+      "name": "브로드컴",
+      "en": "Broadcom",
+      "country": "US",
+      "stages": [
+        "fabless",
+        "idm"
+      ]
+    },
+    {
+      "id": "mediatek",
+      "name": "미디어텍",
+      "en": "MediaTek",
+      "country": "TW",
+      "stages": [
+        "fabless"
+      ]
+    },
+    {
+      "id": "marvell",
+      "name": "마벨",
+      "en": "Marvell Technology",
+      "country": "US",
+      "stages": [
+        "fabless"
+      ]
+    },
+    {
+      "id": "realtek",
+      "name": "리얼텍",
+      "en": "Realtek Semiconductor",
+      "country": "TW",
+      "stages": [
+        "fabless"
+      ]
+    },
+    {
+      "id": "novatek",
+      "name": "노바텍",
+      "en": "Novatek Microelectronics",
+      "country": "TW",
+      "stages": [
+        "fabless"
+      ]
+    },
+    {
+      "id": "lattice",
+      "name": "래티스",
+      "en": "Lattice Semiconductor",
+      "country": "US",
+      "stages": [
+        "fabless"
+      ]
+    },
+    {
+      "id": "ambarella",
+      "name": "암바렐라",
+      "en": "Ambarella",
+      "country": "US",
+      "stages": [
+        "fabless"
+      ]
+    },
+    {
+      "id": "intel",
+      "name": "인텔",
+      "en": "Intel",
+      "country": "US",
+      "stages": [
+        "idm",
+        "foundry",
+        "packaging"
+      ]
+    },
+    {
+      "id": "texas-instruments",
+      "name": "텍사스 인스트루먼트",
+      "en": "Texas Instruments",
+      "country": "US",
+      "stages": [
+        "idm"
+      ]
+    },
+    {
+      "id": "analog-devices",
+      "name": "아나로그디바이스",
+      "en": "Analog Devices",
+      "country": "US",
+      "stages": [
+        "idm"
+      ]
+    },
+    {
+      "id": "infineon",
+      "name": "인피니언",
+      "en": "Infineon Technologies",
+      "country": "DE",
+      "stages": [
+        "idm"
+      ]
+    },
+    {
+      "id": "stmicroelectronics",
+      "name": "ST마이크로일렉트로닉스",
+      "en": "STMicroelectronics",
+      "country": "CH",
+      "stages": [
+        "idm"
+      ]
+    },
+    {
+      "id": "nxp",
+      "name": "NXP",
+      "en": "NXP Semiconductors",
+      "country": "NL",
+      "stages": [
+        "idm"
+      ]
+    },
+    {
+      "id": "renesas",
+      "name": "르네사스",
+      "en": "Renesas Electronics",
+      "country": "JP",
+      "stages": [
+        "idm"
+      ]
+    },
+    {
+      "id": "onsemi",
+      "name": "온세미",
+      "en": "onsemi",
+      "country": "US",
+      "stages": [
+        "idm"
+      ]
+    },
+    {
+      "id": "globalfoundries",
+      "name": "글로벌파운드리스",
+      "en": "GlobalFoundries",
+      "country": "US",
+      "stages": [
+        "foundry",
+        "packaging"
+      ]
+    },
+    {
+      "id": "umc",
+      "name": "UMC",
+      "en": "United Microelectronics Corporation",
+      "country": "TW",
+      "stages": [
+        "foundry"
+      ]
+    },
+    {
+      "id": "smic",
+      "name": "SMIC",
+      "en": "Semiconductor Manufacturing International Corporation",
+      "country": "CN",
+      "stages": [
+        "foundry"
+      ]
+    },
+    {
+      "id": "tower",
+      "name": "타워세미컨덕터",
+      "en": "Tower Semiconductor",
+      "country": "IL",
+      "stages": [
+        "foundry"
+      ]
+    },
+    {
+      "id": "micron",
+      "name": "마이크론",
+      "en": "Micron Technology",
+      "country": "US",
+      "stages": [
+        "memory",
+        "idm"
+      ]
+    },
+    {
+      "id": "kioxia",
+      "name": "키옥시아",
+      "en": "Kioxia",
+      "country": "JP",
+      "stages": [
+        "memory",
+        "idm"
+      ]
+    },
+    {
+      "id": "winbond",
+      "name": "윈본드",
+      "en": "Winbond Electronics",
+      "country": "TW",
+      "stages": [
+        "memory",
+        "idm"
+      ]
+    },
+    {
+      "id": "macronix",
+      "name": "매크로닉스",
+      "en": "Macronix International",
+      "country": "TW",
+      "stages": [
+        "memory",
+        "idm"
+      ]
+    },
+    {
+      "id": "lam-research",
+      "name": "램리서치",
+      "en": "Lam Research",
+      "country": "US",
+      "stages": [
+        "equipment"
+      ]
+    },
+    {
+      "id": "tokyo-electron",
+      "name": "도쿄일렉트론",
+      "en": "Tokyo Electron",
+      "country": "JP",
+      "stages": [
+        "equipment"
+      ]
+    },
+    {
+      "id": "kla",
+      "name": "KLA",
+      "en": "KLA Corporation",
+      "country": "US",
+      "stages": [
+        "equipment"
+      ]
+    },
+    {
+      "id": "asm",
+      "name": "ASM",
+      "en": "ASM International",
+      "country": "NL",
+      "stages": [
+        "equipment"
+      ]
+    },
+    {
+      "id": "screen",
+      "name": "SCREEN",
+      "en": "SCREEN Semiconductor Solutions",
+      "country": "JP",
+      "stages": [
+        "equipment"
+      ]
+    },
+    {
+      "id": "teradyne",
+      "name": "테라다인",
+      "en": "Teradyne",
+      "country": "US",
+      "stages": [
+        "equipment"
+      ]
+    },
+    {
+      "id": "shin-etsu",
+      "name": "신에츠화학",
+      "en": "Shin-Etsu Chemical",
+      "country": "JP",
+      "stages": [
+        "materials"
+      ]
+    },
+    {
+      "id": "globalwafers",
+      "name": "글로벌웨이퍼스",
+      "en": "GlobalWafers",
+      "country": "TW",
+      "stages": [
+        "materials"
+      ]
+    },
+    {
+      "id": "siltronic",
+      "name": "실트로닉",
+      "en": "Siltronic",
+      "country": "DE",
+      "stages": [
+        "materials"
+      ]
+    },
+    {
+      "id": "entegris",
+      "name": "인테그리스",
+      "en": "Entegris",
+      "country": "US",
+      "stages": [
+        "materials"
+      ]
+    },
+    {
+      "id": "jsr",
+      "name": "JSR",
+      "en": "JSR Corporation",
+      "country": "JP",
+      "stages": [
+        "materials"
+      ]
+    },
+    {
+      "id": "cadence",
+      "name": "케이던스",
+      "en": "Cadence Design Systems",
+      "country": "US",
+      "stages": [
+        "eda-ip"
+      ]
+    },
+    {
+      "id": "arm",
+      "name": "Arm",
+      "en": "Arm",
+      "country": "GB",
+      "stages": [
+        "eda-ip"
+      ]
+    },
+    {
+      "id": "amkor",
+      "name": "앰코테크놀로지",
+      "en": "Amkor Technology",
+      "country": "US",
+      "stages": [
+        "packaging"
+      ]
+    },
+    {
+      "id": "jcet",
+      "name": "JCET",
+      "en": "JCET Group",
+      "country": "CN",
+      "stages": [
+        "packaging"
+      ]
+    },
+    {
+      "id": "pti",
+      "name": "파워텍테크놀로지",
+      "en": "Powertech Technology",
+      "country": "TW",
+      "stages": [
+        "packaging"
+      ]
+    }
+  ],
+  "sourceAudit": {
+    "total": 85,
+    "http200": 81,
+    "restricted403": 4,
+    "limitedReadableText": 5
+  },
+  "contentChecks": [
+    "Unique role, analogy and distinction for every company.",
+    "Product, industry role and background-principle learning relations stay distinct.",
+    "Broadcom hybrid manufacturing, Arm IP focus, SCREEN operating-company identity, ST headquarters vs incorporation, and OSAT vs IDM distinctions reviewed.",
+    "Nor/NAND, 3D NAND cell layers vs HBM die stacking, coat/develop vs scanner, and test equipment vs OSAT distinctions included."
+  ],
+  "media": {
+    "newAssetCount": 80,
+    "newAssetBytes": 15078193,
+    "newOfficialLogos": 33,
+    "newPublicFileLogos": 7,
+    "newOfficialImages": 36,
+    "newCommonsImages": 4,
+    "originalBytes": "Preserved SHA-256; native logo colors/proportions retained. Official Ambarella SVG includes an embedded PNG, allowed as passive raster content; scripts, foreignObject and external SVG references remain rejected.",
+    "delivery": "Next.js responsive image delivery preserves full-frame contain layout and visible attribution.",
+    "measured640pxDelivery": [
+      {
+        "company": "shin-etsu",
+        "sourceBytes": 5968402,
+        "deliveredBytes": 34344
+      },
+      {
+        "company": "marvell",
+        "sourceBytes": 2153802,
+        "deliveredBytes": 37838
+      }
+    ]
+  },
+  "verification": {
+    "fullCheck": "PASS",
+    "webpackProductionBuild": "PASS",
+    "httpCompanyFlow": "directory + 50 profiles + 30 reverse concept sections + industry + 100 raw asset hashes/MIME + metadata + unknown-route 404 PASS",
+    "existingContentRegression": "all 30 concept pages PASS",
+    "desktop": [
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/nvidia/logo.svg",
+            "loaded": true,
+            "naturalHeight": 55,
+            "naturalWidth": 300,
+            "src": "/assets/companies/nvidia/logo.svg"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fnvidia%2Fimage.jpg&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 229,
+            "naturalWidth": 491,
+            "src": "/assets/companies/nvidia/image.jpg"
+          }
+        ],
+        "path": "/company/nvidia/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/amd/logo.svg",
+            "loaded": true,
+            "naturalHeight": 72,
+            "naturalWidth": 300,
+            "src": "/assets/companies/amd/logo.svg"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Famd%2Fimage.jpg&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 354,
+            "naturalWidth": 629,
+            "src": "/assets/companies/amd/image.jpg"
+          }
+        ],
+        "path": "/company/amd/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/tsmc/logo.svg",
+            "loaded": true,
+            "naturalHeight": 215,
+            "naturalWidth": 273,
+            "src": "/assets/companies/tsmc/logo.svg"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Ftsmc%2Fimage.jpg&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 478,
+            "naturalWidth": 850,
+            "src": "/assets/companies/tsmc/image.jpg"
+          }
+        ],
+        "path": "/company/tsmc/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/samsung/logo.svg",
+            "loaded": true,
+            "naturalHeight": 16,
+            "naturalWidth": 104,
+            "src": "/assets/companies/samsung/logo.svg"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fsamsung%2Fimage.jpg&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 283,
+            "naturalWidth": 850,
+            "src": "/assets/companies/samsung/image.jpg"
+          }
+        ],
+        "path": "/company/samsung/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/sk-hynix/logo.svg",
+            "loaded": true,
+            "naturalHeight": 150,
+            "naturalWidth": 286,
+            "src": "/assets/companies/sk-hynix/logo.svg"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fsk-hynix%2Fimage.jpg&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 566,
+            "naturalWidth": 768,
+            "src": "/assets/companies/sk-hynix/image.jpg"
+          }
+        ],
+        "path": "/company/sk-hynix/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fasml%2Fimage.jpg&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 568,
+            "naturalWidth": 850,
+            "src": "/assets/companies/asml/image.jpg"
+          }
+        ],
+        "path": "/company/asml/",
+        "scroll": 1265,
+        "svgUses": [
+          "/assets/companies/asml/logo.svg#logo"
+        ],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/applied-materials/logo.png",
+            "loaded": true,
+            "naturalHeight": 198,
+            "naturalWidth": 618,
+            "src": "/assets/companies/applied-materials/logo.png"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fapplied-materials%2Fimage.jpg&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 478,
+            "naturalWidth": 850,
+            "src": "/assets/companies/applied-materials/image.jpg"
+          }
+        ],
+        "path": "/company/applied-materials/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/synopsys/logo.svg",
+            "loaded": true,
+            "naturalHeight": 36,
+            "naturalWidth": 166,
+            "src": "/assets/companies/synopsys/logo.svg"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fsynopsys%2Fimage.jpg&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 561,
+            "naturalWidth": 850,
+            "src": "/assets/companies/synopsys/image.jpg"
+          }
+        ],
+        "path": "/company/synopsys/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/sumco/logo.webp",
+            "loaded": true,
+            "naturalHeight": 453,
+            "naturalWidth": 1200,
+            "src": "/assets/companies/sumco/logo.webp"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fsumco%2Fimage.webp&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 102,
+            "naturalWidth": 275,
+            "src": "/assets/companies/sumco/image.webp"
+          }
+        ],
+        "path": "/company/sumco/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/ase/logo.png",
+            "loaded": true,
+            "naturalHeight": 300,
+            "naturalWidth": 600,
+            "src": "/assets/companies/ase/logo.png"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fase%2Fimage.png&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 165,
+            "naturalWidth": 276,
+            "src": "/assets/companies/ase/image.png"
+          }
+        ],
+        "path": "/company/ase/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/qualcomm/logo.svg",
+            "loaded": true,
+            "naturalHeight": 55,
+            "naturalWidth": 300,
+            "src": "/assets/companies/qualcomm/logo.svg"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fqualcomm%2Fimage.jpg&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 328,
+            "naturalWidth": 629,
+            "src": "/assets/companies/qualcomm/image.jpg"
+          }
+        ],
+        "path": "/company/qualcomm/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/broadcom/logo.svg",
+            "loaded": true,
+            "naturalHeight": 33,
+            "naturalWidth": 240,
+            "src": "/assets/companies/broadcom/logo.svg"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fbroadcom%2Fimage.jpg&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 443,
+            "naturalWidth": 850,
+            "src": "/assets/companies/broadcom/image.jpg"
+          }
+        ],
+        "path": "/company/broadcom/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/mediatek/logo.png",
+            "loaded": true,
+            "naturalHeight": 47,
+            "naturalWidth": 390,
+            "src": "/assets/companies/mediatek/logo.png"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fmediatek%2Fimage.png&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 153,
+            "naturalWidth": 291,
+            "src": "/assets/companies/mediatek/image.png"
+          }
+        ],
+        "path": "/company/mediatek/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/marvell/logo.svg",
+            "loaded": true,
+            "naturalHeight": 35,
+            "naturalWidth": 120,
+            "src": "/assets/companies/marvell/logo.svg"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fmarvell%2Fimage.jpg&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 566,
+            "naturalWidth": 850,
+            "src": "/assets/companies/marvell/image.jpg"
+          }
+        ],
+        "path": "/company/marvell/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/realtek/logo.png",
+            "loaded": true,
+            "naturalHeight": 50,
+            "naturalWidth": 213,
+            "src": "/assets/companies/realtek/logo.png"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Frealtek%2Fimage.jpg&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 168,
+            "naturalWidth": 236,
+            "src": "/assets/companies/realtek/image.jpg"
+          }
+        ],
+        "path": "/company/realtek/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/novatek/logo.jpg",
+            "loaded": true,
+            "naturalHeight": 45,
+            "naturalWidth": 251,
+            "src": "/assets/companies/novatek/logo.jpg"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fnovatek%2Fimage.jpg&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 200,
+            "naturalWidth": 275,
+            "src": "/assets/companies/novatek/image.jpg"
+          }
+        ],
+        "path": "/company/novatek/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/lattice/logo.png",
+            "loaded": true,
+            "naturalHeight": 33,
+            "naturalWidth": 204,
+            "src": "/assets/companies/lattice/logo.png"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Flattice%2Fimage.png&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 163,
+            "naturalWidth": 280,
+            "src": "/assets/companies/lattice/image.png"
+          }
+        ],
+        "path": "/company/lattice/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/ambarella/logo.svg",
+            "loaded": true,
+            "naturalHeight": 636,
+            "naturalWidth": 1052,
+            "src": "/assets/companies/ambarella/logo.svg"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fambarella%2Fimage.jpg&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 565,
+            "naturalWidth": 850,
+            "src": "/assets/companies/ambarella/image.jpg"
+          }
+        ],
+        "path": "/company/ambarella/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/intel/logo.png",
+            "loaded": true,
+            "naturalHeight": 2500,
+            "naturalWidth": 2500,
+            "src": "/assets/companies/intel/logo.png"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fintel%2Fimage.jpg&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 478,
+            "naturalWidth": 850,
+            "src": "/assets/companies/intel/image.jpg"
+          }
+        ],
+        "path": "/company/intel/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/texas-instruments/logo.svg",
+            "loaded": true,
+            "naturalHeight": 70,
+            "naturalWidth": 300,
+            "src": "/assets/companies/texas-instruments/logo.svg"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Ftexas-instruments%2Fimage.jpg&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 478,
+            "naturalWidth": 850,
+            "src": "/assets/companies/texas-instruments/image.jpg"
+          }
+        ],
+        "path": "/company/texas-instruments/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/analog-devices/logo.png",
+            "loaded": true,
+            "naturalHeight": 79,
+            "naturalWidth": 200,
+            "src": "/assets/companies/analog-devices/logo.png"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fanalog-devices%2Fimage.jpg&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 214,
+            "naturalWidth": 447,
+            "src": "/assets/companies/analog-devices/image.jpg"
+          }
+        ],
+        "path": "/company/analog-devices/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/infineon/logo.svg",
+            "loaded": true,
+            "naturalHeight": 40,
+            "naturalWidth": 91,
+            "src": "/assets/companies/infineon/logo.svg"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Finfineon%2Fimage.jpg&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 567,
+            "naturalWidth": 850,
+            "src": "/assets/companies/infineon/image.jpg"
+          }
+        ],
+        "path": "/company/infineon/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/stmicroelectronics/logo.svg",
+            "loaded": true,
+            "naturalHeight": 101,
+            "naturalWidth": 188,
+            "src": "/assets/companies/stmicroelectronics/logo.svg"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fstmicroelectronics%2Fimage.jpg&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 303,
+            "naturalWidth": 464,
+            "src": "/assets/companies/stmicroelectronics/image.jpg"
+          }
+        ],
+        "path": "/company/stmicroelectronics/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/nxp/logo.svg",
+            "loaded": true,
+            "naturalHeight": 68,
+            "naturalWidth": 199,
+            "src": "/assets/companies/nxp/logo.svg"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fnxp%2Fimage.jpg&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 478,
+            "naturalWidth": 850,
+            "src": "/assets/companies/nxp/image.jpg"
+          }
+        ],
+        "path": "/company/nxp/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/renesas/logo.svg",
+            "loaded": true,
+            "naturalHeight": 46,
+            "naturalWidth": 192,
+            "src": "/assets/companies/renesas/logo.svg"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Frenesas%2Fimage.jpg&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 264,
+            "naturalWidth": 333,
+            "src": "/assets/companies/renesas/image.jpg"
+          }
+        ],
+        "path": "/company/renesas/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/onsemi/logo.svg",
+            "loaded": true,
+            "naturalHeight": 52,
+            "naturalWidth": 300,
+            "src": "/assets/companies/onsemi/logo.svg"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fonsemi%2Fimage.jpg&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 295,
+            "naturalWidth": 850,
+            "src": "/assets/companies/onsemi/image.jpg"
+          }
+        ],
+        "path": "/company/onsemi/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/globalfoundries/logo.svg",
+            "loaded": true,
+            "naturalHeight": 59,
+            "naturalWidth": 300,
+            "src": "/assets/companies/globalfoundries/logo.svg"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fglobalfoundries%2Fimage.webp&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 398,
+            "naturalWidth": 850,
+            "src": "/assets/companies/globalfoundries/image.webp"
+          }
+        ],
+        "path": "/company/globalfoundries/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/umc/logo.svg",
+            "loaded": true,
+            "naturalHeight": 185,
+            "naturalWidth": 815,
+            "src": "/assets/companies/umc/logo.svg"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fumc%2Fimage.jpg&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 637,
+            "naturalWidth": 850,
+            "src": "/assets/companies/umc/image.jpg"
+          }
+        ],
+        "path": "/company/umc/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/smic/logo.png",
+            "loaded": true,
+            "naturalHeight": 76,
+            "naturalWidth": 411,
+            "src": "/assets/companies/smic/logo.png"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fsmic%2Fimage.jpg&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 336,
+            "naturalWidth": 850,
+            "src": "/assets/companies/smic/image.jpg"
+          }
+        ],
+        "path": "/company/smic/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/tower/logo.png",
+            "loaded": true,
+            "naturalHeight": 177,
+            "naturalWidth": 360,
+            "src": "/assets/companies/tower/logo.png"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Ftower%2Fimage.jpg&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 236,
+            "naturalWidth": 236,
+            "src": "/assets/companies/tower/image.jpg"
+          }
+        ],
+        "path": "/company/tower/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/micron/logo.svg",
+            "loaded": true,
+            "naturalHeight": 62,
+            "naturalWidth": 288,
+            "src": "/assets/companies/micron/logo.svg"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fmicron%2Fimage.png&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 401,
+            "naturalWidth": 535,
+            "src": "/assets/companies/micron/image.png"
+          }
+        ],
+        "path": "/company/micron/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/kioxia/logo.svg",
+            "loaded": true,
+            "naturalHeight": 59,
+            "naturalWidth": 300,
+            "src": "/assets/companies/kioxia/logo.svg"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fkioxia%2Fimage.jpg&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 309,
+            "naturalWidth": 464,
+            "src": "/assets/companies/kioxia/image.jpg"
+          }
+        ],
+        "path": "/company/kioxia/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/winbond/logo.png",
+            "loaded": true,
+            "naturalHeight": 43,
+            "naturalWidth": 330,
+            "src": "/assets/companies/winbond/logo.png"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fwinbond%2Fimage.jpg&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 637,
+            "naturalWidth": 850,
+            "src": "/assets/companies/winbond/image.jpg"
+          }
+        ],
+        "path": "/company/winbond/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/macronix/logo.png",
+            "loaded": true,
+            "naturalHeight": 175,
+            "naturalWidth": 336,
+            "src": "/assets/companies/macronix/logo.png"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fmacronix%2Fimage.png&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 118,
+            "naturalWidth": 236,
+            "src": "/assets/companies/macronix/image.png"
+          }
+        ],
+        "path": "/company/macronix/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/lam-research/logo.png",
+            "loaded": true,
+            "naturalHeight": 30,
+            "naturalWidth": 188,
+            "src": "/assets/companies/lam-research/logo.png"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Flam-research%2Fimage.jpg&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 250,
+            "naturalWidth": 850,
+            "src": "/assets/companies/lam-research/image.jpg"
+          }
+        ],
+        "path": "/company/lam-research/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/tokyo-electron/logo.svg",
+            "loaded": true,
+            "naturalHeight": 122,
+            "naturalWidth": 300,
+            "src": "/assets/companies/tokyo-electron/logo.svg"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Ftokyo-electron%2Fimage.jpg&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 554,
+            "naturalWidth": 554,
+            "src": "/assets/companies/tokyo-electron/image.jpg"
+          }
+        ],
+        "path": "/company/tokyo-electron/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/kla/logo.png",
+            "loaded": true,
+            "naturalHeight": 90,
+            "naturalWidth": 405,
+            "src": "/assets/companies/kla/logo.png"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fkla%2Fimage.jpg&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 159,
+            "naturalWidth": 283,
+            "src": "/assets/companies/kla/image.jpg"
+          }
+        ],
+        "path": "/company/kla/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/asm/logo.svg",
+            "loaded": true,
+            "naturalHeight": 32,
+            "naturalWidth": 100,
+            "src": "/assets/companies/asm/logo.svg"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fasm%2Fimage.png&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 354,
+            "naturalWidth": 236,
+            "src": "/assets/companies/asm/image.png"
+          }
+        ],
+        "path": "/company/asm/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/screen/logo.svg",
+            "loaded": true,
+            "naturalHeight": 21,
+            "naturalWidth": 161,
+            "src": "/assets/companies/screen/logo.svg"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fscreen%2Fimage.jpg&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 472,
+            "naturalWidth": 850,
+            "src": "/assets/companies/screen/image.jpg"
+          }
+        ],
+        "path": "/company/screen/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/teradyne/logo.svg",
+            "loaded": true,
+            "naturalHeight": 45,
+            "naturalWidth": 300,
+            "src": "/assets/companies/teradyne/logo.svg"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fteradyne%2Fimage.jpg&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 537,
+            "naturalWidth": 805,
+            "src": "/assets/companies/teradyne/image.jpg"
+          }
+        ],
+        "path": "/company/teradyne/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/shin-etsu/logo.png",
+            "loaded": true,
+            "naturalHeight": 90,
+            "naturalWidth": 402,
+            "src": "/assets/companies/shin-etsu/logo.png"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fshin-etsu%2Fimage.jpg&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 566,
+            "naturalWidth": 850,
+            "src": "/assets/companies/shin-etsu/image.jpg"
+          }
+        ],
+        "path": "/company/shin-etsu/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/globalwafers/logo.png",
+            "loaded": true,
+            "naturalHeight": 204,
+            "naturalWidth": 1000,
+            "src": "/assets/companies/globalwafers/logo.png"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fglobalwafers%2Fimage.jpg&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 315,
+            "naturalWidth": 317,
+            "src": "/assets/companies/globalwafers/image.jpg"
+          }
+        ],
+        "path": "/company/globalwafers/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/siltronic/logo.svg",
+            "loaded": true,
+            "naturalHeight": 150,
+            "naturalWidth": 292,
+            "src": "/assets/companies/siltronic/logo.svg"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fsiltronic%2Fimage.jpg&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 850,
+            "naturalWidth": 850,
+            "src": "/assets/companies/siltronic/image.jpg"
+          }
+        ],
+        "path": "/company/siltronic/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/entegris/logo.svg",
+            "loaded": true,
+            "naturalHeight": 38,
+            "naturalWidth": 161,
+            "src": "/assets/companies/entegris/logo.svg"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fentegris%2Fimage.jpg&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 245,
+            "naturalWidth": 314,
+            "src": "/assets/companies/entegris/image.jpg"
+          }
+        ],
+        "path": "/company/entegris/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/jsr/logo.png",
+            "loaded": true,
+            "naturalHeight": 36,
+            "naturalWidth": 232,
+            "src": "/assets/companies/jsr/logo.png"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fjsr%2Fimage.jpg&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 141,
+            "naturalWidth": 458,
+            "src": "/assets/companies/jsr/image.jpg"
+          }
+        ],
+        "path": "/company/jsr/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/cadence/logo.svg",
+            "loaded": true,
+            "naturalHeight": 36,
+            "naturalWidth": 193,
+            "src": "/assets/companies/cadence/logo.svg"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fcadence%2Fimage.jpg&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 628,
+            "naturalWidth": 850,
+            "src": "/assets/companies/cadence/image.jpg"
+          }
+        ],
+        "path": "/company/cadence/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/arm/logo.svg",
+            "loaded": true,
+            "naturalHeight": 72,
+            "naturalWidth": 237,
+            "src": "/assets/companies/arm/logo.svg"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Farm%2Fimage.jpg&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 354,
+            "naturalWidth": 354,
+            "src": "/assets/companies/arm/image.jpg"
+          }
+        ],
+        "path": "/company/arm/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/amkor/logo.svg",
+            "loaded": true,
+            "naturalHeight": 117,
+            "naturalWidth": 300,
+            "src": "/assets/companies/amkor/logo.svg"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Famkor%2Fimage.png&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 376,
+            "naturalWidth": 606,
+            "src": "/assets/companies/amkor/image.png"
+          }
+        ],
+        "path": "/company/amkor/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/jcet/logo.svg",
+            "loaded": true,
+            "naturalHeight": 30,
+            "naturalWidth": 124,
+            "src": "/assets/companies/jcet/logo.svg"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fjcet%2Fimage.png&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 417,
+            "naturalWidth": 626,
+            "src": "/assets/companies/jcet/image.png"
+          }
+        ],
+        "path": "/company/jcet/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "images": [
+          {
+            "currentSrc": "http://127.0.0.1:3101/assets/companies/pti/logo.svg",
+            "loaded": true,
+            "naturalHeight": 50,
+            "naturalWidth": 243,
+            "src": "/assets/companies/pti/logo.svg"
+          },
+          {
+            "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fpti%2Fimage.jpg&w=1080&q=75",
+            "loaded": true,
+            "naturalHeight": 314,
+            "naturalWidth": 499,
+            "src": "/assets/companies/pti/image.jpg"
+          }
+        ],
+        "path": "/company/pti/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      }
+    ],
+    "mobile360": [
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fnvidia%2Fimage.jpg&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/nvidia/image.jpg",
+        "mediaWidth": 321,
+        "path": "/company/nvidia/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Famd%2Fimage.jpg&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/amd/image.jpg",
+        "mediaWidth": 321,
+        "path": "/company/amd/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Ftsmc%2Fimage.jpg&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/tsmc/image.jpg",
+        "mediaWidth": 321,
+        "path": "/company/tsmc/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fsamsung%2Fimage.jpg&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/samsung/image.jpg",
+        "mediaWidth": 321,
+        "path": "/company/samsung/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fsk-hynix%2Fimage.jpg&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/sk-hynix/image.jpg",
+        "mediaWidth": 321,
+        "path": "/company/sk-hynix/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fasml%2Fimage.jpg&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/asml/image.jpg",
+        "mediaWidth": 321,
+        "path": "/company/asml/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fapplied-materials%2Fimage.jpg&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/applied-materials/image.jpg",
+        "mediaWidth": 321,
+        "path": "/company/applied-materials/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fsynopsys%2Fimage.jpg&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/synopsys/image.jpg",
+        "mediaWidth": 321,
+        "path": "/company/synopsys/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fsumco%2Fimage.webp&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/sumco/image.webp",
+        "mediaWidth": 321,
+        "path": "/company/sumco/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fase%2Fimage.png&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/ase/image.png",
+        "mediaWidth": 321,
+        "path": "/company/ase/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fqualcomm%2Fimage.jpg&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/qualcomm/image.jpg",
+        "mediaWidth": 321,
+        "path": "/company/qualcomm/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fbroadcom%2Fimage.jpg&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/broadcom/image.jpg",
+        "mediaWidth": 321,
+        "path": "/company/broadcom/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fmediatek%2Fimage.png&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/mediatek/image.png",
+        "mediaWidth": 321,
+        "path": "/company/mediatek/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fmarvell%2Fimage.jpg&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/marvell/image.jpg",
+        "mediaWidth": 321,
+        "path": "/company/marvell/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Frealtek%2Fimage.jpg&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/realtek/image.jpg",
+        "mediaWidth": 321,
+        "path": "/company/realtek/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fnovatek%2Fimage.jpg&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/novatek/image.jpg",
+        "mediaWidth": 321,
+        "path": "/company/novatek/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Flattice%2Fimage.png&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/lattice/image.png",
+        "mediaWidth": 321,
+        "path": "/company/lattice/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fambarella%2Fimage.jpg&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/ambarella/image.jpg",
+        "mediaWidth": 321,
+        "path": "/company/ambarella/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fintel%2Fimage.jpg&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/intel/image.jpg",
+        "mediaWidth": 321,
+        "path": "/company/intel/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Ftexas-instruments%2Fimage.jpg&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/texas-instruments/image.jpg",
+        "mediaWidth": 321,
+        "path": "/company/texas-instruments/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fanalog-devices%2Fimage.jpg&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/analog-devices/image.jpg",
+        "mediaWidth": 321,
+        "path": "/company/analog-devices/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Finfineon%2Fimage.jpg&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/infineon/image.jpg",
+        "mediaWidth": 321,
+        "path": "/company/infineon/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fstmicroelectronics%2Fimage.jpg&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/stmicroelectronics/image.jpg",
+        "mediaWidth": 321,
+        "path": "/company/stmicroelectronics/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fnxp%2Fimage.jpg&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/nxp/image.jpg",
+        "mediaWidth": 321,
+        "path": "/company/nxp/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Frenesas%2Fimage.jpg&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/renesas/image.jpg",
+        "mediaWidth": 321,
+        "path": "/company/renesas/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fonsemi%2Fimage.jpg&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/onsemi/image.jpg",
+        "mediaWidth": 321,
+        "path": "/company/onsemi/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fglobalfoundries%2Fimage.webp&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/globalfoundries/image.webp",
+        "mediaWidth": 321,
+        "path": "/company/globalfoundries/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fumc%2Fimage.jpg&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/umc/image.jpg",
+        "mediaWidth": 321,
+        "path": "/company/umc/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fsmic%2Fimage.jpg&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/smic/image.jpg",
+        "mediaWidth": 321,
+        "path": "/company/smic/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Ftower%2Fimage.jpg&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/tower/image.jpg",
+        "mediaWidth": 321,
+        "path": "/company/tower/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fmicron%2Fimage.png&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/micron/image.png",
+        "mediaWidth": 321,
+        "path": "/company/micron/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fkioxia%2Fimage.jpg&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/kioxia/image.jpg",
+        "mediaWidth": 321,
+        "path": "/company/kioxia/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fwinbond%2Fimage.jpg&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/winbond/image.jpg",
+        "mediaWidth": 321,
+        "path": "/company/winbond/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fmacronix%2Fimage.png&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/macronix/image.png",
+        "mediaWidth": 321,
+        "path": "/company/macronix/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Flam-research%2Fimage.jpg&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/lam-research/image.jpg",
+        "mediaWidth": 321,
+        "path": "/company/lam-research/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Ftokyo-electron%2Fimage.jpg&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/tokyo-electron/image.jpg",
+        "mediaWidth": 321,
+        "path": "/company/tokyo-electron/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fkla%2Fimage.jpg&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/kla/image.jpg",
+        "mediaWidth": 321,
+        "path": "/company/kla/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fasm%2Fimage.png&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/asm/image.png",
+        "mediaWidth": 321,
+        "path": "/company/asm/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fscreen%2Fimage.jpg&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/screen/image.jpg",
+        "mediaWidth": 321,
+        "path": "/company/screen/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fteradyne%2Fimage.jpg&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/teradyne/image.jpg",
+        "mediaWidth": 321,
+        "path": "/company/teradyne/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fshin-etsu%2Fimage.jpg&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/shin-etsu/image.jpg",
+        "mediaWidth": 321,
+        "path": "/company/shin-etsu/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fglobalwafers%2Fimage.jpg&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/globalwafers/image.jpg",
+        "mediaWidth": 321,
+        "path": "/company/globalwafers/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fsiltronic%2Fimage.jpg&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/siltronic/image.jpg",
+        "mediaWidth": 321,
+        "path": "/company/siltronic/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fentegris%2Fimage.jpg&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/entegris/image.jpg",
+        "mediaWidth": 321,
+        "path": "/company/entegris/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fjsr%2Fimage.jpg&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/jsr/image.jpg",
+        "mediaWidth": 321,
+        "path": "/company/jsr/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fcadence%2Fimage.jpg&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/cadence/image.jpg",
+        "mediaWidth": 321,
+        "path": "/company/cadence/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Farm%2Fimage.jpg&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/arm/image.jpg",
+        "mediaWidth": 321,
+        "path": "/company/arm/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Famkor%2Fimage.png&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/amkor/image.png",
+        "mediaWidth": 321,
+        "path": "/company/amkor/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fjcet%2Fimage.png&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/jcet/image.png",
+        "mediaWidth": 321,
+        "path": "/company/jcet/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "currentSrc": "http://127.0.0.1:3101/_next/image/?url=%2Fassets%2Fcompanies%2Fpti%2Fimage.jpg&w=640&q=75",
+        "imageLoaded": true,
+        "imageSource": "/assets/companies/pti/image.jpg",
+        "mediaWidth": 321,
+        "path": "/company/pti/",
+        "scroll": 345,
+        "width": 345
+      }
+    ],
+    "filters": [
+      {
+        "ids": [
+          "arm"
+        ],
+        "result": "1개 기업",
+        "scroll": 345,
+        "url": "http://127.0.0.1:3101/companies/?stage=eda-ip&country=GB",
+        "width": 345
+      },
+      {
+        "ids": [
+          "siltronic"
+        ],
+        "result": "1개 기업",
+        "scroll": 345,
+        "url": "http://127.0.0.1:3101/companies/?stage=materials&country=DE",
+        "width": 345
+      },
+      {
+        "ids": [
+          "smic"
+        ],
+        "result": "1개 기업",
+        "scroll": 345,
+        "url": "http://127.0.0.1:3101/companies/?stage=foundry&country=CN",
+        "width": 345
+      },
+      {
+        "ids": [
+          "kioxia"
+        ],
+        "result": "1개 기업",
+        "scroll": 345,
+        "url": "http://127.0.0.1:3101/companies/?stage=memory&country=JP",
+        "width": 345
+      }
+    ],
+    "learningNavigation": "Snapdragon query → Qualcomm → CPU → reverse Qualcomm card → back twice restores the query.",
+    "micronHbmFilter": "memory + US + HBM = Micron",
+    "mobileTooltip": {
+      "x": 18,
+      "right": 327,
+      "bottom": 782,
+      "escapeDismissed": true
+    },
+    "browserConsole": []
+  },
+  "limitations": [
+    "Four new official references (UMC x2, Cadence x2) returned 403 directly; their official content was separately checked through web research.",
+    "Five HTTP 200 source pages provide limited readable text in direct HTML; this is recorded separately.",
+    "Historic public photos are dated; Winbond image is explicitly a past 2010 I/O controller, not a current memory product.",
+    "This is an editorial verification, not expert certification.",
+    "No Git commit, push or external deployment performed."
+  ]
+}

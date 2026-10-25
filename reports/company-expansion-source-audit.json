@@ -1,0 +1,867 @@
+{
+  "checkedAt": "2026-10-25",
+  "scope": "85 new official source records for the additional 40 profiles; existing 23 source records remain covered by company-source-link-audit.json.",
+  "counts": {
+    "total": 85,
+    "http200": 81,
+    "restricted403": 4,
+    "limitedReadableText": 5
+  },
+  "notes": [
+    "A 200 response with very little readable text is flagged separately; it is not counted as a readable article.",
+    "Restricted UMC and Cadence source bodies were separately read through web research; direct requests remain marked 403.",
+    "This is an editorial source review, not expert certification."
+  ],
+  "sources": [
+    {
+      "id": "qualcomm_reference_1",
+      "company": "qualcomm",
+      "url": "https://www.qualcomm.com/company/about",
+      "finalUrl": "https://www.qualcomm.com/company",
+      "httpStatus": 200,
+      "evidence": "limited-readable-text",
+      "bodyCharactersRetained": 102,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "qualcomm_reference_2",
+      "company": "qualcomm",
+      "url": "https://www.qualcomm.com/products",
+      "finalUrl": "https://www.qualcomm.com/products",
+      "httpStatus": 200,
+      "evidence": "limited-readable-text",
+      "bodyCharactersRetained": 104,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "broadcom_reference_1",
+      "company": "broadcom",
+      "url": "https://www.broadcom.com/company",
+      "finalUrl": "https://www.broadcom.com/company",
+      "httpStatus": 200,
+      "evidence": "limited-readable-text",
+      "bodyCharactersRetained": 7,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "broadcom_reference_2",
+      "company": "broadcom",
+      "url": "https://www.broadcom.com/products/ethernet-connectivity/switching",
+      "finalUrl": "https://www.broadcom.com/products/ethernet-connectivity/switching",
+      "httpStatus": 200,
+      "evidence": "limited-readable-text",
+      "bodyCharactersRetained": 43,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "broadcom_reference_3",
+      "company": "broadcom",
+      "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/avgo-20251102.htm",
+      "finalUrl": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/avgo-20251102.htm",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 16000,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "mediatek_reference_1",
+      "company": "mediatek",
+      "url": "https://www.mediatek.com/company/discover",
+      "finalUrl": "https://www.mediatek.com/company/discover",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 3349,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "mediatek_reference_2",
+      "company": "mediatek",
+      "url": "https://www.mediatek.com/products/smartphones/dimensity-5g",
+      "finalUrl": "https://www.mediatek.com/products/smartphones/dimensity-5g",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 5733,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "marvell_reference_1",
+      "company": "marvell",
+      "url": "https://www.marvell.com/company.html",
+      "finalUrl": "https://www.marvell.com/company.html",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 3192,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "marvell_reference_2",
+      "company": "marvell",
+      "url": "https://www.marvell.com/products.html",
+      "finalUrl": "https://www.marvell.com/products.html",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 4776,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "realtek_reference_1",
+      "company": "realtek",
+      "url": "https://www.realtek.com.sg/Company/AboutUs",
+      "finalUrl": "https://www.realtek.com.sg/Company/AboutUs",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 3733,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "realtek_reference_2",
+      "company": "realtek",
+      "url": "https://www.realtek.co.jp/products/",
+      "finalUrl": "https://www.realtek.co.jp/products/",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 738,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "novatek_reference_1",
+      "company": "novatek",
+      "url": "https://www.novatek.com.tw/en-global/Html/aboutus_overview",
+      "finalUrl": "https://www.novatek.com.tw/en-global/Html/aboutus_overview",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 2821,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "novatek_reference_2",
+      "company": "novatek",
+      "url": "https://www.novatek.com.tw/en-global/Product/product/Overview",
+      "finalUrl": "https://www.novatek.com.tw/en-global/Product/product/Overview",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 1503,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "lattice_reference_1",
+      "company": "lattice",
+      "url": "https://www.latticesemi.com/About",
+      "finalUrl": "https://www.latticesemi.com/About",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 7182,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "lattice_reference_2",
+      "company": "lattice",
+      "url": "https://www.latticesemi.com/Products",
+      "finalUrl": "https://www.latticesemi.com/Products",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 2179,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "ambarella_reference_1",
+      "company": "ambarella",
+      "url": "https://www.ambarella.com/about-history/",
+      "finalUrl": "https://www.ambarella.com/about-history/",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 2452,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "ambarella_reference_2",
+      "company": "ambarella",
+      "url": "https://www.ambarella.com/technology/",
+      "finalUrl": "https://www.ambarella.com/technology/",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 5121,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "intel_reference_1",
+      "company": "intel",
+      "url": "https://www.intel.com/content/www/us/en/company-overview/company-overview.html",
+      "finalUrl": "https://www.intel.com/content/www/us/en/company-overview/company-overview.html",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 2369,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "intel_reference_2",
+      "company": "intel",
+      "url": "https://www.intel.com/content/www/us/en/products/details/processors.html",
+      "finalUrl": "https://www.intel.com/content/www/us/en/products/details/processors.html",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 2341,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "texas_instruments_reference_1",
+      "company": "texas-instruments",
+      "url": "https://www.ti.com/about-ti.html",
+      "finalUrl": "https://www.ti.com/about-ti.html",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 6807,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "texas_instruments_reference_2",
+      "company": "texas-instruments",
+      "url": "https://www.ti.com/product-category/power-management/overview.html",
+      "finalUrl": "https://www.ti.com/product-category/power-management/overview.html",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 4149,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "analog_devices_reference_1",
+      "company": "analog-devices",
+      "url": "https://www.analog.com/en/who-we-are.html",
+      "finalUrl": "https://www.analog.com/en/who-we-are.html",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 3831,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "analog_devices_reference_2",
+      "company": "analog-devices",
+      "url": "https://www.analog.com/en/who-we-are/resilient-hybrid-manufacturing.html",
+      "finalUrl": "https://www.analog.com/en/who-we-are/resilient-hybrid-manufacturing.html",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 1578,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "infineon_reference_1",
+      "company": "infineon",
+      "url": "https://www.infineon.com/about",
+      "finalUrl": "https://www.infineon.com/about",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 3712,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "infineon_reference_2",
+      "company": "infineon",
+      "url": "https://www.infineon.com/products/power/mosfet",
+      "finalUrl": "https://www.infineon.com/products/power/mosfet",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 16000,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "stmicroelectronics_reference_1",
+      "company": "stmicroelectronics",
+      "url": "https://www.st.com/content/st_com/en/about/who-we-are.html",
+      "finalUrl": "https://www.st.com/content/st_com/en/about/who-we-are.html",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 5308,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "stmicroelectronics_reference_2",
+      "company": "stmicroelectronics",
+      "url": "https://www.st.com/content/st_com/en/about/manufacturing-at-st.html",
+      "finalUrl": "https://www.st.com/content/st_com/en/about/manufacturing-at-st.html",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 1388,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "stmicroelectronics_reference_3",
+      "company": "stmicroelectronics",
+      "url": "https://investors.st.com/resources/faqs",
+      "finalUrl": "https://investors.st.com/resources/faqs",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 8545,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "nxp_reference_1",
+      "company": "nxp",
+      "url": "https://www.nxp.com/company/about-nxp:ABOUT-NXP",
+      "finalUrl": "https://www.nxp.com/company/about-nxp:ABOUT-NXP",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 4226,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "nxp_reference_2",
+      "company": "nxp",
+      "url": "https://www.nxp.com/products/processors-and-microcontrollers:MICROCONTROLLERS-AND-PROCESSORS",
+      "finalUrl": "https://www.nxp.com/products/processors-and-microcontrollers:MICROCONTROLLERS-AND-PROCESSORS",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 9135,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "nxp_reference_3",
+      "company": "nxp",
+      "url": "https://www.nxp.com/company/about-nxp/worldwide-locations/united-states:USA",
+      "finalUrl": "https://www.nxp.com/company/about-nxp/worldwide-locations/united-states:USA",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 6288,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "renesas_reference_1",
+      "company": "renesas",
+      "url": "https://www.renesas.com/en/about/profile",
+      "finalUrl": "https://www.renesas.com/en/about/profile",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 1683,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "renesas_reference_2",
+      "company": "renesas",
+      "url": "https://www.renesas.com/en/products/microcontrollers-microprocessors",
+      "finalUrl": "https://www.renesas.com/en/products/microcontrollers-microprocessors",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 9414,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "onsemi_reference_1",
+      "company": "onsemi",
+      "url": "https://www.onsemi.com/company/about-onsemi",
+      "finalUrl": "https://www.onsemi.com/company/about-onsemi",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 4172,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "onsemi_reference_2",
+      "company": "onsemi",
+      "url": "https://www.onsemi.com/products/discrete-power-modules/mosfets",
+      "finalUrl": "https://www.onsemi.com/products/discrete-power-modules/mosfets",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 3358,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "globalfoundries_reference_1",
+      "company": "globalfoundries",
+      "url": "https://gf.com/about-gf/",
+      "finalUrl": "https://gf.com/about-gf/",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 6849,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "globalfoundries_reference_2",
+      "company": "globalfoundries",
+      "url": "https://gf.com/technologies/",
+      "finalUrl": "https://gf.com/technologies/",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 3195,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "umc_reference_1",
+      "company": "umc",
+      "url": "https://www.umc.com/en/About/about_overview",
+      "finalUrl": "https://www.umc.com/en/About/about_overview",
+      "httpStatus": 403,
+      "evidence": "restricted",
+      "bodyCharactersRetained": 0,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "umc_reference_2",
+      "company": "umc",
+      "url": "https://www.umc.com/en/Product/technologies/Index/logic",
+      "finalUrl": "https://www.umc.com/en/Product/technologies/Index/logic",
+      "httpStatus": 403,
+      "evidence": "restricted",
+      "bodyCharactersRetained": 0,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "smic_reference_1",
+      "company": "smic",
+      "url": "https://www.smics.com/en/site/about_summary",
+      "finalUrl": "https://www.smics.com/en/site/about_summary",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 5326,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "smic_reference_2",
+      "company": "smic",
+      "url": "https://www.smics.com/en/site/design_platform",
+      "finalUrl": "https://www.smics.com/en/site/design_platform",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 4933,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "tower_reference_1",
+      "company": "tower",
+      "url": "https://towersemi.com/about/corporate-overview/",
+      "finalUrl": "https://towersemi.com/about/corporate-overview/",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 4016,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "tower_reference_2",
+      "company": "tower",
+      "url": "https://towersemi.com/technology/process-technology-offerings/",
+      "finalUrl": "https://towersemi.com/technology/process-technology-offerings/",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 1620,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "micron_reference_1",
+      "company": "micron",
+      "url": "https://www.micron.com/about",
+      "finalUrl": "https://www.micron.com/about",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 10693,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "micron_reference_2",
+      "company": "micron",
+      "url": "https://www.micron.com/products/memory",
+      "finalUrl": "https://www.micron.com/products/memory",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 11254,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "micron_reference_3",
+      "company": "micron",
+      "url": "https://www.micron.com/products/storage/nand-flash",
+      "finalUrl": "https://www.micron.com/products/storage/nand-flash",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 11014,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "kioxia_reference_1",
+      "company": "kioxia",
+      "url": "https://www.kioxia.com/en-jp/about/about-us.html",
+      "finalUrl": "https://www.kioxia.com/en-jp/about/about-us.html",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 3670,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "kioxia_reference_2",
+      "company": "kioxia",
+      "url": "https://www.kioxia.com/en-jp/rd/technology/bics-flash.html",
+      "finalUrl": "https://www.kioxia.com/en-jp/rd/technology/bics-flash.html",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 5679,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "winbond_reference_1",
+      "company": "winbond",
+      "url": "https://www.winbond.com/hq/about-winbond/company-profile/overview/?__locale=en",
+      "finalUrl": "https://www.winbond.com/hq/about-winbond/company-profile/overview/?__locale=en",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 4425,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "winbond_reference_2",
+      "company": "winbond",
+      "url": "https://www.winbond.com/hq/product/code-storage-flash-memory/?__locale=en",
+      "finalUrl": "https://www.winbond.com/hq/product/code-storage-flash/?__locale=en",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 7614,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "macronix_reference_1",
+      "company": "macronix",
+      "url": "https://www.macronix.com/en-us/about/Pages/company-overview.aspx",
+      "finalUrl": "https://www.macronix.com/en-us/about/Pages/company-overview.aspx",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 8612,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "macronix_reference_2",
+      "company": "macronix",
+      "url": "https://www.macronix.com/en-us/products/NOR-Flash",
+      "finalUrl": "https://www.macronix.com/en-us/products/NOR-Flash/Pages/default.aspx",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 5191,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "lam_research_reference_1",
+      "company": "lam-research",
+      "url": "https://www.lamresearch.com/company/company-overview/",
+      "finalUrl": "https://www.lamresearch.com/company/company-overview/",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 13769,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "lam_research_reference_2",
+      "company": "lam-research",
+      "url": "https://www.lamresearch.com/products/products-overview/",
+      "finalUrl": "https://www.lamresearch.com/products/products-overview/",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 2883,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "tokyo_electron_reference_1",
+      "company": "tokyo-electron",
+      "url": "https://www.tel.com/about/summary/index.html",
+      "finalUrl": "https://www.tel.com/about/summary/index.html",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 1646,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "tokyo_electron_reference_2",
+      "company": "tokyo-electron",
+      "url": "https://www.tel.com/product/",
+      "finalUrl": "https://www.tel.com/product/",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 9945,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "kla_reference_1",
+      "company": "kla",
+      "url": "https://www.kla.com/company",
+      "finalUrl": "https://www.kla.com/company",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 7432,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "kla_reference_2",
+      "company": "kla",
+      "url": "https://www.kla.com/products/chip-manufacturing",
+      "finalUrl": "https://www.kla.com/products/chip-manufacturing",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 1170,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "asm_reference_1",
+      "company": "asm",
+      "url": "https://www.asm.com/our-company",
+      "finalUrl": "https://www.asm.com/our-company",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 5288,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "asm_reference_2",
+      "company": "asm",
+      "url": "https://www.asm.com/our-technology-products/ald",
+      "finalUrl": "https://www.asm.com/our-technology-products/ald",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 7675,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "screen_reference_1",
+      "company": "screen",
+      "url": "https://www.screen.co.jp/spe/en/company/about",
+      "finalUrl": "https://www.screen.co.jp/spe/en/company/about",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 623,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "screen_reference_2",
+      "company": "screen",
+      "url": "https://www.screen.co.jp/spe/en/products",
+      "finalUrl": "https://www.screen.co.jp/spe/en/products",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 3331,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "teradyne_reference_1",
+      "company": "teradyne",
+      "url": "https://www.teradyne.com/company/about-us/",
+      "finalUrl": "https://www.teradyne.com/company/about-us/",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 3867,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "teradyne_reference_2",
+      "company": "teradyne",
+      "url": "https://www.teradyne.com/semiconductor-testing/",
+      "finalUrl": "https://www.teradyne.com/semiconductor-testing/",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 4646,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "shin_etsu_reference_1",
+      "company": "shin-etsu",
+      "url": "https://www.shinetsu.co.jp/en/company/profile/",
+      "finalUrl": "https://www.shinetsu.co.jp/en/company/profile/",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 1305,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "shin_etsu_reference_2",
+      "company": "shin-etsu",
+      "url": "https://www.shinetsu.co.jp/en/products-2/",
+      "finalUrl": "https://www.shinetsu.co.jp/en/products-2/",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 16000,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "globalwafers_reference_1",
+      "company": "globalwafers",
+      "url": "https://www.sas-globalwafers.com/profile-tw/",
+      "finalUrl": "https://www.sas-globalwafers.com/profile-tw/",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 2566,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "globalwafers_reference_2",
+      "company": "globalwafers",
+      "url": "https://www.sas-globalwafers.com/products-and-processes/",
+      "finalUrl": "https://www.sas-globalwafers.com/products-and-processes/",
+      "httpStatus": 200,
+      "evidence": "limited-readable-text",
+      "bodyCharactersRetained": 13,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "siltronic_reference_1",
+      "company": "siltronic",
+      "url": "https://www.siltronic.com/en/our-company/about-siltronic.html",
+      "finalUrl": "https://www.siltronic.com/en/our-company/about-siltronic.html",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 5347,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "siltronic_reference_2",
+      "company": "siltronic",
+      "url": "https://www.siltronic.com/en/products.html",
+      "finalUrl": "https://www.siltronic.com/en/products.html",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 10089,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "entegris_reference_1",
+      "company": "entegris",
+      "url": "https://www.entegris.com/en/home/about-us/corporate-overview.html",
+      "finalUrl": "https://www.entegris.com/en/home/about-us/corporate-overview.html",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 16000,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "entegris_reference_2",
+      "company": "entegris",
+      "url": "https://www.entegris.com/en/home/products.html",
+      "finalUrl": "https://www.entegris.com/en/home/products.html",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 16000,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "jsr_reference_1",
+      "company": "jsr",
+      "url": "https://www.jsr.co.jp/jsr_e/company/profile.html",
+      "finalUrl": "https://www.jsr.co.jp/jsr_e/company/profile.html",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 2377,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "jsr_reference_2",
+      "company": "jsr",
+      "url": "https://www.jsr.co.jp/jsr_e/products/em/",
+      "finalUrl": "https://www.jsr.co.jp/jsr_e/products/em/",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 5408,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "cadence_reference_1",
+      "company": "cadence",
+      "url": "https://www.cadence.com/en_US/home/resources/factsheets/cadence-design-systems-inc-fs.html",
+      "finalUrl": "https://www.cadence.com/en_US/home/resources/factsheets/cadence-design-systems-inc-fs.html",
+      "httpStatus": 403,
+      "evidence": "restricted",
+      "bodyCharactersRetained": 0,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "cadence_reference_2",
+      "company": "cadence",
+      "url": "https://www.cadence.com/en_US/home/tools/digital-design-and-signoff.html",
+      "finalUrl": "https://www.cadence.com/en_US/home/tools/digital-design-and-signoff.html",
+      "httpStatus": 403,
+      "evidence": "restricted",
+      "bodyCharactersRetained": 0,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "arm_reference_1",
+      "company": "arm",
+      "url": "https://www.arm.com/company",
+      "finalUrl": "https://www.arm.com/company",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 3452,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "arm_reference_2",
+      "company": "arm",
+      "url": "https://www.arm.com/products/silicon-ip-cpu",
+      "finalUrl": "https://www.arm.com/products/silicon-ip-cpu",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 16000,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "arm_reference_3",
+      "company": "arm",
+      "url": "https://www.arm.com/company/offices",
+      "finalUrl": "https://www.arm.com/company/offices",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 4111,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "amkor_reference_1",
+      "company": "amkor",
+      "url": "https://amkor.com/amkor-overview/",
+      "finalUrl": "https://amkor.com/amkor-overview/",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 2214,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "amkor_reference_2",
+      "company": "amkor",
+      "url": "https://amkor.com/technology/25d-3d-tsv/",
+      "finalUrl": "https://amkor.com/technology/25d-3d-tsv/",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 2027,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "jcet_reference_1",
+      "company": "jcet",
+      "url": "https://www.jcetglobal.com/en/site/JCET-overview",
+      "finalUrl": "https://www.jcetglobal.com/en/site/JCET-overview",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 2858,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "jcet_reference_2",
+      "company": "jcet",
+      "url": "https://www.jcetglobal.com/en/site/packaging-services",
+      "finalUrl": "https://www.jcetglobal.com/en/site/packaging-services",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 2285,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "pti_reference_1",
+      "company": "pti",
+      "url": "https://www.pti.com.tw/en/about/about",
+      "finalUrl": "https://www.pti.com.tw/en/about/about",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 1529,
+      "checkedAt": "2026-10-25"
+    },
+    {
+      "id": "pti_reference_2",
+      "company": "pti",
+      "url": "https://www.pti.com.tw/en/tech/advancetechnologycategories/tsv-solution",
+      "finalUrl": "https://www.pti.com.tw/en/tech/advancetechnologycategories/tsv-solution",
+      "httpStatus": 200,
+      "evidence": "http-body-read",
+      "bodyCharactersRetained": 4014,
+      "checkedAt": "2026-10-25"
+    }
+  ]
+}

@@ -1,0 +1,328 @@
+{
+  "version": "1.25.0",
+  "checkedAt": "2026-10-25",
+  "scope": "Existing 10 company profiles; genuine logos and representative company images.",
+  "story": "Company directory → local genuine media and source/credit links → company detail → related concept cards.",
+  "counts": {
+    "companies": 10,
+    "logos": 10,
+    "images": 10,
+    "assetBytes": 2006946,
+    "officialLogos": 9,
+    "publicWikiLogos": 1,
+    "officialImages": 8,
+    "commonsPhotos": 2
+  },
+  "preservation": "Original image bytes preserved; contain layout, no cropping, recoloring or generated substitute logos.",
+  "attribution": {
+    "tsmcPhoto": "Briáxis F. Mendes (孟必思), June 2020, CC BY-SA 4.0",
+    "synopsysPhoto": "M. O. Stevens, 2009, CC BY-SA 3.0",
+    "logos": "Rights remain with the respective trademark owners. TSMC logo obtained from Wikipedia public file."
+  },
+  "verification": {
+    "fullChecks": "npm run check PASS",
+    "build": "npm run build -- --webpack PASS",
+    "runtimeCompanies": "directory + 10 profiles + 30 reverse concept sections + industry + 20 assets/hash/MIME + metadata + unknown route 404 PASS",
+    "runtimeContent": "all 30 existing concept pages PASS",
+    "desktop": [
+      {
+        "credit": "NVIDIA H100 SXM5 모듈 · 2022년 공개 제품 이미지© NVIDIA이미지 출처 · 새 창 ↗",
+        "images": [
+          {
+            "loaded": true,
+            "naturalHeight": 55,
+            "naturalWidth": 300,
+            "src": "/assets/companies/nvidia/logo.svg"
+          },
+          {
+            "loaded": true,
+            "naturalHeight": 291,
+            "naturalWidth": 625,
+            "src": "/assets/companies/nvidia/image.jpg"
+          }
+        ],
+        "path": "/company/nvidia/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "credit": "AMD 미국 산타클라라 본사 · 공식 사진© AMD이미지 출처 · 새 창 ↗",
+        "images": [
+          {
+            "loaded": true,
+            "naturalHeight": 72,
+            "naturalWidth": 300,
+            "src": "/assets/companies/amd/logo.svg"
+          },
+          {
+            "loaded": true,
+            "naturalHeight": 450,
+            "naturalWidth": 800,
+            "src": "/assets/companies/amd/image.jpg"
+          }
+        ],
+        "path": "/company/amd/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "credit": "TSMC 타이중 공장 외관 · 2020년 6월Briáxis F. Mendes (孟必思)이미지 출처 · 새 창 ↗CC BY-SA 4.0 · 새 창 ↗",
+        "images": [
+          {
+            "loaded": true,
+            "naturalHeight": 215,
+            "naturalWidth": 273,
+            "src": "/assets/companies/tsmc/logo.svg"
+          },
+          {
+            "loaded": true,
+            "naturalHeight": 720,
+            "naturalWidth": 1280,
+            "src": "/assets/companies/tsmc/image.jpg"
+          }
+        ],
+        "path": "/company/tsmc/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "credit": "삼성전자 메모리·스토리지 제품 · 공식 이미지© Samsung Electronics이미지 출처 · 새 창 ↗",
+        "images": [
+          {
+            "loaded": true,
+            "naturalHeight": 16,
+            "naturalWidth": 104,
+            "src": "/assets/companies/samsung/logo.svg"
+          },
+          {
+            "loaded": true,
+            "naturalHeight": 385,
+            "naturalWidth": 1156,
+            "src": "/assets/companies/samsung/image.jpg"
+          }
+        ],
+        "path": "/company/samsung/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "credit": "SK하이닉스 HBM 패키지와 메모리 다이 · 공식 이미지© SK hynix이미지 출처 · 새 창 ↗",
+        "images": [
+          {
+            "loaded": true,
+            "naturalHeight": 150,
+            "naturalWidth": 286,
+            "src": "/assets/companies/sk-hynix/logo.svg"
+          },
+          {
+            "loaded": true,
+            "naturalHeight": 720,
+            "naturalWidth": 976,
+            "src": "/assets/companies/sk-hynix/image.jpg"
+          }
+        ],
+        "path": "/company/sk-hynix/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "credit": "ASML 클린룸의 조립 현장 · 공식 사진© ASML이미지 출처 · 새 창 ↗",
+        "images": [
+          {
+            "loaded": true,
+            "naturalHeight": 1284,
+            "naturalWidth": 1920,
+            "src": "/assets/companies/asml/image.jpg"
+          }
+        ],
+        "path": "/company/asml/",
+        "scroll": 1265,
+        "svgUses": [
+          "/assets/companies/asml/logo.svg#logo"
+        ],
+        "width": 1265
+      },
+      {
+        "credit": "어플라이드머티어리얼즈 오스틴 제조 시설 · 공식 사진© Applied Materials이미지 출처 · 새 창 ↗",
+        "images": [
+          {
+            "loaded": true,
+            "naturalHeight": 198,
+            "naturalWidth": 618,
+            "src": "/assets/companies/applied-materials/logo.png"
+          },
+          {
+            "loaded": true,
+            "naturalHeight": 1080,
+            "naturalWidth": 1920,
+            "src": "/assets/companies/applied-materials/image.jpg"
+          }
+        ],
+        "path": "/company/applied-materials/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "credit": "시놉시스 미국 힐즈버러 캠퍼스 · 2009년M. O. Stevens이미지 출처 · 새 창 ↗CC BY-SA 3.0 · 새 창 ↗",
+        "images": [
+          {
+            "loaded": true,
+            "naturalHeight": 36,
+            "naturalWidth": 166,
+            "src": "/assets/companies/synopsys/logo.svg"
+          },
+          {
+            "loaded": true,
+            "naturalHeight": 1126,
+            "naturalWidth": 1705,
+            "src": "/assets/companies/synopsys/image.jpg"
+          }
+        ],
+        "path": "/company/synopsys/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "credit": "SUMCO 실리콘 웨이퍼 · 공식 제품 이미지© SUMCO이미지 출처 · 새 창 ↗",
+        "images": [
+          {
+            "loaded": true,
+            "naturalHeight": 453,
+            "naturalWidth": 1200,
+            "src": "/assets/companies/sumco/logo.webp"
+          },
+          {
+            "loaded": true,
+            "naturalHeight": 130,
+            "naturalWidth": 350,
+            "src": "/assets/companies/sumco/image.webp"
+          }
+        ],
+        "path": "/company/sumco/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      },
+      {
+        "credit": "ASE powerSiP 패키징 구조 · 공식 기술 이미지© ASE이미지 출처 · 새 창 ↗",
+        "images": [
+          {
+            "loaded": true,
+            "naturalHeight": 300,
+            "naturalWidth": 600,
+            "src": "/assets/companies/ase/logo.png"
+          },
+          {
+            "loaded": true,
+            "naturalHeight": 210,
+            "naturalWidth": 351,
+            "src": "/assets/companies/ase/image.png"
+          }
+        ],
+        "path": "/company/ase/",
+        "scroll": 1265,
+        "svgUses": [],
+        "width": 1265
+      }
+    ],
+    "mobile360": [
+      {
+        "credit": "NVIDIA H100 SXM5 모듈 · 2022년 공개 제품 이미지© NVIDIA이미지 출처 · 새 창 ↗",
+        "imageLoaded": true,
+        "mediaWidth": 321,
+        "path": "/company/nvidia/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "credit": "AMD 미국 산타클라라 본사 · 공식 사진© AMD이미지 출처 · 새 창 ↗",
+        "imageLoaded": true,
+        "mediaWidth": 321,
+        "path": "/company/amd/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "credit": "TSMC 타이중 공장 외관 · 2020년 6월Briáxis F. Mendes (孟必思)이미지 출처 · 새 창 ↗CC BY-SA 4.0 · 새 창 ↗",
+        "imageLoaded": true,
+        "mediaWidth": 321,
+        "path": "/company/tsmc/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "credit": "삼성전자 메모리·스토리지 제품 · 공식 이미지© Samsung Electronics이미지 출처 · 새 창 ↗",
+        "imageLoaded": true,
+        "mediaWidth": 321,
+        "path": "/company/samsung/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "credit": "SK하이닉스 HBM 패키지와 메모리 다이 · 공식 이미지© SK hynix이미지 출처 · 새 창 ↗",
+        "imageLoaded": true,
+        "mediaWidth": 321,
+        "path": "/company/sk-hynix/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "credit": "ASML 클린룸의 조립 현장 · 공식 사진© ASML이미지 출처 · 새 창 ↗",
+        "imageLoaded": true,
+        "mediaWidth": 321,
+        "path": "/company/asml/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "credit": "어플라이드머티어리얼즈 오스틴 제조 시설 · 공식 사진© Applied Materials이미지 출처 · 새 창 ↗",
+        "imageLoaded": true,
+        "mediaWidth": 321,
+        "path": "/company/applied-materials/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "credit": "시놉시스 미국 힐즈버러 캠퍼스 · 2009년M. O. Stevens이미지 출처 · 새 창 ↗CC BY-SA 3.0 · 새 창 ↗",
+        "imageLoaded": true,
+        "mediaWidth": 321,
+        "path": "/company/synopsys/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "credit": "SUMCO 실리콘 웨이퍼 · 공식 제품 이미지© SUMCO이미지 출처 · 새 창 ↗",
+        "imageLoaded": true,
+        "mediaWidth": 321,
+        "path": "/company/sumco/",
+        "scroll": 345,
+        "width": 345
+      },
+      {
+        "credit": "ASE powerSiP 패키징 구조 · 공식 기술 이미지© ASE이미지 출처 · 새 창 ↗",
+        "imageLoaded": true,
+        "mediaWidth": 321,
+        "path": "/company/ase/",
+        "scroll": 345,
+        "width": 345
+      }
+    ],
+    "asml": "Official external SVG symbol visibly renders in browser; no logo paths recreated.",
+    "filters": "HBM query + memory + KR + hbm = Samsung and SK hynix; back restores filters.",
+    "credits": "Card source link click leaves the local directory in place rather than following the stretched company detail link. External destination loading is not counted as an HTTP audit.",
+    "glossary": "SK hynix mobile memory popover x=18, right=327, bottom=782 on 360x800; Escape dismisses.",
+    "browserConsole": "No error/warn logs captured."
+  },
+  "limitations": [
+    "Company collection remains the current 10; later expansion to 50 is separate.",
+    "Historic photographs are dated in captions; Synopsys campus photo is not presented as current headquarters.",
+    "Official/public availability is not a blanket asset license. Credits, source links and individual Commons licenses are retained."
+  ]
+}
