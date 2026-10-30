@@ -25,7 +25,7 @@ const checks = [
   ['mobile menu scroll lock', header.includes("document.body.style.overflow = 'hidden'")],
   ['magnifier-adjacent inline search', header.includes('header-direct-search') && header.includes('header-direct-search-input-wrap') && header.includes('header-direct-search-input') && header.includes('setSearchOpen') && !header.includes('header-search-panel')],
   ['header search stays inside header', css.includes('.header-direct-search.is-open') && css.includes('right:44px') && css.includes('width:calc(100% - 44px)')],
-  ['header search direct suggestions', header.includes('suggestConcepts') && header.includes('searchSuggestions') && header.includes('header-direct-search-results')],
+  ['header search direct suggestions', header.includes('suggestUnified') && header.includes('searchSuggestions') && header.includes('header-direct-search-results')],
   ['mobile header action slots remain fixed after search close', css.includes('Mobile header action slots stay fixed when inline search toggles') && css.includes('flex:0 0 94px') && css.includes('.menu-toggle{') && css.includes('display:flex!important')],
   ['brand letter spacing', css.includes('.site-header .brand b') && css.includes('letter-spacing:.16em')],
   ['footer direct contact form', footer.includes('studiokei805@gmail.com') && footer.includes('ContactForm') && footer.includes('setContactOpen(true)')],

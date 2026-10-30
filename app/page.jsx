@@ -3,6 +3,7 @@ import HeroSlider from '@/components/HeroSlider';
 import ConceptCard from '@/components/ConceptCard';
 import SectionTitle from '@/components/SectionTitle';
 import SearchAutocomplete from '@/components/SearchAutocomplete';
+import { searchIndex } from '@/lib/search-index.mjs';
 import { byId, categories } from '@/lib/data.mjs';
 import { absoluteUrl, siteDescription, siteLocale, siteName, socialImagePath } from '@/lib/site-config.mjs';
 
@@ -47,7 +48,7 @@ export default function HomePage() {
             <a className="button mint" href="/concept/semiconductor/">처음이라면 여기서 시작</a>
             <a className="button light-outline" href="/learn/">전체 학습 경로</a>
           </div>
-          <SearchAutocomplete id="home-search" className="hero-search" />
+          <SearchAutocomplete id="home-search" className="hero-search" items={searchIndex} />
           <div className="quick-search">
             <span>궁금한 개념</span>
             <a href="/concept/wafer/">웨이퍼</a>

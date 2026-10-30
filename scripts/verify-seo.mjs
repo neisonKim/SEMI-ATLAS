@@ -7,7 +7,7 @@ const sitemap = await readFile(new URL('../public/sitemap.xml', import.meta.url)
 const robots = await readFile(new URL('../public/robots.txt', import.meta.url), 'utf8');
 const homePage = await readFile(new URL('../app/page.jsx', import.meta.url), 'utf8');
 const layout = await readFile(new URL('../app/layout.jsx', import.meta.url), 'utf8');
-const expectedCount = 8 + concepts.length + companies.length;
+const expectedCount = 9 + concepts.length + companies.length;
 const locCount = (sitemap.match(/<loc>/g) || []).length;
 
 const problems = [];
@@ -19,6 +19,7 @@ for (const company of companies) {
   if (!sitemap.includes(`<loc>${siteUrl}/company/${company.id}/</loc>`)) problems.push(`Company missing from sitemap: ${company.id}`);
 }
 if (!sitemap.includes(`<loc>${siteUrl}/companies/</loc>`)) problems.push('Company directory missing from sitemap');
+if (!sitemap.includes(`<loc>${siteUrl}/search/</loc>`)) problems.push('Unified search missing from sitemap');
 if (!robots.includes(`Sitemap: ${siteUrl}/sitemap.xml`)) problems.push('robots sitemap URL mismatch');
 if (!homePage.includes("title: homeTitle") || !homePage.includes('description: siteDescription')) problems.push('home OG title/description missing');
 if (!homePage.includes('images: [{') || !homePage.includes('absoluteUrl(socialImagePath)')) problems.push('home OG image missing');

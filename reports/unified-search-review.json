@@ -1,0 +1,182 @@
+{
+  "version": "1.27.0",
+  "checkedAt": "2026-10-31",
+  "scope": "Unified concept/company search in the shared header and home search, with a dedicated /search/ page.",
+  "counts": {
+    "concepts": 30,
+    "companies": 50,
+    "records": 80,
+    "sitemapUrls": 89
+  },
+  "flow": "Browser search input → compact records derived on the server from canonical concept/company data → client ranking and kind filter → matching concept/company detail URL. No external search service or credentials.",
+  "behavior": [
+    "Korean/English names, aliases, product/technology names, canonical related concepts and multiple tokens.",
+    "Exact primary names rank above aliases, avoiding company/concept alias collisions.",
+    "At most six autocomplete options; both kinds remain discoverable.",
+    "No selected option: Enter opens all results. Arrow/Enter selects a specific result. Escape closes and restores header toggle focus. Tab reaches all options and the all-results link.",
+    "Kind counts, empty/filtered-empty recovery, reset focus and URL/back restoration.",
+    "Composition guards added to avoid Enter navigation while an IME composition is active. Native OS IME composition was not driven by browser automation.",
+    "Search records passed from server layout/pages; header no longer imports full lesson content.",
+    "Existing concept category/level filters and company facets retained."
+  ],
+  "verification": {
+    "fullCheck": "PASS",
+    "productionBuild": "PASS: next build --webpack, 91 static/internal pages",
+    "http": {
+      "searchRoute": 200,
+      "canonical": "PASS",
+      "websiteSearchAction": "PASS: /search/?q={search_term_string}",
+      "renderedResultLinks": 80,
+      "resultLinkStatuses": "80/80 HTTP 200",
+      "homeAndDirectories": "HTTP 200"
+    },
+    "desktop": {
+      "clientWidth": 1265,
+      "scrollWidth": 1265,
+      "hbmResults": 6
+    },
+    "browser": {
+      "header": {
+        "hbm": [
+          "concept:hbm",
+          "company:nvidia",
+          "company:samsung",
+          "company:sk-hynix",
+          "company:micron",
+          "company:tsmc"
+        ],
+        "arrowWrap": true,
+        "escapeFocusRestored": true,
+        "escapeQueryRetained": true,
+        "enterAllResults": true
+      },
+      "flows": [
+        {
+          "case": "HBM company filter → Micron → back",
+          "pass": true,
+          "restored": "?q=HBM&kind=company, 5 companies"
+        },
+        {
+          "case": "Snapdragon → Qualcomm keyboard selection → back",
+          "pass": true
+        },
+        {
+          "case": "Type-only zero results → show other kind",
+          "pass": true
+        },
+        {
+          "case": "Unknown query → empty suggestion/result → Escape → reset focus",
+          "pass": true
+        },
+        {
+          "case": "Mobile menu → existing concept search and level filter",
+          "pass": true
+        },
+        {
+          "case": "Home product alias → unified results",
+          "pass": true
+        },
+        {
+          "case": "Header zero matches → Enter → empty results",
+          "pass": true
+        },
+        {
+          "case": "Keyboard Tab through suggestions to all-results link → Enter",
+          "pass": true
+        }
+      ],
+      "responsive": [
+        {
+          "client": 345,
+          "columns": "320.667px",
+          "input": {
+            "bottom": 279.2916717529297,
+            "height": 42,
+            "left": 23.666667938232425,
+            "right": 269.0000114440918,
+            "top": 237.2916717529297,
+            "width": 245.33334350585935,
+            "x": 23.666667938232425,
+            "y": 237.2916717529297
+          },
+          "keys": [
+            "concept:hbm",
+            "company:nvidia",
+            "company:samsung",
+            "company:sk-hynix",
+            "company:micron",
+            "company:tsmc"
+          ],
+          "scroll": 345,
+          "width": 360
+        },
+        {
+          "client": 375,
+          "columns": "346.667px",
+          "input": {
+            "bottom": 321.9583435058594,
+            "height": 42,
+            "left": 51.66666793823242,
+            "right": 291.0000114440918,
+            "top": 279.9583435058594,
+            "width": 239.33334350585935,
+            "x": 51.66666793823242,
+            "y": 279.9583435058594
+          },
+          "keys": [
+            "concept:hbm",
+            "company:nvidia",
+            "company:samsung",
+            "company:sk-hynix",
+            "company:micron",
+            "company:tsmc"
+          ],
+          "scroll": 375,
+          "width": 390
+        },
+        {
+          "client": 753,
+          "columns": "346.333px 346.333px",
+          "input": {
+            "bottom": 353.03125,
+            "height": 42,
+            "left": 71.66667175292969,
+            "right": 646.0000457763672,
+            "top": 311.03125,
+            "width": 574.3333740234375,
+            "x": 71.66667175292969,
+            "y": 311.03125
+          },
+          "keys": [
+            "concept:hbm",
+            "company:nvidia",
+            "company:samsung",
+            "company:sk-hynix",
+            "company:micron",
+            "company:tsmc"
+          ],
+          "scroll": 753,
+          "width": 768
+        }
+      ],
+      "mobilePanel": {
+        "active": "/company/tsmc/",
+        "client": 345,
+        "panel": {
+          "bottom": 531.8646087646484,
+          "height": 467.1979370117187,
+          "left": 10.666666984558104,
+          "right": 338.6666669845581,
+          "top": 64.66667175292969,
+          "width": 328,
+          "x": 10.666666984558104,
+          "y": 64.66667175292969
+        },
+        "scroll": 345
+      },
+      "console": []
+    }
+  },
+  "application": "Hash-check original files, verify repository remote, back up changed existing files, apply only the manifest and run original npm run check. See application result artifact for completion.",
+  "delivery": "Local project changes only; no commit, push or external deployment."
+}

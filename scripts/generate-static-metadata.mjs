@@ -6,6 +6,7 @@ import { siteUrl } from '../lib/site-config.mjs';
 const staticRoutes = [
   '/',
   '/encyclopedia/',
+  '/search/',
   '/learn/',
   '/process/',
   '/packaging/',

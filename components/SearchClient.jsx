@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
-import { categories, concepts } from '@/lib/data.mjs';
+import { categories, concepts, levels } from '@/lib/data.mjs';
 import ConceptCard from './ConceptCard';
 import { SearchIcon } from './Icons';
 import SearchAutocomplete from './SearchAutocomplete';
@@ -101,6 +101,9 @@ export default function SearchClient() {
           className="search-large"
           value={query}
           onValueChange={setQuery}
+          conceptItems={concepts}
+          categories={categories}
+          levels={levels}
           category={category}
           level={level}
           live

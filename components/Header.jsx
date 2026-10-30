@@ -3,8 +3,8 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { SearchIcon } from './Icons';
-import { categories, concepts, levels } from '@/lib/data.mjs';
-import { suggestConcepts } from '@/lib/search.mjs';
+import { suggestUnified, unifiedSearchUrl } from '@/lib/unified-search.mjs';
+import SearchSuggestionList from './SearchSuggestionList';
 
 const navItems = [
   ['learn', '/learn/', '처음 배우기'],
@@ -14,9 +14,7 @@ const navItems = [
   ['companies', '/companies/', '기업 사전'],
 ];
 
-const categoryNames = Object.fromEntries(categories.map((item) => [item.id, item.name]));
-
-export default function Header() {
+export default function Header({ searchItems }) {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
@@ -28,10 +26,11 @@ export default function Header() {
   const searchButtonRef = useRef(null);
   const searchPanelRef = useRef(null);
   const searchInputRef = useRef(null);
+  const searchComposing = useRef(false);
 
   const searchSuggestions = useMemo(
-    () => suggestConcepts(concepts, { query: searchQuery, limit: 5 }),
-    [searchQuery],
+    () => suggestUnified(searchItems, { query: searchQuery, limit: 6 }),
+    [searchItems, searchQuery],
   );
 
   useEffect(() => {
@@ -69,6 +68,7 @@ export default function Header() {
     };
     const onKey = (event) => {
       if (event.key === 'Escape' && searchOpen) {
+        event.preventDefault();
         setSearchOpen(false);
         setActiveSearchIndex(-1);
         searchButtonRef.current?.focus();
@@ -108,9 +108,9 @@ export default function Header() {
   };
 
   const goToSearchSuggestion = (index = 0) => {
-    const target = searchSuggestions[index]?.concept;
+    const target = searchSuggestions[index];
     if (!target) return false;
-    window.location.assign(`/concept/${target.id}/`);
+    window.location.assign(target.href);
     return true;
   };
 
@@ -119,18 +119,23 @@ export default function Header() {
       openSearch();
       return;
     }
-    if (searchQuery.trim() && goToSearchSuggestion(activeSearchIndex >= 0 ? activeSearchIndex : 0)) return;
+    if (searchQuery.trim()) {
+      window.location.assign(unifiedSearchUrl({ query: searchQuery }));
+      return;
+    }
     setSearchOpen(false);
     setActiveSearchIndex(-1);
   };
 
   const onSearchSubmit = (event) => {
     event.preventDefault();
-    if (goToSearchSuggestion(activeSearchIndex >= 0 ? activeSearchIndex : 0)) return;
-    searchInputRef.current?.focus();
+    if (searchComposing.current) return;
+    if (activeSearchIndex >= 0 && goToSearchSuggestion(activeSearchIndex)) return;
+    window.location.assign(unifiedSearchUrl({ query: searchQuery }));
   };
 
   const onSearchKeyDown = (event) => {
+    if (event.nativeEvent.isComposing || searchComposing.current || event.keyCode === 229) return;
     if (event.key === 'ArrowDown' && searchSuggestions.length) {
       event.preventDefault();
       setActiveSearchIndex((current) => (current + 1) % searchSuggestions.length);
@@ -141,9 +146,9 @@ export default function Header() {
       setActiveSearchIndex((current) => (current <= 0 ? searchSuggestions.length - 1 : current - 1));
       return;
     }
-    if (event.key === 'Enter' && searchSuggestions.length) {
+    if (event.key === 'Enter' && activeSearchIndex >= 0 && searchSuggestions.length) {
       event.preventDefault();
-      goToSearchSuggestion(activeSearchIndex >= 0 ? activeSearchIndex : 0);
+      goToSearchSuggestion(activeSearchIndex);
     }
   };
 
@@ -190,22 +195,33 @@ export default function Header() {
               ref={searchPanelRef}
               className={`header-direct-search${searchOpen ? ' is-open' : ''}`}
               role="search"
+              onBlur={event => {
+                if (!event.currentTarget.contains(event.relatedTarget)) {
+                  setSearchOpen(false);
+                  setActiveSearchIndex(-1);
+                }
+              }}
               onSubmit={onSearchSubmit}
             >
               <div className="header-direct-search-input-wrap" aria-hidden={!searchOpen}>
-                <label className="sr-only" htmlFor="header-direct-search-input">반도체 용어 검색</label>
+                <label className="sr-only" htmlFor="header-direct-search-input">반도체 개념·기업 검색</label>
                 <input
                   ref={searchInputRef}
                   id="header-direct-search-input"
                   type="search"
                   inputMode="search"
                   autoComplete="off"
-                  placeholder="웨이퍼, HBM, 노광…"
+                  placeholder="HBM, 삼성전자, 스냅드래곤…"
+                  maxLength={200}
+                  role="combobox"
+                  aria-autocomplete="list"
                   value={searchQuery}
                   tabIndex={searchOpen ? 0 : -1}
-                  aria-expanded={searchOpen && searchSuggestions.length > 0}
+                  aria-expanded={searchOpen && Boolean(searchQuery.trim())}
                   aria-controls="header-direct-search-suggestions"
-                  aria-activedescendant={activeSearchIndex >= 0 ? `header-direct-search-suggestion-${activeSearchIndex}` : undefined}
+                  aria-activedescendant={searchOpen && searchSuggestions[activeSearchIndex] ? `header-direct-search-suggestions-${activeSearchIndex}` : undefined}
+                  onCompositionStart={() => { searchComposing.current = true; }}
+                  onCompositionEnd={() => { searchComposing.current = false; }}
                   onChange={(event) => {
                     setSearchQuery(event.target.value);
                     setActiveSearchIndex(-1);
@@ -217,7 +233,7 @@ export default function Header() {
                 ref={searchButtonRef}
                 className={`icon-button header-search-toggle${searchOpen ? ' is-open' : ''}`}
                 type="button"
-                aria-label={searchOpen ? '검색 실행 또는 닫기' : '용어 검색'}
+                aria-label={searchOpen ? '검색 실행 또는 닫기' : '개념·기업 검색'}
                 aria-expanded={searchOpen}
                 aria-controls="header-direct-search-input"
                 onClick={onSearchToggle}
@@ -225,36 +241,15 @@ export default function Header() {
                 <SearchIcon />
               </button>
 
-              {searchOpen && searchQuery.trim() && searchSuggestions.length > 0 && (
-                <div
-                  className="autocomplete-panel header-direct-search-results"
+              {searchOpen && searchQuery.trim() && (
+                <SearchSuggestionList
                   id="header-direct-search-suggestions"
-                  role="listbox"
-                  aria-label="추천 개념"
-                >
-                  <div className="autocomplete-kicker">추천 개념</div>
-                  {searchSuggestions.map(({ concept, reason }, index) => (
-                    <a
-                      id={`header-direct-search-suggestion-${index}`}
-                      role="option"
-                      aria-selected={activeSearchIndex === index}
-                      className={`autocomplete-item${activeSearchIndex === index ? ' active' : ''}`}
-                      href={`/concept/${concept.id}/`}
-                      key={concept.id}
-                      onMouseEnter={() => setActiveSearchIndex(index)}
-                    >
-                      <span className="autocomplete-index">{String(concept.num).padStart(2, '0')}</span>
-                      <span className="autocomplete-copy">
-                        <strong>{concept.title}</strong>
-                        <small>{concept.en}</small>
-                      </span>
-                      <span className="autocomplete-meta">
-                        <b>{reason === 'connected' ? '연결 개념' : categoryNames[concept.category]}</b>
-                        <small>{levels[concept.level]}</small>
-                      </span>
-                    </a>
-                  ))}
-                </div>
+                  className="header-direct-search-results"
+                  items={searchSuggestions}
+                  activeIndex={activeSearchIndex}
+                  onActiveChange={setActiveSearchIndex}
+                  href={unifiedSearchUrl({ query: searchQuery })}
+                />
               )}
             </form>
             <a className="button mint header-start" href="/concept/semiconductor/">첫 개념 읽기</a>

@@ -1,5 +1,6 @@
 import './globals.css';
 import Header from '@/components/Header';
+import { searchIndex } from '@/lib/search-index.mjs';
 import Footer from '@/components/Footer';
 import { absoluteUrl, siteDescription, siteLocale, siteName, siteUrl, socialImagePath } from '@/lib/site-config.mjs';
 
@@ -42,7 +43,7 @@ export default function RootLayout({ children }) {
       '@type': 'SearchAction',
       target: {
         '@type': 'EntryPoint',
-        urlTemplate: `${absoluteUrl('/encyclopedia/')}?q={search_term_string}`,
+        urlTemplate: `${absoluteUrl('/search/')}?q={search_term_string}`,
       },
       'query-input': 'required name=search_term_string',
     },
@@ -52,7 +53,7 @@ export default function RootLayout({ children }) {
     <html lang="ko">
       <body id="top">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
-        <Header />
+        <Header searchItems={searchIndex} />
         <div className="site-page-reveal">
           {children}
           <Footer />
