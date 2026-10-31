@@ -1,0 +1,1124 @@
+{
+  "version": "1.29.0",
+  "checkedAt": "2026-10-31",
+  "scope": "Three explanation depths and original SVG structure/process/role illustrations for the existing 30 concepts, with quiz review links. No new concept expansion.",
+  "counts": {
+    "concepts": 30,
+    "explanationLevels": 90,
+    "distinctParagraphs": 180,
+    "svgDiagrams": 30,
+    "svgBytes": 121725,
+    "svgTextLabels": 214,
+    "quizQuestionsWithReviewTargets": 90,
+    "newPrimaryReferences": 5,
+    "sitemapUrls": 89
+  },
+  "content": [
+    "Separate easy meaning, causal operation and technical assumptions/limitations for every concept.",
+    "Physical cross-sections, functional circuit relations, process flows and business role maps are identified separately.",
+    "Original authored SVGs, no reproduced external graphic or generated bitmap. Captions identify example geometries, scale/count limitations and product/generation variation.",
+    "Planar nMOS gate/oxide/channel and conventional D-to-S current; DRAM access transistor/capacitor and sense/restore; NAND page/block hierarchy; silicon-consuming oxidation; separated ALD dose/purge; insulated TSV and joining; HBM stack/interface/interposer/substrate distinctions reviewed."
+  ],
+  "sources": {
+    "newReadablePrimarySources": [
+      {
+        "key": "mit_planar_mos",
+        "url": "https://ocw.mit.edu/courses/6-720j-integrated-microelectronic-devices-spring-2007/f1045f97ead60566639079883da94b59_lecture24.pdf",
+        "evidence": "Read official PDF text and requested the nMOS cross-section page."
+      },
+      {
+        "key": "berkeley_dram",
+        "url": "https://people.eecs.berkeley.edu/~pattrsn/294/lec2.html",
+        "evidence": "Read storage-cell/wordline/bitline/sense-amplifier restore text; historical fundamentals, not current product timing."
+      },
+      {
+        "key": "rohm_dram",
+        "url": "https://techweb.rohm.com/product/memory/memories/23812/",
+        "evidence": "Read official 1T1C and write control description."
+      },
+      {
+        "key": "oxford_ald_overview",
+        "url": "https://plasma.oxinst.com/technologies/atomic-layer-deposition",
+        "evidence": "Read four-step self-limiting dose/purge sequence."
+      },
+      {
+        "key": "intel_packaging_overview",
+        "url": "https://www.intel.com/content/www/us/en/foundry/packaging.html",
+        "evidence": "Read 2.5D interposer/bridge and 3D hybrid-bonding distinctions."
+      }
+    ],
+    "existing": "Existing 67 source catalog records and 81 main lesson reference links retained. New references are scoped to the explanation/diagram bibliography. Existing source URLs were not all re-audited online in this change.",
+    "excluded": "Micron educator PDF appeared in search but opening returned 404; it is excluded from shipped references."
+  },
+  "interaction": [
+    "Native buttons with tablist/tab/tabpanel, arrow wrapping, Home/End and focus.",
+    "Hash deep links reveal the selected explanation; reload/back restores matching mode. Stale animation-frame callbacks cannot steal focus after a newer fragment navigation.",
+    "Quiz feedback keeps the original review link and adds the relevant explanation mode plus diagram.",
+    "Diagram target is programmatically/native-fragment focusable and uses the global header offset once.",
+    "Quiz questions/revision and progress schema unchanged; prior HBM reading and 3/3 result restored in QA."
+  ],
+  "verification": {
+    "fullCheck": "PASS",
+    "finalWebpackBuild": "PASS: 91 static/internal pages",
+    "http": "All 30 explanation pages/90 panels/30 SVG HTTP+MIME/alt/scope/source checks PASS; all 30 existing content and learning page regressions PASS.",
+    "svg": "Deterministic regeneration, passive SVG-only security check, unique assets, 214 native text bounds and no pairwise text overlaps. Full contact sheet and key device/package schematics visually reviewed.",
+    "contrast": "Every actual SVG text fill checked at >=4.5:1 against the seven light illustration palette backgrounds. New small UI captions/hints darkened. This is scoped text contrast testing, not a full-site accessibility certification.",
+    "browser": {
+      "flows": [
+        {
+          "case": "Old HBM read/3-of-3 result preserved; initial principle deep link; arrow wrap/Home; quiz caution link reveals and focuses correct panel",
+          "pass": true
+        },
+        {
+          "case": "Diagram source disclosure, back to explanation, reload preserves hash-selected caution",
+          "pass": true
+        },
+        {
+          "case": "30 mobile pages / 90 mode switches / 30 SVGs loaded; mobile quiz → principle panel focus → diagram",
+          "pass": true
+        },
+        {
+          "case": "Final native diagram anchor moves focus to figure; stale explanation focus guarded; mobile fixed-header offset corrected",
+          "pass": true
+        }
+      ],
+      "desktop": [
+        {
+          "client": 1265,
+          "id": "semiconductor",
+          "panels": 3,
+          "scroll": 1265,
+          "selected": "explain-tab-principle"
+        },
+        {
+          "client": 1265,
+          "id": "conductors",
+          "panels": 3,
+          "scroll": 1265,
+          "selected": "explain-tab-principle"
+        },
+        {
+          "client": 1265,
+          "id": "silicon",
+          "panels": 3,
+          "scroll": 1265,
+          "selected": "explain-tab-principle"
+        },
+        {
+          "client": 1265,
+          "id": "wafer",
+          "panels": 3,
+          "scroll": 1265,
+          "selected": "explain-tab-principle"
+        },
+        {
+          "client": 1265,
+          "id": "transistor",
+          "panels": 3,
+          "scroll": 1265,
+          "selected": "explain-tab-principle"
+        },
+        {
+          "client": 1265,
+          "id": "mosfet",
+          "panels": 3,
+          "scroll": 1265,
+          "selected": "explain-tab-principle"
+        },
+        {
+          "client": 1265,
+          "id": "logic-memory",
+          "panels": 3,
+          "scroll": 1265,
+          "selected": "explain-tab-principle"
+        },
+        {
+          "client": 1265,
+          "id": "cpu",
+          "panels": 3,
+          "scroll": 1265,
+          "selected": "explain-tab-principle"
+        },
+        {
+          "client": 1265,
+          "id": "gpu",
+          "panels": 3,
+          "scroll": 1265,
+          "selected": "explain-tab-principle"
+        },
+        {
+          "client": 1265,
+          "id": "dram",
+          "panels": 3,
+          "scroll": 1265,
+          "selected": "explain-tab-principle"
+        },
+        {
+          "client": 1265,
+          "id": "nand",
+          "panels": 3,
+          "scroll": 1265,
+          "selected": "explain-tab-principle"
+        },
+        {
+          "client": 1265,
+          "id": "fabrication",
+          "panels": 3,
+          "scroll": 1265,
+          "selected": "explain-tab-principle"
+        },
+        {
+          "client": 1265,
+          "id": "oxidation",
+          "panels": 3,
+          "scroll": 1265,
+          "selected": "explain-tab-principle"
+        },
+        {
+          "client": 1265,
+          "id": "lithography",
+          "panels": 3,
+          "scroll": 1265,
+          "selected": "explain-tab-principle"
+        },
+        {
+          "client": 1265,
+          "id": "euv-duv",
+          "panels": 3,
+          "scroll": 1265,
+          "selected": "explain-tab-principle"
+        },
+        {
+          "client": 1265,
+          "id": "etching",
+          "panels": 3,
+          "scroll": 1265,
+          "selected": "explain-tab-principle"
+        },
+        {
+          "client": 1265,
+          "id": "deposition",
+          "panels": 3,
+          "scroll": 1265,
+          "selected": "explain-tab-principle"
+        },
+        {
+          "client": 1265,
+          "id": "cvd",
+          "panels": 3,
+          "scroll": 1265,
+          "selected": "explain-tab-principle"
+        },
+        {
+          "client": 1265,
+          "id": "ald",
+          "panels": 3,
+          "scroll": 1265,
+          "selected": "explain-tab-principle"
+        },
+        {
+          "client": 1265,
+          "id": "ion-implantation",
+          "panels": 3,
+          "scroll": 1265,
+          "selected": "explain-tab-principle"
+        },
+        {
+          "client": 1265,
+          "id": "cmp",
+          "panels": 3,
+          "scroll": 1265,
+          "selected": "explain-tab-principle"
+        },
+        {
+          "client": 1265,
+          "id": "cleaning",
+          "panels": 3,
+          "scroll": 1265,
+          "selected": "explain-tab-principle"
+        },
+        {
+          "client": 1265,
+          "id": "packaging",
+          "panels": 3,
+          "scroll": 1265,
+          "selected": "explain-tab-principle"
+        },
+        {
+          "client": 1265,
+          "id": "tsv",
+          "panels": 3,
+          "scroll": 1265,
+          "selected": "explain-tab-principle"
+        },
+        {
+          "client": 1265,
+          "id": "interposer",
+          "panels": 3,
+          "scroll": 1265,
+          "selected": "explain-tab-principle"
+        },
+        {
+          "client": 1265,
+          "id": "hbm",
+          "panels": 3,
+          "scroll": 1265,
+          "selected": "explain-tab-principle"
+        },
+        {
+          "client": 1265,
+          "id": "integration",
+          "panels": 3,
+          "scroll": 1265,
+          "selected": "explain-tab-principle"
+        },
+        {
+          "client": 1265,
+          "id": "ecosystem",
+          "panels": 3,
+          "scroll": 1265,
+          "selected": "explain-tab-principle"
+        },
+        {
+          "client": 1265,
+          "id": "fabless",
+          "panels": 3,
+          "scroll": 1265,
+          "selected": "explain-tab-principle"
+        },
+        {
+          "client": 1265,
+          "id": "foundry",
+          "panels": 3,
+          "scroll": 1265,
+          "selected": "explain-tab-principle"
+        }
+      ],
+      "mobile": [
+        {
+          "client": 345,
+          "id": "semiconductor",
+          "image": true,
+          "imageWidth": 319.3333435058594,
+          "scroll": 345,
+          "modes": [
+            {
+              "mode": "simple",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "principle",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "caution",
+              "width": 320.66668701171875
+            }
+          ]
+        },
+        {
+          "client": 345,
+          "id": "conductors",
+          "image": true,
+          "imageWidth": 319.3333435058594,
+          "scroll": 345,
+          "modes": [
+            {
+              "mode": "simple",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "principle",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "caution",
+              "width": 320.66668701171875
+            }
+          ]
+        },
+        {
+          "client": 345,
+          "id": "silicon",
+          "image": true,
+          "imageWidth": 319.3333435058594,
+          "scroll": 345,
+          "modes": [
+            {
+              "mode": "simple",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "principle",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "caution",
+              "width": 320.66668701171875
+            }
+          ]
+        },
+        {
+          "client": 345,
+          "id": "wafer",
+          "image": true,
+          "imageWidth": 319.3333435058594,
+          "scroll": 345,
+          "modes": [
+            {
+              "mode": "simple",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "principle",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "caution",
+              "width": 320.66668701171875
+            }
+          ]
+        },
+        {
+          "client": 345,
+          "id": "transistor",
+          "image": true,
+          "imageWidth": 319.3333435058594,
+          "scroll": 345,
+          "modes": [
+            {
+              "mode": "simple",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "principle",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "caution",
+              "width": 320.66668701171875
+            }
+          ]
+        },
+        {
+          "client": 345,
+          "id": "mosfet",
+          "image": true,
+          "imageWidth": 319.3333435058594,
+          "scroll": 345,
+          "modes": [
+            {
+              "mode": "simple",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "principle",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "caution",
+              "width": 320.66668701171875
+            }
+          ]
+        },
+        {
+          "client": 345,
+          "id": "logic-memory",
+          "image": true,
+          "imageWidth": 319.3333435058594,
+          "scroll": 345,
+          "modes": [
+            {
+              "mode": "simple",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "principle",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "caution",
+              "width": 320.66668701171875
+            }
+          ]
+        },
+        {
+          "client": 345,
+          "id": "cpu",
+          "image": true,
+          "imageWidth": 319.3333435058594,
+          "scroll": 345,
+          "modes": [
+            {
+              "mode": "simple",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "principle",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "caution",
+              "width": 320.66668701171875
+            }
+          ]
+        },
+        {
+          "client": 345,
+          "id": "gpu",
+          "image": true,
+          "imageWidth": 319.3333435058594,
+          "scroll": 345,
+          "modes": [
+            {
+              "mode": "simple",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "principle",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "caution",
+              "width": 320.66668701171875
+            }
+          ]
+        },
+        {
+          "client": 345,
+          "id": "dram",
+          "image": true,
+          "imageWidth": 319.3333435058594,
+          "scroll": 345,
+          "modes": [
+            {
+              "mode": "simple",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "principle",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "caution",
+              "width": 320.66668701171875
+            }
+          ]
+        },
+        {
+          "client": 345,
+          "id": "nand",
+          "image": true,
+          "imageWidth": 319.3333435058594,
+          "scroll": 345,
+          "modes": [
+            {
+              "mode": "simple",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "principle",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "caution",
+              "width": 320.66668701171875
+            }
+          ]
+        },
+        {
+          "client": 345,
+          "id": "fabrication",
+          "image": true,
+          "imageWidth": 319.3333435058594,
+          "scroll": 345,
+          "modes": [
+            {
+              "mode": "simple",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "principle",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "caution",
+              "width": 320.66668701171875
+            }
+          ]
+        },
+        {
+          "client": 345,
+          "id": "oxidation",
+          "image": true,
+          "imageWidth": 319.3333435058594,
+          "scroll": 345,
+          "modes": [
+            {
+              "mode": "simple",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "principle",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "caution",
+              "width": 320.66668701171875
+            }
+          ]
+        },
+        {
+          "client": 345,
+          "id": "lithography",
+          "image": true,
+          "imageWidth": 319.3333435058594,
+          "scroll": 345,
+          "modes": [
+            {
+              "mode": "simple",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "principle",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "caution",
+              "width": 320.66668701171875
+            }
+          ]
+        },
+        {
+          "client": 345,
+          "id": "euv-duv",
+          "image": true,
+          "imageWidth": 319.3333435058594,
+          "scroll": 345,
+          "modes": [
+            {
+              "mode": "simple",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "principle",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "caution",
+              "width": 320.66668701171875
+            }
+          ]
+        },
+        {
+          "client": 345,
+          "id": "etching",
+          "image": true,
+          "imageWidth": 319.3333435058594,
+          "scroll": 345,
+          "modes": [
+            {
+              "mode": "simple",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "principle",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "caution",
+              "width": 320.66668701171875
+            }
+          ]
+        },
+        {
+          "client": 345,
+          "id": "deposition",
+          "image": true,
+          "imageWidth": 319.3333435058594,
+          "scroll": 345,
+          "modes": [
+            {
+              "mode": "simple",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "principle",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "caution",
+              "width": 320.66668701171875
+            }
+          ]
+        },
+        {
+          "client": 345,
+          "id": "cvd",
+          "image": true,
+          "imageWidth": 319.3333435058594,
+          "scroll": 345,
+          "modes": [
+            {
+              "mode": "simple",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "principle",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "caution",
+              "width": 320.66668701171875
+            }
+          ]
+        },
+        {
+          "client": 345,
+          "id": "ald",
+          "image": true,
+          "imageWidth": 319.3333435058594,
+          "scroll": 345,
+          "modes": [
+            {
+              "mode": "simple",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "principle",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "caution",
+              "width": 320.66668701171875
+            }
+          ]
+        },
+        {
+          "client": 345,
+          "id": "ion-implantation",
+          "image": true,
+          "imageWidth": 319.3333435058594,
+          "scroll": 345,
+          "modes": [
+            {
+              "mode": "simple",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "principle",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "caution",
+              "width": 320.66668701171875
+            }
+          ]
+        },
+        {
+          "client": 345,
+          "id": "cmp",
+          "image": true,
+          "imageWidth": 319.3333435058594,
+          "scroll": 345,
+          "modes": [
+            {
+              "mode": "simple",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "principle",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "caution",
+              "width": 320.66668701171875
+            }
+          ]
+        },
+        {
+          "client": 345,
+          "id": "cleaning",
+          "image": true,
+          "imageWidth": 319.3333435058594,
+          "scroll": 345,
+          "modes": [
+            {
+              "mode": "simple",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "principle",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "caution",
+              "width": 320.66668701171875
+            }
+          ]
+        },
+        {
+          "client": 345,
+          "id": "packaging",
+          "image": true,
+          "imageWidth": 319.3333435058594,
+          "scroll": 345,
+          "modes": [
+            {
+              "mode": "simple",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "principle",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "caution",
+              "width": 320.66668701171875
+            }
+          ]
+        },
+        {
+          "client": 345,
+          "id": "tsv",
+          "image": true,
+          "imageWidth": 319.3333435058594,
+          "scroll": 345,
+          "modes": [
+            {
+              "mode": "simple",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "principle",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "caution",
+              "width": 320.66668701171875
+            }
+          ]
+        },
+        {
+          "client": 345,
+          "id": "interposer",
+          "image": true,
+          "imageWidth": 319.3333435058594,
+          "scroll": 345,
+          "modes": [
+            {
+              "mode": "simple",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "principle",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "caution",
+              "width": 320.66668701171875
+            }
+          ]
+        },
+        {
+          "client": 345,
+          "id": "hbm",
+          "image": true,
+          "imageWidth": 319.3333435058594,
+          "scroll": 345,
+          "modes": [
+            {
+              "mode": "simple",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "principle",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "caution",
+              "width": 320.66668701171875
+            }
+          ]
+        },
+        {
+          "client": 345,
+          "id": "integration",
+          "image": true,
+          "imageWidth": 319.3333435058594,
+          "scroll": 345,
+          "modes": [
+            {
+              "mode": "simple",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "principle",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "caution",
+              "width": 320.66668701171875
+            }
+          ]
+        },
+        {
+          "client": 345,
+          "id": "ecosystem",
+          "image": true,
+          "imageWidth": 319.3333435058594,
+          "scroll": 345,
+          "modes": [
+            {
+              "mode": "simple",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "principle",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "caution",
+              "width": 320.66668701171875
+            }
+          ]
+        },
+        {
+          "client": 345,
+          "id": "fabless",
+          "image": true,
+          "imageWidth": 319.3333435058594,
+          "scroll": 345,
+          "modes": [
+            {
+              "mode": "simple",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "principle",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "caution",
+              "width": 320.66668701171875
+            }
+          ]
+        },
+        {
+          "client": 345,
+          "id": "foundry",
+          "image": true,
+          "imageWidth": 319.3333435058594,
+          "scroll": 345,
+          "modes": [
+            {
+              "mode": "simple",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "principle",
+              "width": 320.66668701171875
+            },
+            {
+              "mode": "caution",
+              "width": 320.66668701171875
+            }
+          ]
+        }
+      ],
+      "svgText": [
+        {
+          "id": "semiconductor",
+          "labels": 7,
+          "outside": [],
+          "overlap": []
+        },
+        {
+          "id": "conductors",
+          "labels": 7,
+          "outside": [],
+          "overlap": []
+        },
+        {
+          "id": "silicon",
+          "labels": 3,
+          "outside": [],
+          "overlap": []
+        },
+        {
+          "id": "wafer",
+          "labels": 4,
+          "outside": [],
+          "overlap": []
+        },
+        {
+          "id": "transistor",
+          "labels": 6,
+          "outside": [],
+          "overlap": []
+        },
+        {
+          "id": "mosfet",
+          "labels": 11,
+          "outside": [],
+          "overlap": []
+        },
+        {
+          "id": "logic-memory",
+          "labels": 8,
+          "outside": [],
+          "overlap": []
+        },
+        {
+          "id": "cpu",
+          "labels": 7,
+          "outside": [],
+          "overlap": []
+        },
+        {
+          "id": "gpu",
+          "labels": 5,
+          "outside": [],
+          "overlap": []
+        },
+        {
+          "id": "dram",
+          "labels": 8,
+          "outside": [],
+          "overlap": []
+        },
+        {
+          "id": "nand",
+          "labels": 8,
+          "outside": [],
+          "overlap": []
+        },
+        {
+          "id": "fabrication",
+          "labels": 12,
+          "outside": [],
+          "overlap": []
+        },
+        {
+          "id": "oxidation",
+          "labels": 7,
+          "outside": [],
+          "overlap": []
+        },
+        {
+          "id": "lithography",
+          "labels": 7,
+          "outside": [],
+          "overlap": []
+        },
+        {
+          "id": "euv-duv",
+          "labels": 4,
+          "outside": [],
+          "overlap": []
+        },
+        {
+          "id": "etching",
+          "labels": 6,
+          "outside": [],
+          "overlap": []
+        },
+        {
+          "id": "deposition",
+          "labels": 5,
+          "outside": [],
+          "overlap": []
+        },
+        {
+          "id": "cvd",
+          "labels": 6,
+          "outside": [],
+          "overlap": []
+        },
+        {
+          "id": "ald",
+          "labels": 5,
+          "outside": [],
+          "overlap": []
+        },
+        {
+          "id": "ion-implantation",
+          "labels": 4,
+          "outside": [],
+          "overlap": []
+        },
+        {
+          "id": "cmp",
+          "labels": 6,
+          "outside": [],
+          "overlap": []
+        },
+        {
+          "id": "cleaning",
+          "labels": 5,
+          "outside": [],
+          "overlap": []
+        },
+        {
+          "id": "packaging",
+          "labels": 7,
+          "outside": [],
+          "overlap": []
+        },
+        {
+          "id": "tsv",
+          "labels": 8,
+          "outside": [],
+          "overlap": []
+        },
+        {
+          "id": "interposer",
+          "labels": 7,
+          "outside": [],
+          "overlap": []
+        },
+        {
+          "id": "hbm",
+          "labels": 12,
+          "outside": [],
+          "overlap": []
+        },
+        {
+          "id": "integration",
+          "labels": 9,
+          "outside": [],
+          "overlap": []
+        },
+        {
+          "id": "ecosystem",
+          "labels": 14,
+          "outside": [],
+          "overlap": []
+        },
+        {
+          "id": "fabless",
+          "labels": 10,
+          "outside": [],
+          "overlap": []
+        },
+        {
+          "id": "foundry",
+          "labels": 6,
+          "outside": [],
+          "overlap": []
+        }
+      ],
+      "console": [],
+      "finalMobile": {
+        "client": 345,
+        "figureTop": 109.76042175292967,
+        "focus": "concept-diagram",
+        "image": true,
+        "scroll": 345
+      }
+    },
+    "finalChangeCoverage": "30-page desktop/mobile and 214-label checks preceded the last focus-offset and text-color refinements; geometry/content remained unchanged. Final mobile HBM quiz→caution→diagram focus/load/position and final build were checked after those refinements."
+  },
+  "application": "Verify before/after hashes and repository remote, back up existing changed files, copy only manifest paths, then run original npm run check. Completion is recorded in application result artifact.",
+  "delivery": "Local original project only; no commit, push, external deployment, new dependency or secret configuration access. Browser QA uses port 3102, preserving user progress on 3101."
+}

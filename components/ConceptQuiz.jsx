@@ -4,6 +4,7 @@ import { useRef, useState } from 'react';
 import { useLearning, LearningStorageNotice } from './LearningProvider';
 import { ReadCompletionButton } from './LessonProgress';
 import { getLessonProgress } from '@/lib/learning-progress.mjs';
+import { explanationModeForReview, explanationModes } from '@/lib/concept-review.mjs';
 
 const reviewLabels = { what: '무엇인가요?', why: '왜 필요한가요?', how: '작동 원리', structure: '구조', misconceptions: '흔한 오해', question: '자주 묻는 질문' };
 
@@ -66,7 +67,11 @@ export default function ConceptQuiz({ conceptId, questions }) {
             {showResult && <div className={`quiz-feedback${correct ? ' correct' : ' incorrect'}`}>
               <strong>{correct ? '정답이에요.' : '다시 확인해보세요.'}</strong>
               <p>{question.explanation}</p>
-              <a href={`#${question.review}`}>다시 읽기 · {reviewLabels[question.review]} ↑</a>
+              <div className="quiz-review-links">
+                <a href={`#${question.review}`}>다시 읽기 · {reviewLabels[question.review]} ↑</a>
+                <a href={`#explain-${explanationModeForReview(question.review)}`}>관련 설명 · {explanationModes.find(mode => mode.id === explanationModeForReview(question.review)).label} ↑</a>
+                <a href="#concept-diagram">구조도로 확인 ↑</a>
+              </div>
             </div>}
           </div>;
         })}

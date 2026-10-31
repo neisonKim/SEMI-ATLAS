@@ -4,6 +4,9 @@ import GlossaryText from '@/components/GlossaryText';
 import CompanyCard from '@/components/CompanyCard';
 import LessonProgress from '@/components/LessonProgress';
 import ConceptQuiz from '@/components/ConceptQuiz';
+import ConceptExplanation from '@/components/ConceptExplanation';
+import ConceptDiagram from '@/components/ConceptDiagram';
+import { conceptExplanations } from '@/lib/concept-explanations.mjs';
 import { conceptQuizzes } from '@/lib/concept-quizzes.mjs';
 import { getCompaniesForConcept } from '@/lib/companies.mjs';
 import { byId, categories, concepts, getLearningNavigation, levels, sources } from '@/lib/data.mjs';
@@ -167,6 +170,13 @@ export default async function ConceptPage({ params }) {
               </div>
             </section>
 
+            <section id="explanations" className="explanations-section">
+              <span className="eyebrow">CHOOSE YOUR DEPTH</span>
+              <h2>궁금한 깊이로 읽어보세요.</h2>
+              <p>처음이라면 쉬운 설명부터, 흐름이 궁금하면 작동 원리를 읽어보세요.</p>
+              <ConceptExplanation levels={conceptExplanations[id].levels} />
+            </section>
+
             <section id="analogy">
               <span className="eyebrow">AN EVERYDAY ANALOGY</span>
               <h2>비유로 먼저 이해해보세요.</h2>
@@ -196,6 +206,7 @@ export default async function ConceptPage({ params }) {
             <section id="structure">
               <span className="eyebrow">STRUCTURE</span>
               <h2>구조를 세 부분으로 나눠보세요.</h2>
+              <ConceptDiagram diagram={conceptExplanations[id].diagram} />
               <div className="structure-flow">
                 {concept.structureLabels.map((label, index) => (
                   <div className="structure-node" key={label}>
@@ -343,10 +354,12 @@ export default async function ConceptPage({ params }) {
             <div className="toc">
               <span className="eyebrow">이 페이지에서</span>
               <a href="#what">무엇인가요?</a>
+              <a href="#explanations">설명 깊이 선택</a>
               <a href="#analogy">비유로 이해하기</a>
               <a href="#why">왜 필요한가요?</a>
               <a href="#how">어떻게 작동하나요?</a>
               <a href="#structure">구조</a>
+              <a href="#concept-diagram">구조도</a>
               <a href="#numbers">핵심 수치·계산 예시</a>
               <a href="#where">어디에 쓰이나요?</a>
               <a href="#industry">산업에서의 위치</a>
