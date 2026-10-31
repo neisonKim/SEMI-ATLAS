@@ -1,4 +1,6 @@
 import PageHero from '@/components/PageHero';
+import LearningDashboard from '@/components/LearningDashboard';
+import { LessonBadge } from '@/components/LessonProgress';
 import { categories, concepts, levels } from '@/lib/data.mjs';
 
 const phaseDescriptions = {
@@ -28,8 +30,10 @@ export default function LearnPage() {
         title={<>처음이라면,<br />이 순서로 시작하세요.</>}
         description="30개의 짧은 개념을 5단계로 나눴습니다. 궁금한 과정부터 읽어도 좋습니다."
         image="silicon-wafer"
-        action={<a className="button mint" href="/concept/semiconductor/">첫 개념 읽기</a>}
+        action={<div className="learning-hero-actions"><a className="button mint" href="/concept/semiconductor/">첫 개념 읽기</a><a className="button light-outline" href="#my-progress">내 학습 현황</a></div>}
       />
+
+      <LearningDashboard />
 
       <div className="container learn-layout">
         <aside className="phase-nav">
@@ -62,6 +66,7 @@ export default function LearnPage() {
                       <div>
                         <h3>{concept.title}</h3>
                         <span>{concept.en}</span>
+                        <LessonBadge conceptId={concept.id} />
                       </div>
                       <span className={`level level-${concept.level}`}>{levels[concept.level]}</span>
                       <span className="lesson-time">약 {concept.minutes}분</span>

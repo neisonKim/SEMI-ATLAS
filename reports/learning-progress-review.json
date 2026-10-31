@@ -1,0 +1,294 @@
+{
+  "version": "1.28.0",
+  "checkedAt": "2026-10-31",
+  "scope": "30 lesson quizzes and browser-saved reading, draft answers, last graded results, resume and review on /learn/.",
+  "counts": {
+    "concepts": 30,
+    "quizQuestions": 90,
+    "choices": 270,
+    "explanations": 90,
+    "reviewTargets": 90,
+    "sitemapUrls": 89
+  },
+  "content": "Questions authored from existing published lesson definitions, steps, structure, FAQs and misconception corrections. Each explanation links back to the corresponding lesson section and its existing reference list. No new external technical claims or company data added.",
+  "flow": "Concept quiz/read control → validated client reducer → dedicated localStorage key → restored quiz and learning dashboard. No server account, new API or remote progress transmission.",
+  "persistence": {
+    "key": "semi-atlas.learning.v1",
+    "schema": 1,
+    "quizRevision": "2026-10-31.1",
+    "reading": "Explicit completion/undo; visiting or submitting a quiz does not silently complete reading.",
+    "quiz": "Partial answers auto-save. Latest completed result is retained while a retry draft is in progress. Score is derived from validated answers, not a saved numeric score.",
+    "resilience": "Unknown IDs/options/invalid attempts sanitized. A changed quiz revision invalidates old quiz attempts but retains reading history. Unreadable/newer root records are not overwritten. Read/write failures keep an in-memory session with a user-facing notice.",
+    "tabs": "Fresh persisted state read before each write; storage events refresh another tab. Changes to different lessons merge; simultaneous edits to the same field use the last write.",
+    "limitations": "Device/browser/origin only; no cloud sync. Clearing browser data removes records. Temporary fallback cannot survive a full navigation/reload."
+  },
+  "verification": {
+    "fullCheck": "PASS",
+    "finalWebpackBuild": "PASS: 91 static/internal pages",
+    "httpLearning": "30/30 pages, 90 questions, 270 native radio inputs, review targets, reading buttons and dashboard PASS",
+    "existingContentRegression": "30/30 concept explanations, numbers/citations, structure, misconceptions, FAQ, connections and navigation PASS",
+    "modelTests": [
+      "Draft serialization and result restoration",
+      "Incomplete submit and explicit retry rules",
+      "Reading completion independent of quiz; undo preserves result",
+      "Automatic score/review/mastery counts and next lesson",
+      "Malformed/unknown schema preserved; old quiz revision invalidated",
+      "Mock denied storage and quota failures keep in-memory answers",
+      "Two stale clients retain different lesson updates",
+      "Full 30-lesson reading and all-correct completion"
+    ],
+    "browser": {
+      "flows": [
+        {
+          "case": "Incomplete submit focuses first missing answer; one selected answer survives reload",
+          "pass": true
+        },
+        {
+          "case": "1/3 score, three explanations/review anchors, read completion → dashboard (1 read,1 checked,0 mastered,1 review), next integration → HBM restored result",
+          "pass": true
+        },
+        {
+          "case": "Retry draft survives reload; native radio ArrowRight + Enter grades 3/3; result restored after reload",
+          "pass": true
+        },
+        {
+          "case": "Reading undo/restore updates another tab live and retains 3/3 quiz result",
+          "pass": true
+        },
+        {
+          "case": "DRAM partial answer → dashboard draft filter and resume DRAM → answer restored",
+          "pass": true
+        },
+        {
+          "case": "Mobile 30 quiz pages and learning dashboard fit viewport; mobile menu opens learning history",
+          "pass": true
+        },
+        {
+          "case": "Same-page mobile history link closes menu and restores page scroll after fix",
+          "pass": true
+        },
+        {
+          "case": "Existing unified search → HBM concept restores reading and 3/3 result",
+          "pass": true
+        }
+      ],
+      "mobile": [
+        {
+          "client": 345,
+          "id": "semiconductor",
+          "questions": 3,
+          "radios": 9,
+          "scroll": 345
+        },
+        {
+          "client": 345,
+          "id": "conductors",
+          "questions": 3,
+          "radios": 9,
+          "scroll": 345
+        },
+        {
+          "client": 345,
+          "id": "silicon",
+          "questions": 3,
+          "radios": 9,
+          "scroll": 345
+        },
+        {
+          "client": 345,
+          "id": "wafer",
+          "questions": 3,
+          "radios": 9,
+          "scroll": 345
+        },
+        {
+          "client": 345,
+          "id": "transistor",
+          "questions": 3,
+          "radios": 9,
+          "scroll": 345
+        },
+        {
+          "client": 345,
+          "id": "mosfet",
+          "questions": 3,
+          "radios": 9,
+          "scroll": 345
+        },
+        {
+          "client": 345,
+          "id": "logic-memory",
+          "questions": 3,
+          "radios": 9,
+          "scroll": 345
+        },
+        {
+          "client": 345,
+          "id": "cpu",
+          "questions": 3,
+          "radios": 9,
+          "scroll": 345
+        },
+        {
+          "client": 345,
+          "id": "gpu",
+          "questions": 3,
+          "radios": 9,
+          "scroll": 345
+        },
+        {
+          "client": 345,
+          "id": "dram",
+          "questions": 3,
+          "radios": 9,
+          "scroll": 345
+        },
+        {
+          "client": 345,
+          "id": "nand",
+          "questions": 3,
+          "radios": 9,
+          "scroll": 345
+        },
+        {
+          "client": 345,
+          "id": "fabrication",
+          "questions": 3,
+          "radios": 9,
+          "scroll": 345
+        },
+        {
+          "client": 345,
+          "id": "oxidation",
+          "questions": 3,
+          "radios": 9,
+          "scroll": 345
+        },
+        {
+          "client": 345,
+          "id": "lithography",
+          "questions": 3,
+          "radios": 9,
+          "scroll": 345
+        },
+        {
+          "client": 345,
+          "id": "euv-duv",
+          "questions": 3,
+          "radios": 9,
+          "scroll": 345
+        },
+        {
+          "client": 345,
+          "id": "etching",
+          "questions": 3,
+          "radios": 9,
+          "scroll": 345
+        },
+        {
+          "client": 345,
+          "id": "deposition",
+          "questions": 3,
+          "radios": 9,
+          "scroll": 345
+        },
+        {
+          "client": 345,
+          "id": "cvd",
+          "questions": 3,
+          "radios": 9,
+          "scroll": 345
+        },
+        {
+          "client": 345,
+          "id": "ald",
+          "questions": 3,
+          "radios": 9,
+          "scroll": 345
+        },
+        {
+          "client": 345,
+          "id": "ion-implantation",
+          "questions": 3,
+          "radios": 9,
+          "scroll": 345
+        },
+        {
+          "client": 345,
+          "id": "cmp",
+          "questions": 3,
+          "radios": 9,
+          "scroll": 345
+        },
+        {
+          "client": 345,
+          "id": "cleaning",
+          "questions": 3,
+          "radios": 9,
+          "scroll": 345
+        },
+        {
+          "client": 345,
+          "id": "packaging",
+          "questions": 3,
+          "radios": 9,
+          "scroll": 345
+        },
+        {
+          "client": 345,
+          "id": "tsv",
+          "questions": 3,
+          "radios": 9,
+          "scroll": 345
+        },
+        {
+          "client": 345,
+          "id": "interposer",
+          "questions": 3,
+          "radios": 9,
+          "scroll": 345
+        },
+        {
+          "client": 345,
+          "id": "hbm",
+          "questions": 3,
+          "radios": 9,
+          "scroll": 345
+        },
+        {
+          "client": 345,
+          "id": "integration",
+          "questions": 3,
+          "radios": 9,
+          "scroll": 345
+        },
+        {
+          "client": 345,
+          "id": "ecosystem",
+          "questions": 3,
+          "radios": 9,
+          "scroll": 345
+        },
+        {
+          "client": 345,
+          "id": "fabless",
+          "questions": 3,
+          "radios": 9,
+          "scroll": 345
+        },
+        {
+          "client": 345,
+          "id": "foundry",
+          "questions": 3,
+          "radios": 9,
+          "scroll": 345
+        }
+      ],
+      "console": []
+    },
+    "storageFailureTestLevel": "Automated fake-storage tests; the browser storage API was not forcibly disabled.",
+    "reactReview": "Scoped client components, compact manifest props, memoized context and stable dispatch, effect cleanup, hydration-safe initial state, native fieldsets/radios, explicit feedback and keyboard focus."
+  },
+  "application": "Verify original hashes and repository remote, back up existing changed files, copy only manifest paths, then run original npm run check. Completion is recorded in the application result artifact.",
+  "delivery": "Local project changes; no dependency installation, commit, push or external deployment. QA uses port 3102 to isolate test progress from the user preview on 3101."
+}

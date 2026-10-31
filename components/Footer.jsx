@@ -26,6 +26,7 @@ export default function Footer() {
           </div>
           <nav aria-label="푸터 메뉴">
             <a href="/learn/">학습 경로</a>
+            <a href="/learn/#my-progress">학습 현황</a>
             <a href="/encyclopedia/">전체 개념</a>
             <a href="/process/">공정 지도</a>
             <a href="/industry/">산업 지도</a>

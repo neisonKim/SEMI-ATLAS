@@ -2,6 +2,8 @@ import './globals.css';
 import Header from '@/components/Header';
 import { searchIndex } from '@/lib/search-index.mjs';
 import Footer from '@/components/Footer';
+import LearningProvider from '@/components/LearningProvider';
+import { learningLessons } from '@/lib/learning-data.mjs';
 import { absoluteUrl, siteDescription, siteLocale, siteName, siteUrl, socialImagePath } from '@/lib/site-config.mjs';
 
 export const metadata = {
@@ -53,11 +55,13 @@ export default function RootLayout({ children }) {
     <html lang="ko">
       <body id="top">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
+        <LearningProvider lessons={learningLessons}>
         <Header searchItems={searchIndex} />
         <div className="site-page-reveal">
           {children}
           <Footer />
         </div>
+        </LearningProvider>
       </body>
     </html>
   );

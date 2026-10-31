@@ -2,6 +2,9 @@ import { notFound } from 'next/navigation';
 import AssetImage from '@/components/AssetImage';
 import GlossaryText from '@/components/GlossaryText';
 import CompanyCard from '@/components/CompanyCard';
+import LessonProgress from '@/components/LessonProgress';
+import ConceptQuiz from '@/components/ConceptQuiz';
+import { conceptQuizzes } from '@/lib/concept-quizzes.mjs';
 import { getCompaniesForConcept } from '@/lib/companies.mjs';
 import { byId, categories, concepts, getLearningNavigation, levels, sources } from '@/lib/data.mjs';
 import { absoluteUrl, siteName } from '@/lib/site-config.mjs';
@@ -142,6 +145,7 @@ export default async function ConceptPage({ params }) {
                 <span>GLOSSARY</span>
                 <p><b>점선 밑줄</b> 용어를 탭하거나 마우스를 올리면 한 줄 설명을 볼 수 있습니다.</p>
               </div>
+              <LessonProgress key={id} conceptId={id} />
             </header>
 
             <figure className="article-image">
@@ -287,6 +291,8 @@ export default async function ConceptPage({ params }) {
               </div>
             </section>
 
+            <ConceptQuiz key={id} conceptId={id} questions={conceptQuizzes[id]} />
+
             <section id="connections" className="connections">
               <span className="eyebrow">CONNECT THE KNOWLEDGE</span>
               <h2>개념을 연결해보세요.</h2>
@@ -348,6 +354,7 @@ export default async function ConceptPage({ params }) {
               <a href="#visual-guide">Visual Guide</a>
               <a href="#misconceptions">흔한 오해</a>
               <a href="#question">FAQ</a>
+              <a href="#quiz">학습 확인 퀴즈</a>
               <a href="#connections">연결된 개념</a>
               <a href="#references">공식 자료</a>
             </div>

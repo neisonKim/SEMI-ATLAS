@@ -1,6 +1,6 @@
 {
   "name": "semiconductor-encyclopedia-nextjs",
-  "version": "1.27.0",
+  "version": "1.28.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,7 +8,7 @@
     "start": "next start",
     "check:search": "node scripts/verify-search.mjs",
     "check:data": "node scripts/verify-data.mjs",
-    "check": "npm run check:data && npm run check:content && npm run check:enrichment && npm run check:companies && npm run check:companies:media && npm run check:glossary && npm run check:references && npm run check:search && npm run check:visual && npm run check:process && npm run check:industry && npm run check:responsive && npm run check:transition && npm run check:seo && npm run check:interaction && npm run check:contact",
+    "check": "npm run check:data && npm run check:content && npm run check:enrichment && npm run check:companies && npm run check:companies:media && npm run check:glossary && npm run check:references && npm run check:search && npm run check:learning && npm run check:visual && npm run check:process && npm run check:industry && npm run check:responsive && npm run check:transition && npm run check:seo && npm run check:interaction && npm run check:contact",
     "check:companies": "node scripts/verify-companies.mjs",
     "check:companies:pages": "node scripts/verify-company-pages.mjs",
     "check:references:companies": "node scripts/audit-reference-links.mjs reports/company-source-link-audit.json --companies",
@@ -34,7 +34,9 @@
     "check:contact": "node scripts/verify-contact.mjs",
     "check:references": "node scripts/verify-references.mjs",
     "check:glossary": "node scripts/verify-glossary.mjs",
-    "check:companies:media": "node scripts/verify-company-media.mjs"
+    "check:companies:media": "node scripts/verify-company-media.mjs",
+    "check:learning": "node scripts/verify-learning.mjs",
+    "check:learning:pages": "node scripts/verify-learning-pages.mjs"
   },
   "dependencies": {
     "next": "16.3.5",

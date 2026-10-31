@@ -274,11 +274,13 @@ export default function Header({ searchItems }) {
         <nav
           ref={menuRef}
           id="mobile-nav"
+          onClick={event => { if (event.target.closest('a')) setOpen(false); }}
           className={`mobile-nav${open ? ' is-open' : ''}`}
           aria-label="모바일 메뉴"
           aria-hidden={!open}
         >
           <a href="/learn/">처음 배우기</a>
+          <a href="/learn/#my-progress">내 학습 현황</a>
           <a href="/encyclopedia/">백과사전</a>
           <a href="/visual/">한눈에 보기</a>
           <a href="/industry/">산업 지도</a>
