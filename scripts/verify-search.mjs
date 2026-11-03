@@ -17,10 +17,10 @@ for (const [query, expected] of [
 ]) assert.equal(first(query), expected, query);
 
 assert.deepEqual(searchConcepts(concepts, { category: 'basics' }).map((c) => c.id), ['semiconductor','conductors','silicon','wafer','transistor']);
-assert.deepEqual(searchConcepts(concepts, { category: 'packaging', level: '3' }).map((c) => c.id), ['tsv','interposer','integration']);
+assert.deepEqual(searchConcepts(concepts, { category: 'packaging', level: '3' }).map((c) => c.id), ['rdl','tsv','interposer','integration','chiplet']);
 assert.deepEqual(searchConcepts(concepts, { category: 'packaging', level: '2' }).map((c) => c.id), ['hbm']);
 assert.equal(searchConcepts(concepts, { query: '없는개념x739' }).length, 0);
-assert.equal(searchConcepts(concepts).length, 30);
+assert.equal(searchConcepts(concepts).length, concepts.length);
 const hbmSuggestions = suggestConcepts(concepts, { query: 'HB', limit: 5 });
 assert.equal(hbmSuggestions[0]?.concept.id, 'hbm');
 assert.equal(hbmSuggestions.length, 5);
@@ -29,10 +29,10 @@ assert.equal(suggestConcepts(concepts, { query: '', limit: 5 }).length, 0);
 assert.ok(suggestConcepts(concepts, { query: '노광', limit: 5 }).some((item) => item.concept.id === 'lithography'));
 console.log('PASS: Korean/English aliases, filters, empty results and 5-item connected autocomplete.');
 
-assert.equal(searchIndex.length, 80);
-assert.equal(new Set(searchIndex.map(item => item.key)).size, 80);
-assert.equal(searchUnified(searchIndex).length, 80);
-assert.equal(searchUnified(searchIndex, { kind: 'concept' }).length, 30);
+assert.equal(searchIndex.length, 90);
+assert.equal(new Set(searchIndex.map(item => item.key)).size, 90);
+assert.equal(searchUnified(searchIndex).length, 90);
+assert.equal(searchUnified(searchIndex, { kind: 'concept' }).length, concepts.length);
 assert.equal(searchUnified(searchIndex, { kind: 'company' }).length, 50);
 for (const item of searchIndex) {
   for (const query of [item.title, item.en, item.id]) {
@@ -71,4 +71,4 @@ assert.equal(readSearchFilters(`?q=${'a'.repeat(201)}`).query.length, 200);
 assert.equal(unifiedSearchUrl({ query: '  ', kind: 'invalid' }), '/search/');
 assert(searchIndex.every(item => !('refs' in item) && !('technologies' in item) && !('sections' in item)));
 assert(Buffer.byteLength(JSON.stringify(searchIndex)) < 150000, 'Search records stay compact.');
-console.log('PASS: 80 unified results, all 240 identities, product/technology aliases, mixed suggestions, kind filters, safe URL round trip, empty/invalid inputs.');
+console.log('PASS: 90 unified results, all 270 identities, product/technology aliases, mixed suggestions, kind filters, safe URL round trip, empty/invalid inputs.');

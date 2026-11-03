@@ -8,7 +8,7 @@ import { processHub } from '@/lib/process-hub.mjs';
 
 export const metadata = {
   title: '반도체 공정 지도',
-  description: '산화·노광·DUV/EUV·식각·증착·CVD·ALD·이온주입·CMP·세정을 12~22번 학습 경로로 연결해 이해하세요.',
+  description: '산화·노광·DUV/EUV·식각·증착·CVD·ALD·이온주입·CMP·세정을 15~29번 학습 경로로 연결해 이해하세요.',
   alternates: { canonical: '/process/' },
   openGraph: {
     title: '반도체 공정 지도',
@@ -25,7 +25,7 @@ export default function ProcessPage() {
       <PageHero
         eyebrow="FROM WAFER TO CHIP"
         title={<>작은 회로는<br />어떻게 만들어질까요?</>}
-        description="12~22번 핵심 개념을 따라가며, 웨이퍼 위에 회로를 만드는 제조공정의 큰 그림과 반복 구조를 이해합니다."
+        description="15~29번 핵심 개념을 따라가며, 웨이퍼 위에 회로를 만드는 제조공정의 큰 그림과 반복 구조를 이해합니다."
         image="process-overview"
         action={<a className="button mint" href="#process-map">공정 지도부터 보기</a>}
       />
@@ -33,7 +33,7 @@ export default function ProcessPage() {
       <section className="section container" id="process-map">
         <SectionTitle
           eyebrow="THE PROCESS HUB"
-          title="11개 핵심 개념을 하나의 흐름으로"
+          title="15개 핵심 개념을 하나의 흐름으로"
           description="각 노드는 개념 상세페이지로 연결됩니다. 처음이라면 12번 전체 공정을 읽고 13번부터 순서대로 따라가세요."
         />
         <ProcessHub />

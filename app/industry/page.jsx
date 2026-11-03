@@ -59,9 +59,9 @@ export default function IndustryPage() {
 
       <section className="section container">
         <SectionTitle
-          eyebrow="INDUSTRY LEARNING PATH · 28—30"
+          eyebrow="INDUSTRY LEARNING PATH · 37—40"
           title="산업 생태계에서 팹리스와 파운드리까지"
-          description="28번 전체 산업 구조를 먼저 읽고, 29번 팹리스와 30번 파운드리의 역할 차이를 순서대로 학습합니다."
+          description="산업 구조에서 시작해 팹리스와 파운드리의 역할을 구분하고, 설계 도구가 두 역할을 어떻게 연결하는지 배웁니다."
         />
         <div className="cards three">
           {['ecosystem', 'fabless', 'foundry'].map((id) => <ConceptCard key={id} concept={byId[id]} />)}

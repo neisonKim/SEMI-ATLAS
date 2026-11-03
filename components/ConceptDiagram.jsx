@@ -1,5 +1,5 @@
 import { sources } from '@/lib/data.mjs';
-import { explanationCheckedAt, explanationSources } from '@/lib/concept-explanations.mjs';
+import { explanationSources } from '@/lib/concept-explanations.mjs';
 
 const diagramSources = { ...sources, ...explanationSources };
 
@@ -15,7 +15,7 @@ export default function ConceptDiagram({ diagram }) {
     <details className="concept-diagram-sources" id="diagram-sources">
       <summary>설명·구조도의 원리 참고자료</summary>
       <ul>{diagram.refs.map(key => <li key={key}><a href={diagramSources[key][1]} target="_blank" rel="noopener noreferrer">{diagramSources[key][0]}<span className="sr-only"> 새 창</span> ↗</a></li>)}</ul>
-      <span className="diagram-source-date">설명·도식 작성 {explanationCheckedAt} · 학습용으로 직접 작성한 개념도</span>
+      <span className="diagram-source-date">설명·도식 작성 {diagram.checkedAt} · 학습용으로 직접 작성한 개념도</span>
     </details>
   </figure>;
 }

@@ -23,10 +23,13 @@ if (conceptStageErrors.length) {
 }
 
 const expectedLearningPath = [
-  { number: 28, id: 'ecosystem' },
-  { number: 29, id: 'fabless' },
-  { number: 30, id: 'foundry' },
+  { number: 37, id: 'ecosystem' },
+  { number: 38, id: 'fabless' },
+  { number: 39, id: 'foundry' },
+  { number: 40, id: 'eda' },
 ];
+
+if (industryHub.learningPath.length !== expectedLearningPath.length) throw new Error('Industry path length mismatch');
 
 for (let index = 0; index < expectedLearningPath.length; index += 1) {
   const expected = expectedLearningPath[index];
@@ -49,5 +52,5 @@ if (!supportStage?.support) {
 
 console.log(`✓ Industry Hub: ${industryHub.stages.length} role stages`);
 console.log('✓ Core role flow: EDA/IP → Fabless → Foundry → Equipment/Materials → OSAT/Packaging → System');
-console.log('✓ MVP industry learning path: 28 Ecosystem → 29 Fabless → 30 Foundry');
+console.log('✓ Industry learning path: 37 Ecosystem → 38 Fabless → 39 Foundry → 40 EDA');
 console.log('✓ Equipment / Materials is explicitly marked as a cross-stage support layer');

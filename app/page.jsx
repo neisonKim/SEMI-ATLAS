@@ -43,7 +43,7 @@ export default function HomePage() {
         <div className="container hero-content">
           <span className="eyebrow">KNOWLEDGE, CONNECTED.</span>
           <h1>반도체의 큰 그림,<br /><em>첫 개념부터.</em></h1>
-          <p>작은 칩은 어떻게 세상을 움직일까요?<br />30개의 개념을 연결하며 기초부터 배워보세요.</p>
+          <p>작은 칩은 어떻게 세상을 움직일까요?<br />40개의 개념을 연결하며 기초부터 배워보세요.</p>
           <div className="hero-buttons">
             <a className="button mint" href="/concept/semiconductor/">처음이라면 여기서 시작</a>
             <a className="button light-outline" href="/learn/">전체 학습 경로</a>
@@ -85,7 +85,7 @@ export default function HomePage() {
           eyebrow="EXPLORE THE KNOWLEDGE"
           title="관심 있는 곳에서 시작하세요."
           description="기초부터 산업까지, 하나로 연결된 반도체 지식."
-          action={<a className="text-link" href="/encyclopedia/">전체 30개 개념 보기</a>}
+          action={<a className="text-link" href="/encyclopedia/">전체 40개 개념 보기</a>}
         />
         <div className="category-grid">
           {categories.map((category, index) => (

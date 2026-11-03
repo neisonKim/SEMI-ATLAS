@@ -48,4 +48,4 @@ for (const concept of concepts) {
   assert.deepEqual(hrefs(refs).map(url => new URL(url.replaceAll('&amp;', '&')).href), concept.refs.map(key => new URL(sources[key][1]).href), `${concept.id}: rendered references`);
   assert(html.includes('glossary-term'), `${concept.id}: glossary missing`);
 }
-console.log(`Rendered content PASS: all ${concepts.length} pages, analogies, 60 numeric cards + citations + conditions, 90 structure explanations, misconceptions, unique connections, FAQs, curriculum navigation and glossary.`);
+console.log(`Rendered content PASS: all ${concepts.length} pages, analogies, ${concepts.length * 2} numeric cards + citations + conditions, ${concepts.length * 3} structure explanations, misconceptions, unique connections, FAQs, curriculum navigation and glossary.`);

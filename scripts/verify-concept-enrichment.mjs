@@ -6,6 +6,7 @@ assert.deepEqual(Object.keys(conceptEnrichment).sort(), concepts.map(c => c.id).
 const analogyTitles = new Set();
 const claims = new Set();
 const operations = {
+  subtract: ([a, b]) => a - b,
   multiply: ([a, b]) => a * b,
   divide: ([a, b]) => a / b,
   power: ([a, b]) => a ** b,

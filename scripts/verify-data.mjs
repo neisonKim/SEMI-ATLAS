@@ -10,7 +10,7 @@ const root = path.resolve(here, '..');
 const ids = new Set(concepts.map((concept) => concept.id));
 const files = new Set(manifest.map((item) => item.file));
 
-assert.equal(concepts.length, 30);
+assert.equal(concepts.length, 40);
 for (const concept of concepts) {
   for (const relation of [...concept.prerequisites, ...concept.related, ...concept.next]) assert(ids.has(relation), `${concept.id}: ${relation}`);
   for (const ref of concept.refs) assert(sources[ref], `${concept.id}: source ${ref}`);

@@ -18,7 +18,7 @@ export default function ProcessHub() {
     <div className="process-hub" aria-label="반도체 제조공정 학습 지도">
       <div className="process-hub-summary">
         <div>
-          <span className="eyebrow">MVP PROCESS MAP · 12—22</span>
+          <span className="eyebrow">PROCESS MAP · 15—29</span>
           <h3>{processHub.title}</h3>
           <p>{processHub.description}</p>
         </div>

@@ -6,7 +6,7 @@ import { explanationModes, explanationModeForReview, explanationModeFromHash } f
 import { conceptQuizzes } from '../lib/concept-quizzes.mjs';
 import { renderConceptDiagram } from './generate-concept-diagrams.mjs';
 
-assert.deepEqual(Object.keys(conceptExplanations), concepts.map(concept => concept.id));
+assert.deepEqual(Object.keys(conceptExplanations).sort(), concepts.map(concept => concept.id).sort());
 assert.deepEqual(explanationModes.map(mode => mode.id), ['simple', 'principle', 'caution']);
 for (const mode of explanationModes) assert.equal(explanationModeFromHash(`#explain-${mode.id}`), mode.id);
 for (const hash of ['', '#quiz', '#explain-constructor', '#explain-simple-extra']) assert.equal(explanationModeFromHash(hash), null);
@@ -59,6 +59,6 @@ for (const concept of concepts) {
     quizLinks++;
   }
 }
-assert.equal(levelCount, 90); assert.equal(paragraphs.size, 180); assert.equal(diagrams.size, 30); assert.equal(quizLinks, 90);
+assert.equal(levelCount, concepts.length * 3); assert.equal(paragraphs.size, concepts.length * 6); assert.equal(diagrams.size, concepts.length); assert.equal(quizLinks, concepts.length * 3);
 assert(assetBytes < 250000, 'Diagrams stay small.');
 console.log(`Explanations PASS: ${levelCount} levels / ${paragraphs.size} distinct paragraphs, ${diagrams.size} original static SVGs (${assetBytes} bytes), source metadata and ${quizLinks} quiz explanation/diagram targets.`);

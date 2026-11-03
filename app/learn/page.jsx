@@ -28,7 +28,7 @@ export default function LearnPage() {
       <PageHero
         eyebrow="YOUR LEARNING PATH"
         title={<>처음이라면,<br />이 순서로 시작하세요.</>}
-        description="30개의 짧은 개념을 5단계로 나눴습니다. 궁금한 과정부터 읽어도 좋습니다."
+        description="40개의 짧은 개념을 5단계로 나눴습니다. 궁금한 과정부터 읽어도 좋습니다."
         image="silicon-wafer"
         action={<div className="learning-hero-actions"><a className="button mint" href="/concept/semiconductor/">첫 개념 읽기</a><a className="button light-outline" href="#my-progress">내 학습 현황</a></div>}
       />

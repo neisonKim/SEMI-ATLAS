@@ -30,7 +30,7 @@ export default function LearningDashboard() {
         <div className="learning-progress-meter"><label htmlFor="reading-progress">읽기 진행률 <b>{Math.round(summary.read / lessons.length * 100)}%</b></label><progress id="reading-progress" max={lessons.length} value={summary.read}>{summary.read} / {lessons.length}</progress></div>
         <div className="learning-resume">
           {resume ? <><div><span>{resume.reason === 'reading' ? (summary.read ? '이어서 읽어보세요' : '지금 시작하거나 이어서 읽기') : resume.reason === 'review' ? '이 개념을 복습해보세요' : '퀴즈로 학습을 확인해보세요'}</span><strong>{resume.lesson.title}</strong></div><a className="button navy" data-learning-resume={resume.lesson.id} href={`/concept/${resume.lesson.id}/${resume.reason !== 'reading' ? '#quiz' : ''}`}>{resume.reason === 'reading' ? '이어서 읽기' : '학습 확인'} →</a></>
-            : <><div><span>전체 학습 확인 완료</span><strong>30개 개념을 읽고 모든 퀴즈를 맞혔어요.</strong></div><a className="button navy" href="/encyclopedia/">관심 개념 다시 보기</a></>}
+            : <><div><span>전체 학습 확인 완료</span><strong>{lessons.length}개 개념을 읽고 모든 퀴즈를 맞혔어요.</strong></div><a className="button navy" href="/encyclopedia/">관심 개념 다시 보기</a></>}
         </div>
         <details className="learning-records">
           <summary>개념별 학습 기록 보기 <span>{summary.inProgress ? `답변 중 ${summary.inProgress}개 · ` : ''}복습 필요 {summary.review}개</span></summary>

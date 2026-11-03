@@ -22,6 +22,6 @@ for (const concept of concepts) {
 }
 const learn = await (await fetch(new URL('/learn/', base))).text();
 assert(learn.includes('id="my-progress"') && learn.includes('다른 기기와 동기화되지 않으며'));
-assert.equal((learn.match(/class="lesson-row"/g) || []).length, 30);
+assert.equal((learn.match(/class="lesson-row"/g) || []).length, concepts.length);
 assert(learn.includes('기록을 불러오는 중'));
-console.log('Learning pages PASS: all 30 concept quizzes (90 questions, 270 radio choices), review targets, reading control and learning dashboard with private hydration-safe initial state.');
+console.log('Learning pages PASS: all 40 concept quizzes (120 questions, 360 radio choices), review targets, reading control and learning dashboard with private hydration-safe initial state.');

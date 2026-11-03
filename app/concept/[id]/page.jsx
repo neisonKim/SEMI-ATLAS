@@ -19,7 +19,7 @@ const imageFileByName = Object.fromEntries(
 const categoryById = Object.fromEntries(categories.map((category) => [category.id, category]));
 const visualGuideByCategory = { basics: 'foundations', devices: 'computing', process: 'process', packaging: 'hbm', industry: 'industry' };
 
-// Static export only serves the 30 concepts declared below.
+// Static export only serves the concepts declared below.
 export const dynamicParams = false;
 
 export function generateStaticParams() {

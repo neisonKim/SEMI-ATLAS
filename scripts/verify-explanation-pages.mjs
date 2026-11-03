@@ -21,4 +21,4 @@ for (const concept of concepts) {
   assert((await svg.text()).includes('<title'));
   assert(html.includes('href="#explanations"') && html.includes('href="#concept-diagram"'));
 }
-console.log('Explanation pages PASS: 30 pages with 90 accessible tab panels, 30 SVG HTTP/MIME/source/alt/scope checks, reference links and deep-link targets.');
+console.log('Explanation pages PASS: 40 pages with 120 accessible tab panels, 40 SVG HTTP/MIME/source/alt/scope checks, reference links and deep-link targets.');

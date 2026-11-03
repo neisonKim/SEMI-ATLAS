@@ -8,7 +8,7 @@ import {
   parseLearningProgress, summarizeLearning,
 } from '../lib/learning-progress.mjs';
 
-assert.deepEqual(Object.keys(conceptQuizzes), concepts.map(concept => concept.id));
+assert.deepEqual(Object.keys(conceptQuizzes).sort(), concepts.map(concept => concept.id).sort());
 const ids = new Set();
 const prompts = new Set();
 const anchors = new Set(['what', 'why', 'how', 'structure', 'misconceptions', 'question']);
@@ -27,9 +27,9 @@ for (const concept of concepts) {
     answerPositions[question.correct]++;
   }
 }
-assert.equal(ids.size, 90);
-assert.deepEqual(Object.values(answerPositions), [30, 30, 30]);
-assert.equal(learningLessons.length, 30);
+assert.equal(ids.size, concepts.length * 3);
+assert.deepEqual(Object.values(answerPositions), Array(3).fill(concepts.length));
+assert.equal(learningLessons.length, concepts.length);
 assert(Buffer.byteLength(JSON.stringify(learningLessons)) < 20000, 'Global store uses compact rules.');
 
 const time = '2026-10-31T00:00:00.000Z';
@@ -114,6 +114,6 @@ for (const lesson of learningLessons) {
   for (const question of lesson.questions) complete = applyLearningAction(complete, { type: 'answer', conceptId: lesson.id, questionId: question.id, optionId: question.correct }, learningLessons, time);
   complete = applyLearningAction(complete, { type: 'submit', conceptId: lesson.id }, learningLessons, time);
 }
-assert.deepEqual(summarizeLearning(complete, learningLessons), { read: 30, checked: 30, mastered: 30, review: 0, inProgress: 0 });
+assert.deepEqual(summarizeLearning(complete, learningLessons), { read: concepts.length, checked: concepts.length, mastered: concepts.length, review: 0, inProgress: 0 });
 assert.equal(nextLearningLesson(complete, learningLessons), null);
-console.log('Learning PASS: 30 lessons, 90 unique questions/explanations/review targets; separate reading/quiz progress, drafts, retries, grading, schema/revision validation, storage failure fallback, cross-tab merge and full-course completion.');
+console.log('Learning PASS: 40 lessons, 120 unique questions/explanations/review targets; separate reading/quiz progress, drafts, retries, grading, schema/revision validation, storage failure fallback, cross-tab merge and full-course completion.');
