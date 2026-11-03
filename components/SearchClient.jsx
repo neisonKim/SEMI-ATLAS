@@ -3,6 +3,8 @@
 import { useEffect, useMemo, useState } from 'react';
 import { categories, concepts, levels } from '@/lib/data.mjs';
 import ConceptCard from './ConceptCard';
+import ConceptIndex from './ConceptIndex';
+import { buildConceptIndex, indexViews } from '@/lib/concept-index.mjs';
 import { SearchIcon } from './Icons';
 import SearchAutocomplete from './SearchAutocomplete';
 import { searchConcepts } from '@/lib/search.mjs';
@@ -11,11 +13,14 @@ export default function SearchClient() {
   const [query, setQuery] = useState('');
   const [category, setCategory] = useState('all');
   const [level, setLevel] = useState('all');
+  const [view, setView] = useState('cards');
   const [ready, setReady] = useState(false);
 
   const validCategories = useMemo(() => new Set(['all', ...categories.map((item) => item.id)]), []);
 
   const matches = useMemo(() => searchConcepts(concepts, { query, category, level }), [query, category, level]);
+
+  const groups = useMemo(() => view === 'cards' ? [] : buildConceptIndex(matches, view), [matches, view]);
 
   useEffect(() => {
     const readUrl = () => {
@@ -25,6 +30,8 @@ export default function SearchClient() {
       setQuery(params.get('q') || '');
       setCategory(validCategories.has(nextCategory) ? nextCategory : 'all');
       setLevel(['1', '2', '3'].includes(nextLevel) ? nextLevel : 'all');
+      const nextView = params.get('view');
+      setView(indexViews.find(item => item.id === nextView)?.id ?? 'cards');
       setReady(true);
     };
     readUrl();
@@ -38,9 +45,20 @@ export default function SearchClient() {
     if (query.trim()) params.set('q', query.trim());
     if (category !== 'all') params.set('category', category);
     if (level !== 'all') params.set('level', level);
+    if (view !== 'cards') params.set('view', view);
     const suffix = params.toString();
-    window.history.replaceState(null, '', `${window.location.pathname}${suffix ? `?${suffix}` : ''}${window.location.hash}`);
-  }, [query, category, level, ready]);
+    const currentHash = window.location.hash;
+    const hash = currentHash.startsWith('#concept-index-') && !groups.some(group => `#${group.id}` === currentHash) ? '' : currentHash;
+    window.history.replaceState(window.history.state, '', `${window.location.pathname}${suffix ? `?${suffix}` : ''}${hash}`);
+  }, [query, category, level, view, groups, ready]);
+
+  useEffect(() => {
+    if (!ready || view === 'cards') return;
+    const hash = window.location.hash;
+    if (hash.startsWith(`#concept-index-${view}-`)) {
+      document.getElementById(hash.slice(1))?.scrollIntoView();
+    }
+  }, [ready, view]);
 
   useEffect(() => {
     if (!ready || !document.modelContext?.registerTool) return undefined;
@@ -95,7 +113,7 @@ export default function SearchClient() {
       <section className="search-heading container">
         <span className="eyebrow">THE ENCYCLOPEDIA</span>
         <h1>궁금한 반도체,<br />여기서 찾아보세요.</h1>
-        <p>용어의 뜻부터 작동 원리, 다음에 읽을 개념까지.</p>
+        <p>용어를 검색하거나 가나다·ABC 색인에서 찾아보세요.</p>
         <SearchAutocomplete
           id="search"
           className="search-large"
@@ -137,6 +155,14 @@ export default function SearchClient() {
           </label>
         </div>
 
+        <div className="concept-index-views" role="group" aria-label="개념 보기 방식">
+          {indexViews.map(item => (
+            <button key={item.id} type="button" className={view === item.id ? 'filter active' : 'filter'} aria-pressed={view === item.id} onClick={() => setView(item.id)}>
+              {item.label}
+            </button>
+          ))}
+        </div>
+
         <div className="results-heading">
           <p id="result-count" role="status" aria-live="polite">
             {query.trim() ? `“${query.trim()}” 검색 결과 · ${matches.length}개 개념` : `${matches.length}개 개념`}
@@ -144,7 +170,9 @@ export default function SearchClient() {
           <button type="button" className="text-button" id="reset-search" onClick={reset}>검색·필터 초기화</button>
         </div>
 
-        {matches.length > 0 ? (
+        {matches.length > 0 && view !== 'cards' ? (
+          <ConceptIndex groups={groups} language={view} />
+        ) : matches.length > 0 ? (
           <div id="search-results" className="search-grid">
             {matches.map((concept) => (
               <article className="search-item" data-id={concept.id} data-category={concept.category} data-level={concept.level} key={concept.id}>

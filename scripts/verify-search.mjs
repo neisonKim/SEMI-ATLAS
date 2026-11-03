@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import { concepts } from '../lib/data.mjs';
+import { buildConceptIndex } from '../lib/concept-index.mjs';
 import { searchConcepts, suggestConcepts } from '../lib/search.mjs';
 import { searchIndex } from '../lib/search-index.mjs';
 import { readSearchFilters, searchUnified, suggestUnified, unifiedSearchUrl } from '../lib/unified-search.mjs';
@@ -72,3 +73,31 @@ assert.equal(unifiedSearchUrl({ query: '  ', kind: 'invalid' }), '/search/');
 assert(searchIndex.every(item => !('refs' in item) && !('technologies' in item) && !('sections' in item)));
 assert(Buffer.byteLength(JSON.stringify(searchIndex)) < 150000, 'Search records stay compact.');
 console.log('PASS: 90 unified results, all 270 identities, product/technology aliases, mixed suggestions, kind filters, safe URL round trip, empty/invalid inputs.');
+
+for (const language of ['ko', 'en']) {
+  const groups = buildConceptIndex(concepts, language);
+  const entries = groups.flatMap(group => group.entries);
+  assert.equal(new Set(entries.map(entry => entry.concept.id)).size, concepts.length);
+  assert.equal(new Set(groups.map(group => group.id)).size, groups.length);
+  assert.equal(groups[0].label, '0–9');
+  assert(groups.every(group => group.entries.length > 0));
+  if (language === 'ko') assert.equal(entries.length, concepts.length);
+  assert.deepEqual(buildConceptIndex([], language), []);
+}
+
+for (const [language, initial, name, id] of [
+  ['ko', 'ㅈ', '재배선층', 'rdl'],
+  ['ko', 'ㅈ', '전자설계자동화', 'eda'],
+  ['ko', 'ㅍ', '핀펫', 'finfet'],
+  ['en', 'R', 'RDL', 'rdl'],
+  ['en', 'E', 'EDA', 'eda'],
+  ['en', 'D', 'DUV', 'euv-duv'],
+  ['en', 'E', 'EUV', 'euv-duv'],
+]) {
+  const filtered = searchConcepts(concepts, { query: id === 'rdl' ? 'RDL' : '' });
+  const group = buildConceptIndex(filtered, language).find(item => item.label === initial);
+  assert(group?.entries.some(entry => entry.name === name && entry.concept.id === id), name);
+}
+const filtered = searchConcepts(concepts, { query: 'RDL', category: 'packaging', level: '3' });
+assert.deepEqual(buildConceptIndex(filtered, 'ko').flatMap(group => group.entries.map(entry => entry.concept.id)), ['rdl']);
+console.log('Index PASS: all 40 concepts in both modes, name and acronym placement, stable numeric group and combined filters.');

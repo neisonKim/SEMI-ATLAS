@@ -1017,3 +1017,60 @@ html,body{max-width:100%}body{overflow-x:clip}main,section,article,nav,header,fo
   .concept-diagram-sources{padding-inline:16px}
   .quiz-review-links{gap:0 14px}
 }
+
+/* Encyclopedia index */
+.concept-index-views,
+.concept-index-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.concept-index-views { margin-top: 20px; }
+.concept-index-jump {
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f4f8fa;
+}
+.concept-index-jump a {
+  display: grid;
+  place-items: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding-inline: 8px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--navy);
+  font-weight: 750;
+}
+.concept-index-jump a:hover,
+.concept-index-group li a:hover { background: #edf8f9; }
+.concept-index-group { margin-top: 26px; }
+.concept-index-group h2 {
+  padding: 8px 12px;
+  border-bottom: 2px solid var(--line);
+  color: var(--navy);
+  font-size: 1.125rem;
+}
+.concept-index-group ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 275px), 1fr));
+  gap: 0 18px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.concept-index-group li a {
+  display: grid;
+  gap: 3px;
+  min-height: 56px;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--line);
+  overflow-wrap: anywhere;
+}
+.concept-index-group li a span {
+  color: var(--muted);
+  font-size: .8125rem;
+}
+
