@@ -28,6 +28,7 @@ export default function Footer() {
             <a href="/learn/">학습 경로</a>
             <a href="/learn/#my-progress">학습 현황</a>
             <a href="/encyclopedia/">전체 개념</a>
+            <a href="/news-terms/">뉴스 속 반도체 용어</a>
             <a href="/process/">공정 지도</a>
             <a href="/industry/">산업 지도</a>
             <a href="/companies/">기업 사전</a>

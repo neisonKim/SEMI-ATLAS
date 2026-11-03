@@ -3,7 +3,7 @@ import { concepts } from '../lib/data.mjs';
 
 const outUrl = new URL('../out/', import.meta.url);
 const routeSet = new Set([
-  '/', '/encyclopedia/', '/learn/', '/process/', '/packaging/', '/industry/', '/visual/',
+  '/', '/encyclopedia/', '/news-terms/', '/learn/', '/process/', '/packaging/', '/industry/', '/visual/',
   ...concepts.map((concept) => `/concept/${concept.id}/`),
 ]);
 

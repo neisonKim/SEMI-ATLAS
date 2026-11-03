@@ -10,6 +10,7 @@ const outPath = decodeURIComponent(outUrl.pathname);
 const requiredFiles = [
   'index.html',
   'encyclopedia/index.html',
+  'news-terms/index.html',
   'learn/index.html',
   'process/index.html',
   'packaging/index.html',
@@ -45,7 +46,7 @@ const robots = await readFile(new URL('robots.txt', outUrl), 'utf8');
 const htmlFiles = requiredFiles.filter((file) => file.endsWith('.html'));
 
 const expectedRoutes = [
-  '/', '/encyclopedia/', '/learn/', '/process/', '/packaging/', '/industry/', '/visual/', '/companies/',
+  '/', '/encyclopedia/', '/news-terms/', '/learn/', '/process/', '/packaging/', '/industry/', '/visual/', '/companies/',
   ...concepts.map((concept) => `/concept/${concept.id}/`),
   ...companies.map(company => `/company/${company.id}/`),
 ];

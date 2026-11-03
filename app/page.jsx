@@ -55,6 +55,7 @@ export default function HomePage() {
             <a href="/concept/hbm/">HBM</a>
             <a href="/concept/lithography/">노광</a>
             <a href="/concept/foundry/">파운드리</a>
+            <a href="/news-terms/">뉴스 속 반도체 용어</a>
           </div>
         </div>
       </section>
